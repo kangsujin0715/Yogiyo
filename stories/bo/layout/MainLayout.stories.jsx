@@ -1,4 +1,4 @@
-import MainLayout from "../../components/bo/layout/MainLayout";
+import MainLayout from "../../../components/bo/layout/MainLayout";
 
 export default {
     title: "Yogiyo-bo/layout/MainLayout",

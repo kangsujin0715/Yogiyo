@@ -1,7 +1,7 @@
-import FullTable from "../../components/bo/complex/FullTable";
+import FullTable from "../../../components/bo/ui/FullTable";
 
 export default {
-    title: "Yogiyo-bo/component/FullTable",
+    title: "Yogiyo-bo/complex/FullTable",
     component: FullTable,
     parameters: {
         layout: "centered",

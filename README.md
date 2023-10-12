@@ -7,24 +7,41 @@ publisher
 ├─ .storybook  // 스토리북 설정정보
 │  ├─ main.js
 │  └─ preview.js
-├─ asset              // 1. 정적 파일 경로
-│  ├─ component-css   // 2 컴포넌트 단위 css 적용 경로
-│  │  ├─ button.css
-│  │  └─ header.css
-│  ├─ css             // 3. 페이지 단위 css
-│  ├─ html            // 4. 페이지 단위 html
-│  └─ image           // 5. 정적이미지 경로
+├─ asset                 // 1. 정적 파일 경로
+│  ├─ bo
+│  │  ├─ component-css   // 2 컴포넌트 단위 css 적용 경로
+│  │  │  ├─ button.css
+│  │  │  └─ header.css
+│  │  ├─ css             // 3. 페이지 단위 css
+│  │  ├─ html            // 4. 페이지 단위 html
+│  │  └─ image           // 5. 정적이미지 경로
+│  ├─ fo  // bo 와 동일
 ├─ components
-│  ├─ complex         // 6. 복합요소 컴포넌트
-│  │  └─ Header.jsx
-│  └─ ui              // 7. 단순 UI 컴포넌트
-│     └─ Button.jsx
+│  ├─ bo
+│  │  ├─ complex         // 6. 복합요소 컴포넌트
+│  │  │  └─ Header.jsx
+│  │  ├─ layout          // 7. 레이아웃 컴포넌트
+│  │  │  └─ MainLayout.jsx
+│  │  ├─ page            // 8. 페이지 컴포넌트
+│  │  │  └─ MainPage.jsx
+│  │  └─ ui              // 9. 단순 UI 컴포넌트
+│  │     └─ Button.jsx
+│  ├─ fo // bo 와 동일
 ├─ package-lock.json
 ├─ package.json
 ├─ README.md
-└─ stories               // 8. 스토리 경로
+└─ stories               // 10. 스토리 경로
    ├─ assets
-   ├─ Button.stories.js
+   ├─ bo
+   │  ├─ complex              // 11. 복합요소 컴포넌트 스토리
+   │  │  └─ Header.stories.js
+   │  ├─ layout               // 12. 레이아웃 컴포넌트 스토리
+   │  │  └─ MainLayout.stories.jsx
+   │  ├─ page                 // 13. 페이지 컴포넌트 스토리
+   │  │  └─ MainPage.stories.js
+   │  └─ ui                   // 14. 단순 UI 컴포넌트 스토리
+   │     └─ Button.stories.js
+   ├─ fo // bo 와 동일
    ├─ Configure.mdx
    └─ Header.stories.js
 ```
@@ -37,7 +54,9 @@ publisher
 5. 정적이미지
 6. 복합요소 컴포넌트 (2개 이상의 컴포넌트가 혼합된 컴포넌트)
     - 컴포넌트는 기본적으로 `jsx` 파일로 작성
-7. 단순요소 컴포넌트 (단순 UI 성 컴포넌트)
+7. 페이지/복합요소 유형 별 레이아웃 컴포넌트 작성 `ex) ModalLayout, FormLayout 등..`
+8. 페이지 컴포넌트 단순컴포넌트와 복합컴포넌트를 조합해 페이지 단위의 컴포넌트 작성
+9. 단순요소 컴포넌트 (단순 UI 성 컴포넌트)
     - `jsx` 파일로 작성
 
 ### 2. 작업 진행 순서 (공통 UI 작업 사전 완료 가정)
@@ -50,6 +69,8 @@ publisher
 ### 3. `stories` 작성 방법
 
 1. `default` 작성
+    - `{스토리 대상의 파일명}.stories.js` 로 작성
+    - 스토리 내에서 컴포넌트를 `render` 해야 하는 경우 `.jsx` 로 작성한다.
 
 ```javascript
 export default {
@@ -62,7 +83,9 @@ export default {
 };
 ```
 
-2. 각 `option` 에 대한 `argument` 작성 (컴포넌트 `props` 별 작성)
+2. 각 `option` 에 대한 `argument` 작성
+    - 컴포넌트 `props` 별 작성, `props` 가 없다면 `preview` 또는 각 상황별로 작성
+    - `ex) emptyData, hasData`
 
 ```javascript
 // Primary 가 true 인 경우 stories
@@ -92,6 +115,20 @@ export const Small = {
         label: "Button",
     },
 };
+
+export const Preview = {};
+
+export const HasData = {};
+
+export const EmptyData = {};
 ```
 
 3. `console` 에서 `npm run storybook` 을 실행하여 작성된 스토리를 확인한다.
+
+### ETC
+
+1.  프로젝트 구동 방법.
+    -   최초 `git clone` 후 상단 `Terminal(터미널)` 메뉴 클릭
+    -   `new Terminal` 또는 `ctrl` + `~` 단축키로 터미널 실행
+    -   `npm install` 입력 후 실행
+    -   `npm run storybook` 입력 후 실행

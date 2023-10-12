@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import "../../../asset/component-css/bo/layout/mainLayout.css";
-import "../../../asset/component-css/bo/common.css";
+import "../../../asset/bo/component-css/mainLayout.css";
+import "../../../asset/bo/component-css/common.css";
 
 export default function MainLayout(props) {
     return (

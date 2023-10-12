@@ -1,4 +1,4 @@
-import MainPage from "../../components/bo/page/MainPage";
+import MainPage from "../../../components/bo/page/MainPage";
 
 export default {
     title: "Yogiyo-bo/page/MainPage",

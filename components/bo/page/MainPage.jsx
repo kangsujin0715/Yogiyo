@@ -1,10 +1,9 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
-import FullTable from "../complex/FullTable";
+import FullTable from "../ui/FullTable";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import RadioGroup from "@mui/material/RadioGroup";
-import FormHelperText from "@mui/material/FormHelperText";
 
 export default function MainPage() {
     const sampleTableProps = {
