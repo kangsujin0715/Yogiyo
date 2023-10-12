@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Button } from "../ui/Button";
-import "../../asset/component-css/header.css";
+import "../../../asset/component-css/header.css";
+import { Button } from "@mui/material";
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-    <header>
+    <header style={{ backgroundColor: "#fff" }}>
         <div className="storybook-header">
             <div>
                 <svg
