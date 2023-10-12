@@ -8,4 +8,10 @@ export default {
     },
 };
 
-export const Preview = {};
+export const Preview = {
+    render: () => (
+        <MainLayout>
+            <div>write content here ...</div>
+        </MainLayout>
+    ),
+};

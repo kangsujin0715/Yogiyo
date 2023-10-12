@@ -3,7 +3,7 @@ import React from "react";
 import "../../../asset/component-css/bo/layout/mainLayout.css";
 import "../../../asset/component-css/bo/common.css";
 
-export default function MainLayout() {
+export default function MainLayout(props) {
     return (
         <Box>
             <Box component="header" className="header-container">
@@ -18,7 +18,7 @@ export default function MainLayout() {
                         Nav
                     </Box>
                     <Box component="main" className="main">
-                        CONTENT
+                        {props.children}
                     </Box>
                 </Box>
             </Box>

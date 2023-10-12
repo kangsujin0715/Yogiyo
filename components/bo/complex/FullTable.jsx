@@ -6,18 +6,26 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 
 /**
- *
  * props : {columnHeaders : {name,text}[], data[]}
  */
 export default function FullTable(props) {
-    const tableHeader = props.columnHeaders.map((cell) => (
-        <TableCell>{cell.text}</TableCell>
+    const tableHeader = props.columnHeaders.map((cell, i) => (
+        <TableCell key={`hc_${i}`}>{cell.text}</TableCell>
     ));
 
-    const tableBody = props.data.map((row) => (
+    const isEmpty = !props.data.length;
+    const emptyTableBody = (
         <TableRow>
-            {props.columnHeaders.map((cell) => (
-                <TableCell>{row[cell.name]}</TableCell>
+            <TableCell align="center" colSpan={props.columnHeaders.length}>
+                데이터가 없습니다.
+            </TableCell>
+        </TableRow>
+    );
+
+    const tableBody = props.data.map((row, i) => (
+        <TableRow key={`r_${i}`}>
+            {props.columnHeaders.map((cell, j) => (
+                <TableCell key={`r_${i}_c_${j}`}>{row[cell.name]}</TableCell>
             ))}
         </TableRow>
     ));
@@ -26,7 +34,7 @@ export default function FullTable(props) {
             <TableHead>
                 <TableRow>{tableHeader}</TableRow>
             </TableHead>
-            <TableBody>{tableBody}</TableBody>
+            <TableBody>{isEmpty ? emptyTableBody : tableBody}</TableBody>
         </Table>
     );
 }

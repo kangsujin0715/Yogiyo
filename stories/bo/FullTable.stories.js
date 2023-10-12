@@ -8,73 +8,31 @@ export default {
     },
     tags: ["autodocs"],
 };
+const columnHeaders = [
+    { name: "test0", text: "컬럼 1" },
+    { name: "test1", text: "컬럼 2" },
+    { name: "test2", text: "컬럼 3" },
+    { name: "test3", text: "컬럼 4" },
+    { name: "test4", text: "컬럼 5" },
+];
+const createSampleData = (count) =>
+    Array(count)
+        .fill("")
+        .map(() =>
+            columnHeaders
+                .map(({ name }) => name)
+                .reduce((acc, cur) => ({ ...acc, [cur]: "......" }), {})
+        );
 
-export const columnHeaders = {
+export const emptyData = {
     args: {
-        columnHeaders: [
-            { name: "test1", text: "컬럼 1" },
-            { name: "test2", text: "컬럼 2" },
-            { name: "test3", text: "컬럼 3" },
-            { name: "test4", text: "컬럼 4" },
-            { name: "test5", text: "컬럼 5" },
-        ],
-        data: [
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-            {
-                test1: "....",
-                test2: ".....",
-                test3: "....",
-                test4: "....",
-                test5: ".....",
-            },
-        ],
+        columnHeaders,
+        data: [],
+    },
+};
+export const hasData = {
+    args: {
+        columnHeaders,
+        data: createSampleData(10),
     },
 };
