@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../../../asset/component-css/header.css";
-import { Button } from "@mui/material";
+import { Button } from "../../ui/Button";
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
     <header style={{ backgroundColor: "#fff" }}>

@@ -18,7 +18,7 @@ export default function MainLayout() {
                         Nav
                     </Box>
                     <Box component="main" className="main">
-                        Main
+                        CONTENT
                     </Box>
                 </Box>
             </Box>
