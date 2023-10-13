@@ -1,0 +1,28 @@
+.header-container {
+    background-color: #fff;
+    height: 60px;
+}
+.footer-container {
+    height: 60px;
+}
+.lnb-container {
+    background-color: beige;
+    width: 200px;
+    height: calc(100vh - 120px);
+    display: inline-block;
+}
+
+.nav-container {
+    background-color: aquamarine;
+    height: 40px;
+}
+
+.main-container {
+    width: calc(100% - 200px);
+    overflow: hidden;
+}
+
+.main {
+    background-color: #eee;
+    height: 100%;
+}
