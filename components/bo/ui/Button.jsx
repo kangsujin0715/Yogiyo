@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../../../asset/bo/component-css/button.css';
-
 /**
  * Primary UI component for user interaction
  */
