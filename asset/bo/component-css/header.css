@@ -1,3 +1,5 @@
+html {font-size: 10px;}
+
 .storybook-header {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -20,6 +22,16 @@
   display: inline-block;
   vertical-align: top;
 }
+
+.storybook-header button {
+	color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 1.6rem;
+    border-left: 0.1rem solid#e8e8e8;
+}
+
+.storybook-header button:hover { background-color: transparent; }
 
 .storybook-header button + button {
   margin-left: 10px;
