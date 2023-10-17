@@ -1,7 +1,8 @@
 import React from 'react';
 
 import '../../../asset/bo/component-css/header.css';
-import { Button } from '../ui/Button';
+import { Send } from '@mui/icons-material';
+import { Button } from '@mui/material';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header style={{ backgroundColor: '#fff' }}>
@@ -35,17 +36,15 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            <Button variant="text" startIcon={<Send />}>
+              로그아웃
+            </Button>
           </>
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button
-              primary
-              size="small"
-              onClick={onCreateAccount}
-              label="Sign up"
-            />
+            <Button variant="text" endIcon={<Send />}>
+              로그인
+            </Button>
           </>
         )}
       </div>
