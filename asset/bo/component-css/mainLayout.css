@@ -1,15 +1,14 @@
+html {font-size: 10px;}
+
 .header-container {
   background-color: #fff;
   height: 60px;
 }
-.footer-container {
-  height: 60px;
-}
+
 .lnb-container {
-  background-color: beige;
-  width: 200px;
-  height: calc(100vh - 120px);
-  display: inline-block;
+  width: 25.6rem;
+  padding: 0.8rem;
+  height: calc(100vh - 5.6rem);
 }
 
 .nav-container {
@@ -18,7 +17,7 @@
 }
 
 .main-container {
-  width: calc(100% - 200px);
+  width: calc(100% - 25.6rem);
   overflow: hidden;
 }
 

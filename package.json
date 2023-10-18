@@ -27,8 +27,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
-    "prettier": "^3.0.3"
+    "@mui/styled-engine-sc": "^6.0.0-alpha.1",
+    "prettier": "^3.0.3",
+    "styled-components": "^6.1.0",
+    "styled-reset": "^4.5.1"
   }
 }

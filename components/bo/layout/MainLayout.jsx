@@ -2,16 +2,17 @@ import { Box } from '@mui/material';
 import React from 'react';
 import '../../../asset/bo/component-css/mainLayout.css';
 import '../../../asset/bo/component-css/common.css';
+import HaderTest from '../complex/HeaderTest';
+import LnbTest from '../complex/LnbTest';
+
 
 export default function MainLayout(props) {
   return (
-    <Box>
-      <Box component="header" className="header-container">
-        Header Area
-      </Box>
+    <>
+      <HaderTest/>
       <Box className="flex-box">
         <Box component="aside" className="lnb-container">
-          LNB
+          <LnbTest/>
         </Box>
         <Box className="main-container">
           <Box component="nav" className="nav-container">
@@ -22,7 +23,6 @@ export default function MainLayout(props) {
           </Box>
         </Box>
       </Box>
-      <Box className="footer-container">Footer</Box>
-    </Box>
+    </>
   );
 }

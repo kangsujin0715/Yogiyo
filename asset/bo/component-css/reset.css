@@ -63,4 +63,4 @@ input::-webkit-search-results-decoration {display:none;}
 ::-webkit-scrollbar-thumb {background-color: #e0e0e0; border-radius: 1rem;}
 ::-webkit-scrollbar-track {background: transparent;}
 
-
+.sb-main-padded.sb-show-main {padding: 0 !important;}
