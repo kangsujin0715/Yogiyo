@@ -20,12 +20,12 @@ html {
 	font-size: 1.4rem;
 }
 
-.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root:hover,
-.css-1cjkyt1-MuiButtonBase-root-MuiListItemButton-root:hover {
+.lnb .css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root:hover,
+.lnb .css-1cjkyt1-MuiButtonBase-root-MuiListItemButton-root:hover {
 	border-radius: 0.4rem;
 }
 
-.css-i4bv87-MuiSvgIcon-root {
+.lnb .css-i4bv87-MuiSvgIcon-root {
 	font-size: 2.4rem !important;
 	color: rgba(0, 0, 0, 1);
 }

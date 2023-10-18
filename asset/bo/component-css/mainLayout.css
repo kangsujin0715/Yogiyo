@@ -1,27 +1,32 @@
-html {font-size: 10px;}
+html {
+	font-size: 10px;
+}
 
 .header-container {
-  background-color: #fff;
-  height: 60px;
+	background-color: #fff;
+	height: 60px;
 }
 
 .lnb-container {
-  width: 25.6rem;
-  padding: 0.8rem;
-  height: calc(100vh - 5.6rem);
+	width: 25.6rem;
+	padding: 0.8rem;
+	height: calc(100vh - 5.6rem);
+}
+
+
+.main-container {
+	width: calc(100% - 25.6rem);
+	padding: 0 3.2rem;
+	overflow: hidden;
+	background-color: rgba(250, 250, 250, 1);
 }
 
 .nav-container {
-  background-color: aquamarine;
-  height: 40px;
-}
-
-.main-container {
-  width: calc(100% - 25.6rem);
-  overflow: hidden;
+	display: flex;
+	align-items: center;
+	height: 5.6rem;
 }
 
 .main {
-  background-color: #eee;
-  height: 100%;
+	height: 100%;
 }

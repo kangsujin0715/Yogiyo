@@ -1,26 +1,30 @@
 import React from 'react';
 import { useState } from 'react';
 
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+import {
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Collapse
+} from '@mui/material';
 
-import CorporateFareRoundedIcon from '@mui/icons-material/CorporateFareRounded';
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
-import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
-import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
-import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
-import OutboundOutlinedIcon from '@mui/icons-material/OutboundOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import {
+  ExpandLess,
+  ExpandMore,
+  CorporateFareRounded,
+  ShoppingBagOutlined,
+  Inventory2Outlined,
+  AssessmentOutlined,
+  ConfirmationNumberOutlined,
+  OutboundOutlined,
+  SettingsOutlined
+} from '@mui/icons-material';
 
 import '../../../asset/bo/component-css/LnbTest.css';
 
 const LnbTest = () => {
-  const [open, setOpen] = useState([false, false, false, false, false, false, false]);
+  const [open, setOpen] = useState([false]);
   const handleClick = (i) => {
     const click = { ...open };
     click[i] = !click[i];
@@ -30,12 +34,13 @@ const LnbTest = () => {
   return (
     <>
       <List
+        className="lnb"
         sx={{ width: '100%', py: 0, maxWidth: 256 }}
         component="aside"
         aria-labelledby="nested-list-subheader">
         <ListItemButton onClick={() => handleClick(0)}>
           <ListItemIcon>
-            <CorporateFareRoundedIcon />
+            <CorporateFareRounded />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="거래처 관리" />
           {open[0] ? (
@@ -61,7 +66,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(1)}>
           <ListItemIcon>
-            <ShoppingBagOutlinedIcon />
+            <ShoppingBagOutlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="상품 관리" />
           {open[1] ? (
@@ -92,7 +97,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(2)}>
           <ListItemIcon>
-            <Inventory2OutlinedIcon />
+            <Inventory2Outlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="거래 관리" />
           {open[2] ? (
@@ -114,7 +119,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(3)}>
           <ListItemIcon>
-            <AssessmentOutlinedIcon />
+            <AssessmentOutlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="통게 관리" />
           {open[3] ? (
@@ -142,7 +147,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(4)}>
           <ListItemIcon>
-            <ConfirmationNumberOutlinedIcon />
+            <ConfirmationNumberOutlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="쿠폰 관리" />
           {open[4] ? (
@@ -161,7 +166,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(5)}>
           <ListItemIcon>
-            <OutboundOutlinedIcon />
+            <OutboundOutlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="발행/발송 관리" />
           {open[5] ? (
@@ -186,7 +191,7 @@ const LnbTest = () => {
 
         <ListItemButton onClick={() => handleClick(6)}>
           <ListItemIcon>
-            <SettingsOutlinedIcon />
+            <SettingsOutlined />
           </ListItemIcon>
           <ListItemText className="lnbTitle" primary="시스템 관리" />
           {open[6] ? (

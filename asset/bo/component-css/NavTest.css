@@ -1,0 +1,36 @@
+@import url('reset.css');
+
+html {
+	font-size: 10px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav .nav-item {
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding-right: 0.8rem;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.nav .nav-item::after {
+	content: '/';
+	width: 0.7rem;
+	height: 2.4rem;
+	padding-left: 0.8rem;
+}
+
+.nav .nav-item:last-child:after {
+	display: none;
+}
+
+.nav .nav-item:last-child a {
+	padding-right: 0;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.87);
+}
