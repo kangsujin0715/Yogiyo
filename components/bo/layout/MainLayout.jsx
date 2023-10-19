@@ -22,7 +22,6 @@ export default function MainLayout(props) {
           </Box>
           <Box component='main' className='main'>
             {props.children}
-			
           </Box>
         </Box>
       </Box>

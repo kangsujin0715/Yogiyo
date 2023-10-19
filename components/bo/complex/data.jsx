@@ -1,15 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-
-import '../../../asset/bo/component-css/LnbTest.css';
 
 import CorporateFareRoundedIcon from '@mui/icons-material/CorporateFareRounded';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
@@ -85,64 +74,5 @@ const lnbMenu = [
     },
   ];
 
-const LnbTest2 = () => {
-  
-  return (
-    <>
-      <List
-        className="lnb"
-        sx={{ width: '100%', maxWidth: 256 }}
-        component="nav"
-        aria-labelledby="nested-list-subheader">
-        {lnbMenu.map((a, i) => {
-          return (
-            <>
-              <Menu lnbMenu={lnbMenu[i]} key={i}></Menu>
-            </>
-          );
-        })}
-      </List>
-    </>
-  );
-};
-
-function Menu(props) {
-  const [open, setOpen] = useState([false, false]);
-  const handleClick = (i) => {
-    const o = { ...open };
-    o[i] = !o[i];
-    setOpen(o);
-  };
-
-  const subMenu = [ ...props.lnbMenu.item ];
-
-  return (
-    <>
-      <ListItemButton onClick={() => handleClick(0)}>
-        <ListItemIcon>{ props.lnbMenu.icon }</ListItemIcon>
-        <ListItemText className="lnbTitle" primary={ props.lnbMenu.title } />
-        {open[0] ? (
-          <ExpandLess fontSize="large" />
-        ) : (
-          <ExpandMore fontSize="large" />
-        )}
-      </ListItemButton>
-
-      <Collapse in={open[0]} timeout="auto" unmountOnExit>
-        <List component="div" className="lnbItem" disablePadding>
-          {
-			subMenu.map((a, i) => {
-				return (
-				<ListItemButton key={i} sx={{ pl: 9, py: 0 }}>
-					<ListItemText>{ subMenu[i] }</ListItemText>
-				</ListItemButton>
-				);
-			})
-		  }
-        </List>
-      </Collapse>
-    </>
-  );
-}
-
-export default LnbTest2;
+  export default lnbMenu;
+   
