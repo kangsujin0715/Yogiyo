@@ -8,7 +8,7 @@ import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumb
 import OutboundOutlinedIcon from '@mui/icons-material/OutboundOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
-const lnbMenu = [
+const LnbData = [
     {
       id: 1,
       icon: <CorporateFareRoundedIcon />,
@@ -74,5 +74,5 @@ const lnbMenu = [
     },
   ];
 
-  export default lnbMenu;
+  export default LnbData;
    

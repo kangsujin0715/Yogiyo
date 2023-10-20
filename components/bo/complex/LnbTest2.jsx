@@ -23,7 +23,7 @@ import {
 
 import '../../../asset/bo/component-css/LnbTest.css';
 
-const LnbTest = () => {
+const LnbTest2 = () => {
   const [open, setOpen] = useState([false]);
   const handleClick = (i) => {
     const click = { ...open };
@@ -236,4 +236,4 @@ const LnbTest = () => {
   );
 };
 
-export default LnbTest;
+export default LnbTest2;
