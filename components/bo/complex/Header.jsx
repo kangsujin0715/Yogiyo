@@ -1,32 +1,26 @@
+<<<<<<< HEAD
 import React from 'react';
 
 import '../../../asset/bo/component-css/header.css';
+import logo from '../../../asset/images/Yogiyo_logo.svg';
+import LogoutIcon from '@mui/icons-material/Logout';
 import Button from '@mui/material/Button';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header style={{ backgroundColor: '#fff' }}>
-    <div className="storybook-header">
-      <div>
-        <h1><a href="#"></a></h1>
+const Header = () => {
+  return (
+    <header>
+      <h1>
+        <a href="javascript:void(0)">
+          <img src={logo} alt="요기요 로고" />
+        </a>
+      </h1>
+      <div className="header-menu">
+        <Button>운영매뉴얼</Button>
+        <Button>YOGIYO(요기요)</Button>
+        <Button endIcon={<LogoutIcon />}>로그아웃</Button>
       </div>
-      <div>
-        {user ? (
-          <>
-            {/* <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span> */}
-            <Button size="small" variant="text" >운영매뉴얼</Button>
-            <Button size="small" variant="text" >YOGIYO(요기요)</Button>
-            <Button size="small" variant="text" onClick={onLogout}>로그아웃</Button>
-          </>
-        ) : (
-          <>
-            <Button variant="text" endIcon={<Send />}>
-              로그인
-            </Button>
-          </>
-        )}
-      </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
+
+export default Header;

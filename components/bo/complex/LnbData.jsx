@@ -48,7 +48,7 @@ const LnbData = [
       id: 5,
       icon: <ConfirmationNumberOutlinedIcon />,
       title: '쿠폰 관리',
-      item: '쿠폰 조회',
+      item:  ['쿠폰 조회'],
     },
     {
       id: 6,

@@ -1,0 +1,26 @@
+@import url('reset.css');
+
+.lnb-title span {
+	font-size: 16px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.lnb-item div {
+	height: 36px;
+	display: flex;
+	align-items: center;
+}
+
+.lnb-item span {
+	font-size: 14px;
+}
+
+.lnb .MuiListItemButton-root:hover {
+	border-radius: 4px;
+}
+
+.lnb .MuiListItemIcon-root, .lnb .MuiSvgIcon-root {
+	font-size: 24px !important;
+	color: rgba(0, 0, 0, 1);
+}

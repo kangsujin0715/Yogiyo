@@ -1,3 +1,96 @@
 .flex-box {
-  display: flex;
+	display: flex;
 }
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+.search-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.search-box .item-box {
+	display: flex;
+	margin: 0 -18.5px 24px;
+}
+
+.search-box .item-box .item {
+	width: 25%;
+	padding: 0 18.5px;
+}
+
+.search-box .date input {
+	height: 40px;
+	padding: 0 0 0 14px;
+}
+
+.search-box h6 {
+	color: rgba(0, 0, 0, 60%);
+	padding-bottom: 8px;
+}
+
+.MuiStack-root {padding-top: 0 !important;}
+
+.btn-center-box {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-end-box {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.btn-end-box button:last-child {
+	margin-right: 0 !important;
+}
+
+.control-box {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 16px;
+}
+
+.control-box h6 {
+	font-weight: 700;
+}
+
+.control-box h6 .num {
+	font-weight: 700;
+	color: #2196F3;
+}
+
+.control-box .btn-end-box {
+	width: auto;
+	margin-left: auto;
+}
+
+
+
+
+
+
+
+
+

@@ -10,30 +10,24 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import LnbData from './LnbData';
 
-import '../../../asset/bo/component-css/LnbTest.css';
+import '../../../asset/bo/component-css/Lnb.css';
 
-const LnbTest = () => {
+const Lnb = () => {
   return (
-    <>
-      <List
-        className="lnb"
-        sx={{ width: '100%', maxWidth: 256 }}
-        component="nav"
-        aria-labelledby="nested-list-subheader">
-        {LnbData.map((a, i) => {
-          return (
-            <>
-              <Lnb LnbData={LnbData[i]} key={i}></Lnb>
-            </>
-          );
-        })}
-      </List>
-    </>
+    <List
+      className="lnb"
+      sx={{ width: '100%', maxWidth: 256 }}
+      component="nav"
+      aria-labelledby="nested-list-subheader">
+      {LnbData.map((a, i) => {
+        return <LnbMenu LnbData={LnbData[i]} key={i}></LnbMenu>;
+      })}
+    </List>
   );
 };
 
-function Lnb(props) {
-  const [open, setOpen] = useState([false, false]);
+function LnbMenu(props) {
+  const [open, setOpen] = useState(false);
   const handleClick = (i) => {
     const openClick = { ...open };
     openClick[i] = !openClick[i];
@@ -46,7 +40,7 @@ function Lnb(props) {
     <>
       <ListItemButton onClick={() => handleClick(0)}>
         <ListItemIcon>{props.LnbData.icon}</ListItemIcon>
-        <ListItemText className="lnbTitle" primary={props.LnbData.title} />
+        <ListItemText className="lnb-title" primary={props.LnbData.title} />
         {open[0] ? (
           <ExpandLess fontSize="large" />
         ) : (
@@ -54,7 +48,7 @@ function Lnb(props) {
         )}
       </ListItemButton>
       <Collapse in={open[0]} timeout="auto" unmountOnExit>
-        <List component="div" className="lnbItem" disablePadding>
+        <List component="div" className="lnb-item" disablePadding>
           {subLnbData.map((a, i) => {
             return (
               <ListItemButton key={i} sx={{ pl: 9, py: 0 }}>
@@ -68,4 +62,4 @@ function Lnb(props) {
   );
 }
 
-export default LnbTest;
+export default Lnb;

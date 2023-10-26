@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2553e49-7ba8-4508-86f1-0771eac1d772" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/bo/component-css/LnbTest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/bo/component-css/NavTest.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/bo/component-css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/bo/component-css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/bo/component-css/headerTest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/bo/component-css/mainLayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/bo/component-css/mainLayout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/images/yogiyo_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/asset/images/yogiyo_logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/bo/complex/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/bo/complex/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/bo/complex/HeaderTest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/bo/complex/LnbData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/bo/complex/LnbData.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/bo/complex/LnbTest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/bo/complex/NavTest.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/bo/layout/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/bo/layout/MainLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/bo/complex/Header.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/bo/complex/Header.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/bo/complex/HeaderTest.stories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/bo/complex/LnbTest.stories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/bo/complex/NavTest.stories.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +50,8 @@
       <option name="presentableId" value="Default" />
       <updated>1697441895806</updated>
       <workItem from="1697441897920" duration="4000" />
+      <workItem from="1697788731456" duration="22000" />
+      <workItem from="1698199025876" duration="6000" />
     </task>
     <servers />
   </component>
