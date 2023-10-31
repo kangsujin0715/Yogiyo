@@ -1,0 +1,29 @@
+.ch_area {
+  margin-top: 10px;
+}
+
+.check_box_all {
+  width: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.check_box_all input[type='checkbox'] + label {
+  display: inline-block;
+  background-size: 24px auto;
+  background: url('/images/button-checkbox-btn-checkbox-large.svg') no-repeat
+    left top;
+  padding: 0 0 0 36px;
+  font-size: 13px;
+  line-height: 25px;
+  color: #000;
+  height: 24px;
+}
+
+.check_box_all input[type='checkbox']:checked + label {
+  background-size: 24px auto;
+  background: url('/images/button-checkbox-large-on.svg') no-repeat left top;
+  font-size: 13px;
+  line-height: 25px;
+}

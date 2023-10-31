@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "src/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "typedocOptions": {
+    "entryPointStrategy": "expand",
+    "entryPoints": ["./src"],
+    "out": ".generated/docs",
+    "plugin": ["typedoc-theme-hierarchy"],
+    "theme": "hierarchy",
+    "cleanOutputDir": true,
+    "name":"Typedoc 문서",
+    "readme": "./README.md",
+    "excludePrivate": false,
+    "excludeInternal": false,
+    "excludeNotDocumented": true,
+    "exclude": [
+      "**/*.test.*",
+    ],
+    "htmlLang": "ko"
+  }
+}
