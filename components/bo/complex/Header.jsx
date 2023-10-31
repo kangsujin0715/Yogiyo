@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 
 import '../../../asset/bo/component-css/header.css';
