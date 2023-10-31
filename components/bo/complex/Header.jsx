@@ -1,53 +1,25 @@
 import React from 'react';
 
 import '../../../asset/bo/component-css/header.css';
-import { Send } from '@mui/icons-material';
-import { Button } from '@mui/material';
+import logo from '../../../asset/images/Yogiyo_logo.svg';
+import LogoutIcon from '@mui/icons-material/Logout';
+import Button from '@mui/material/Button';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header style={{ backgroundColor: '#fff' }}>
-    <div className="storybook-header">
-      <div>
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
+const Header = () => {
+  return (
+    <header>
+      <h1>
+        <a href="javascript:void(0)">
+          <img src={logo} alt="요기요 로고" />
+        </a>
+      </h1>
+      <div className="header-menu">
+        <Button>운영매뉴얼</Button>
+        <Button>YOGIYO(요기요)</Button>
+        <Button endIcon={<LogoutIcon />}>로그아웃</Button>
       </div>
-      <div>
-        {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
-            <Button variant="text" startIcon={<Send />}>
-              로그아웃
-            </Button>
-          </>
-        ) : (
-          <>
-            <Button variant="text" endIcon={<Send />}>
-              로그인
-            </Button>
-          </>
-        )}
-      </div>
-    </div>
-  </header>
-);
+    </header>
+  );
+};
+
+export default Header;
