@@ -38,7 +38,6 @@ const StyledCellBox = styled(Box)`
     font-size: 14px;
   }
   & .MuiInputBase-root {
-    width: 300px;
     margin-right: 8px;
   }
   & label {

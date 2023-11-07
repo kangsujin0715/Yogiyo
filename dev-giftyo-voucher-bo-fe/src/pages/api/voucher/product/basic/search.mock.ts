@@ -1,0 +1,35 @@
+export const searchProductMock = {
+  pagination: {
+    last: false,
+    first: true,
+    totalElements: 120,
+    start: 11,
+    end: 20,
+    size: 10,
+    curPage: 2,
+  },
+  list: [
+    {
+      id: 1,
+      codeNum: '2234567890123',
+      productName: '해피해피해피',
+      productType: '교환권',
+      brand: '스타벅스',
+      price: '2,000원',
+      amount: '1개',
+      state: '사용',
+      date: '2023-10-23 13:33:33',
+    },
+    {
+      id: 2,
+      codeNum: '1234567890123',
+      productName: '케이크선물',
+      productType: '교환권',
+      brand: '스타벅스',
+      price: '2,000원',
+      amount: '1개',
+      state: '사용',
+      date: '2023-10-23 13:33:33',
+    },
+  ],
+};

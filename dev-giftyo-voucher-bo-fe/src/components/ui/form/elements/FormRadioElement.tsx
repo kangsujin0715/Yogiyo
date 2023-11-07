@@ -10,11 +10,16 @@ interface Props extends RadioGroupProps {
   options: RadioOption[];
 }
 const FormRadioElement = (props: Props) => {
-  const { id, name, options } = props;
-  const elementId = id ?? name;
+  const { name, options } = props;
   return (
     <StyledFormRadioGroup>
-      <RadioGroup {...props} row sx={{ display: 'flex' }} defaultValue={props.value} name={name}>
+      <RadioGroup
+        {...props}
+        row
+        sx={{ display: 'flex' }}
+        defaultValue={props.defaultValue}
+        name={name}
+      >
         {options.map(({ name, value }) => (
           <FormControlLabel key={name} value={value} control={<Radio />} label={name} />
         ))}

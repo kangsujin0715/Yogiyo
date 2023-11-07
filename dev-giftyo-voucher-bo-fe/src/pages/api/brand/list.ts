@@ -1,11 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import {
-  methodNotSupportedResponse,
-  toQueryParams,
-} from 'src/common/utils/commonUtils';
-import { beAxios } from 'src/net/customAxios';
-
-const BE_BRAND_API_PATH = '/api/CoopGift/GetBrandList';
+import { methodNotSupportedResponse } from 'src/common/utils/commonUtils';
+import { brandList } from 'src/pages/api/brand/brand.mock';
 
 /**
  * brand list api request handler
@@ -16,12 +11,9 @@ const BE_BRAND_API_PATH = '/api/CoopGift/GetBrandList';
  * @author : yhju@coopnc.com
  */
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-  const { method, query } = req;
+  const { method } = req;
   if (method === 'GET') {
-    const result = beAxios.get(
-      `${BE_BRAND_API_PATH}/list/${toQueryParams(query)}`,
-    );
-    res.status(200).json(result);
+    res.status(200).json(brandList);
   }
   methodNotSupportedResponse(res);
 };

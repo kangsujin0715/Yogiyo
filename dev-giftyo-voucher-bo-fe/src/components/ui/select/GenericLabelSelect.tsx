@@ -45,7 +45,7 @@ const GenericLabelSelect = <
 
   return (
     <Stack {...stackProps}>
-      <StyledTypography>{children}</StyledTypography>
+      {children && <StyledTypography>{children}</StyledTypography>}
       <Select {...selectProps} {...field}>
         {items.map((data, index) => {
           const itemLabel = getItemLabel(data);

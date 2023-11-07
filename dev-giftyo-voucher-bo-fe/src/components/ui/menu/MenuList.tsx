@@ -35,8 +35,8 @@ const menuList: MenuItem[] = [
     icon: <CorporateFareRounded />,
     title: '거래처 관리',
     subMenu: [
-      { id: 1, title: '사업자', link: '/customer/list' },
-      { id: 2, title: '브랜드', link: '/customer/brand/list' },
+      { id: 1, title: '사업자', link: '/voucher/customer/customer/list' },
+      { id: 2, title: '브랜드', link: '/voucher/customer/brand/list' },
       { id: 3, title: '판매채널' },
     ],
   },
@@ -45,7 +45,7 @@ const menuList: MenuItem[] = [
     icon: <ShoppingBagOutlined />,
     title: '상품 관리',
     subMenu: [
-      { id: 1, title: '기본상품' },
+      { id: 1, title: '기본상품', link: '/voucher/product/basic/search' },
       { id: 2, title: '판매상품' },
       { id: 3, title: '상품 고시정보' },
       { id: 4, title: '상품 공급수수료' },
@@ -76,7 +76,7 @@ const menuList: MenuItem[] = [
     id: 5,
     icon: <ConfirmationNumberOutlined />,
     title: '쿠폰 관리',
-    subMenu: [{ id: 1, title: '쿠폰 조회' }],
+    subMenu: [{ id: 1, title: '쿠폰 조회', link: '/voucher/coupon/manage/search' }],
   },
   {
     id: 6,
@@ -99,7 +99,7 @@ const menuList: MenuItem[] = [
       { id: 4, title: '판매 정책' },
       { id: 5, title: 'API 사용권한' },
       { id: 6, title: 'API 근룹' },
-      { id: 7, title: '공지사항' },
+      { id: 7, title: '공지사항', link: '/voucher/system/notice/list' },
       { id: 8, title: '감사기록관리' },
       { id: 9, title: '공통코드관리' },
     ],

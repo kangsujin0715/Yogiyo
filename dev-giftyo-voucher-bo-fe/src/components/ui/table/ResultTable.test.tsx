@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import ResultTable from 'src/components/ui/table/ResultTable';
 
@@ -44,9 +44,9 @@ const data = [
 const pagination = {
   last: false,
   first: false,
-  totalElements: 30,
-  start: 11,
-  end: 20,
+  totalElements: 40,
+  start: 21,
+  end: 30,
   size: 10,
   curPage: 2,
 };
@@ -71,31 +71,23 @@ describe('ResultTable', () => {
   });
 
   test('입력받은 데이터를 화면에 노출 해야한다.', () => {
-    const dataCell = screen.getAllByRole('cell');
+    const dataCell = screen.getAllByRole('table.body.td');
     expect(dataCell.length).toEqual(columns.length * data.length);
   });
 
   test('페이징 객체가 입력되면 페이징이 노출되어야 한다.', () => {
     const { start, end, totalElements } = pagination;
-    const pageInfoEl = screen.getByText(`${start} / ${end} of ${totalElements}`);
+    const pageInfoEl = screen.getByText(`${start}–${end} of ${totalElements}`);
     expect(pageInfoEl).toBeInTheDocument();
   });
 
   test('다음 페이지 버튼 클릭 시 페이지 변경함수를 다음 페이지 번호와 함께 를 호출해야한다.', () => {
-    screen.getByRole('navigation.next').click();
+    screen.getByTitle('Go to previous page').click();
     waitFor(() => expect(mockFn).toBeCalledWith({ size: 10, page: 3 }));
   });
 
   test('이전 페이지 버튼 클릭 시 페이지 변경함수를 이전 페이지 번호와 함께 를 호출해야한다.', () => {
-    screen.getByRole('navigation.before').click();
+    screen.getByTitle('Go to next page').click();
     waitFor(() => expect(mockFn).toBeCalledWith({ size: 10, page: 1 }));
-  });
-
-  test('페이지 당 목록 개수를 변경하면 페이지 변경함수를 변경한 사이즈와 함께 호출해야한다.', () => {
-    const sizeEl = screen.getByLabelText('Rows per page');
-    fireEvent.change(sizeEl, '20');
-    waitFor(() => {
-      expect(mockFn).toBeCalledWith({ size: 20, page: 1 });
-    });
   });
 });

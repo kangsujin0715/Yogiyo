@@ -10,11 +10,7 @@ import { BrandService } from 'src/services/brand/BrandService';
  * @returns {UseQueryResult<Brand[], unknown>}
  */
 export const useBrandList = (params: BrandSearchPayload, options?: any) =>
-  useQuery(
-    [BrandKeys.list, params],
-    () => BrandService.getBrandList(params),
-    options,
-  );
+  useQuery([BrandKeys.list, params], () => BrandService.getBrandList(params), options);
 
 /**
  * 브랜드 hook
@@ -23,8 +19,4 @@ export const useBrandList = (params: BrandSearchPayload, options?: any) =>
  * @returns {UseQueryResult<Brand, unknown>}
  */
 export const useBrand = <R>(code: string, options?: any) =>
-  useQuery(
-    [BrandKeys.detail, code],
-    () => BrandService.getBrand(code),
-    options,
-  );
+  useQuery([BrandKeys.detail, code], () => BrandService.getBrand(code), options);

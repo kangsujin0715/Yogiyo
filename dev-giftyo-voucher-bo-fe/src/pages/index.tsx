@@ -102,11 +102,7 @@ export default function Home() {
           </FormRow>
           <FormRow>
             <FormCell label="주소">
-              <AddressInput
-                onChange={(arg) => setAddr(arg)}
-                address={addr?.address}
-                zipCode={addr?.zonecode}
-              />
+              <AddressInput onChange={(arg) => setAddr(arg)} {...addr} />
             </FormCell>
           </FormRow>
         </FormArticle>
