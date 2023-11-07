@@ -2,7 +2,25 @@ import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
   components: {
+    MuiTablePagination: {
+      defaultProps: {
+        rowsPerPageOptions: [10, 20, 30, 40, 50],
+      },
+      styleOverrides: {
+        root: {
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          fontSize: '12px',
+          '& p': { fontSize: '12px' },
+          '& li': { fontSize: '12px' },
+        },
+      },
+    },
     MuiCheckbox: {
+      defaultProps: {
+        size: 'medium',
+      },
       styleOverrides: {
         root: {
           '& svg': { width: '18px', height: '18px' },

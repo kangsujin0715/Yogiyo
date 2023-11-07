@@ -1,6 +1,9 @@
+import { ReactNode } from 'react';
+
 export interface Brand {
+  no?: number;
   code: string;
-  name: string;
+  name: string | ReactNode;
   menuCategoryCode: string;
   imgUrl?: string;
   linkUrl?: string;

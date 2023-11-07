@@ -1,6 +1,8 @@
 import { jest } from '@jest/globals';
 import {
+  getComparator,
   methodNotSupportedResponse,
+  stableSort,
   toQueryParams,
 } from 'src/common/utils/commonUtils';
 import { NextApiResponse } from 'next';
@@ -37,5 +39,26 @@ describe('methodNotSupportedResponse', () => {
     methodNotSupportedResponse(mockResponse);
     //then
     expect(jsonMock).toBeCalledWith(METHOD_NOT_SUPPORTED_RESULT);
+  });
+});
+
+describe('stableSort', () => {
+  //given
+  const params = [
+    { id: 1, label: 'test1' },
+    { id: 2, label: 'test2' },
+  ];
+
+  const order = 'desc';
+  const orderBy = 'id';
+
+  const expectResult = [
+    { id: 2, label: 'test2' },
+    { id: 1, label: 'test1' },
+  ];
+
+  test('정렬이 정상적으로 이루어져야한다.', () => {
+    const result = stableSort(params, getComparator(order, orderBy));
+    expect(result).toEqual(expectResult);
   });
 });

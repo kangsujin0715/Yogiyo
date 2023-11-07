@@ -1,9 +1,13 @@
-import { Button, Divider, SelectChangeEvent, Stack, Typography } from '@mui/material';
-import LabelTextField from 'src/components/ui/textfield/LabelTextField';
-import { RowContainer } from 'src/components/page-scenes/customer/brand/register/BrandRegister.scenes';
+import { SelectChangeEvent, TextField } from '@mui/material';
 import { useFormContext } from 'react-hook-form';
 import { BasicFormType } from 'src/components/page-scenes/customer/brand/register/brand.type';
 import GenericLabelSelect from 'src/components/ui/select/GenericLabelSelect';
+import FormArticle from 'src/components/ui/form/FormArticle';
+import FormCell from 'src/components/ui/form/shared/FormCell';
+import { FormRow } from 'src/components/ui/form/shared/FormStyled';
+import AddressInput from 'src/components/common/AddressInput';
+import { useState } from 'react';
+import { Address } from 'react-daum-postcode/lib/loadPostcode';
 
 const selectItems = [
   {
@@ -33,112 +37,40 @@ const selectItems = [
 
 const BasicBox = () => {
   const { control } = useFormContext<BasicFormType>();
+  const [addr, setAddr] = useState<Address>();
 
   return (
-    <>
-      <Typography sx={{ fontSize: '20px', fontWeight: '700' }}>기본정보</Typography>
-
-      <Divider sx={{ color: '#0000001F', marginTop: '16px' }} />
-
-      <RowContainer spacing={10} direction={'row'}>
-        <GenericLabelSelect
-          defaultValue={'all'}
-          items={selectItems}
-          getItemLabel={(item) => item.name}
-          getItemValue={(item) => item.value}
-          name={'corporationName'}
-          control={control}
-          rules={{
-            onChange: (e: SelectChangeEvent) => console.log('select change = ', e),
-          }}
-          selectProps={{
-            size: 'small',
-            sx: { width: '300px' },
-          }}
-          stackProps={{
-            direction: 'row',
-            alignItems: 'center',
-            spacing: 10,
-          }}
-        >
-          사업자명
-        </GenericLabelSelect>
-
-        <LabelTextField
-          stackProps={{
-            direction: 'row',
-            spacing: 10,
-          }}
-          textFieldProps={{
-            variant: 'outlined',
-            size: 'small',
-            width: '300',
-          }}
-          control={control}
-          name={'brandName'}
-        >
-          브랜드명
-        </LabelTextField>
-      </RowContainer>
-
-      <Divider sx={{ color: '#0000001F', marginTop: '16px' }} />
-
-      <Stack spacing={1} marginTop={'16px'}>
-        <RowContainer spacing={1} direction={'row'}>
-          <LabelTextField
-            stackProps={{
-              direction: 'row',
-              spacing: 10,
-            }}
-            textFieldProps={{
-              variant: 'outlined',
-              size: 'small',
-              width: '176',
-              disabled: true,
-              placeholder: '06655',
-            }}
+    <FormArticle title={'기본정보'} unMask={() => {}}>
+      <FormRow>
+        <FormCell label={'사업자명'}>
+          <GenericLabelSelect
+            defaultValue={'all'}
+            items={selectItems}
+            getItemLabel={(item) => item.name}
+            getItemValue={(item) => item.value}
+            name={'corporationName'}
             control={control}
-            name={'zipCode'}
-          >
-            주소
-          </LabelTextField>
-          <Button variant="outlined" color="inherit" size="small">
-            주소검색
-          </Button>
-        </RowContainer>
-
-        <RowContainer spacing={1} direction={'row'}>
-          <LabelTextField
-            stackProps={{
-              direction: 'row',
-              spacing: 10,
+            rules={{
+              onChange: (e: SelectChangeEvent) => console.log('select change = ', e),
             }}
-            textFieldProps={{
-              variant: 'outlined',
-              size: 'small',
-              width: '300',
-              disabled: true,
-              placeholder: '도로명주소 또는 지번주소',
-            }}
-            control={control}
-            name={'address'}
           />
+        </FormCell>
 
-          <LabelTextField
-            textFieldProps={{
-              variant: 'outlined',
-              size: 'small',
-              width: '300',
-              placeholder: '상세주소',
-            }}
-            control={control}
-            name={'detailAddress'}
+        <FormCell label={'브랜드명'}>
+          <TextField id="brandName" />
+        </FormCell>
+      </FormRow>
+
+      <FormRow>
+        <FormCell label="주소">
+          <AddressInput
+            onChange={(arg) => setAddr(arg)}
+            address={addr?.address}
+            zipCode={addr?.zonecode}
           />
-        </RowContainer>
-      </Stack>
-
-      <Divider sx={{ color: '#0000001F', marginTop: '16px' }} />
-    </>
+        </FormCell>
+      </FormRow>
+    </FormArticle>
   );
 };
 

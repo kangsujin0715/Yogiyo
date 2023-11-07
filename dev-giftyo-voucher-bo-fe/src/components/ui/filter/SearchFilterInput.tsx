@@ -11,10 +11,11 @@ import { FilterStyledLabel } from 'src/components/ui/filter/shared/FilterStyledC
  */
 const SearchFilterInput = (props: TextFieldProps) => {
   const { id, name, label } = props;
+  const variant = props.variant ?? 'outlined';
   return (
     <Grid item xs={3}>
       <FilterStyledLabel htmlFor={id ?? name}>{label}</FilterStyledLabel>
-      <TextField {...props} fullWidth variant="outlined" size="small" id={id ?? name} label={''} />
+      <TextField {...props} fullWidth variant={variant} size="small" id={id ?? name} label={''} />
     </Grid>
   );
 };

@@ -1,16 +1,7 @@
 import * as React from 'react';
-import {
-  Box,
-  Button,
-  IconButton,
-  InputLabel,
-  MenuItem,
-  Paper,
-  Select,
-  Typography,
-} from '@mui/material';
+import { Box, Button, Paper, TablePagination, Typography } from '@mui/material';
 import styled from 'styled-components';
-import { FileDownloadOutlined, NavigateBefore, NavigateNext } from '@mui/icons-material';
+import { FileDownloadOutlined } from '@mui/icons-material';
 import { Pagination, PaginationSearchParams } from 'src/interface/Pagination';
 import BasicTable from 'src/components/ui/table/BasicTable';
 
@@ -33,13 +24,14 @@ const ResultTable = <T extends object>({
   excelDownload,
 }: Props<T>) => {
   const handleChangePage = (size: number, page: number) => onPageChange?.({ size, page });
-
   return (
     <Box mt="40px">
       <TableCaption>
-        <Typography>
-          검색결과 <span className="volume-up">{pagination?.totalElements ?? 0}</span> 건
-        </Typography>
+        {!!pagination && (
+          <Typography>
+            검색결과 <span className="volume-up">{pagination?.totalElements ?? 0}</span> 건
+          </Typography>
+        )}
         <Box>
           {excelDownload && (
             <Button
@@ -57,47 +49,14 @@ const ResultTable = <T extends object>({
       <Paper sx={{ padding: '24px' }}>
         <BasicTable columns={columns} data={data} />
         {!!pagination && (
-          <TableFooter>
-            <Box className="table-footer-box">
-              <InputLabel id="size">Rows per page</InputLabel>
-              <Select
-                labelId="size"
-                sx={{ height: '24px' }}
-                size={'small'}
-                name="size"
-                label={false}
-                value={pagination.size ?? 10}
-                onChange={({ target: { value } }) => handleChangePage(Number(value), 1)}
-              >
-                <MenuItem value={10}>10</MenuItem>
-                <MenuItem value={20}>20</MenuItem>
-                <MenuItem value={30}>30</MenuItem>
-                <MenuItem value={40}>40</MenuItem>
-                <MenuItem value={50}>50</MenuItem>
-              </Select>
-            </Box>
-            <Box className="table-footer-box">
-              <Typography>
-                {pagination.start} / {pagination.end} of {pagination.totalElements}
-              </Typography>
-            </Box>
-            <Box className="table-footer-box">
-              <IconButton
-                role="navigation.before"
-                disabled={pagination.first}
-                onClick={() => handleChangePage(pagination.size, --pagination.curPage)}
-              >
-                <NavigateBefore />
-              </IconButton>
-              <IconButton
-                role="navigation.next"
-                disabled={pagination.last}
-                onClick={() => handleChangePage(pagination.size, ++pagination.curPage)}
-              >
-                <NavigateNext />
-              </IconButton>
-            </Box>
-          </TableFooter>
+          <TablePagination
+            component="div"
+            count={pagination.totalElements}
+            page={pagination.curPage}
+            onPageChange={(event, page) => handleChangePage(pagination?.size, page)}
+            rowsPerPage={pagination.size}
+            onRowsPerPageChange={({ target: { value } }) => handleChangePage(Number(value), 1)}
+          />
         )}
       </Paper>
     </Box>
@@ -121,29 +80,6 @@ const TableCaption = styled(Box)`
     font-weight: 700;
     & .volume-up {
       color: #2196f3;
-    }
-  }
-`;
-
-const TableFooter = styled(Box)`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 12px;
-  height: 44px;
-  & .table-footer-box {
-    margin-left: 24px;
-    &:first-child {
-      margin-left: 0;
-      display: flex;
-      align-items: center;
-      & label {
-        font-size: 12px;
-        margin-right: 8px;
-      }
-    }
-    & p {
-      font-size: 12px;
     }
   }
 `;

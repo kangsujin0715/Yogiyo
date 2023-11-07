@@ -1,10 +1,8 @@
-import styled from 'styled-components';
-import { Box } from '@mui/material';
-import FormBox, {
-  FormValue
-} from 'src/components/page-scenes/customer/brand/list/form/FormBox';
 import { useState } from 'react';
-import TableBox from './table/TableBox';
+import BrandListTable from './table/BrandListTable';
+import SearchForm, { FormValue } from './form/SearchForm';
+import FormBox from 'src/components/ui/form/FormBox';
+import { QueryErrorBoundary } from 'src/components/common/error/boundary/QueryErrorBoundary';
 
 /**
  * 브랜드 목록 컴포넌트
@@ -12,6 +10,7 @@ import TableBox from './table/TableBox';
  * @since 2023.10.24
  * @author : hijoeng@coopnc.com
  */
+
 const BrandListScenes = () => {
   const [searchValue, setSearchValue] = useState<FormValue>({
     franchiseId: '',
@@ -22,20 +21,13 @@ const BrandListScenes = () => {
   });
 
   return (
-    <BrandContainer>
-      <FormBox onSearch={(data) => setSearchValue(data)} />
-      <TableBox searchValue={searchValue} />
-    </BrandContainer>
+    <FormBox>
+      <SearchForm onSearch={(data) => setSearchValue(data)} />
+      <QueryErrorBoundary>
+        <BrandListTable searchValue={searchValue} />
+      </QueryErrorBoundary>
+    </FormBox>
   );
 };
 
 export default BrandListScenes;
-
-const BrandContainer = styled(Box)`
-  display: flex;
-  width: auto;
-  height: 100%;
-  border-radius: var(--none, 0px);
-  background: #fafafa;
-  flex-direction: column;
-`;
