@@ -1,5 +1,9 @@
 import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
-    components:{}
+	typography: {
+		htmlFontSize: '10px',
+	},
+    components:{
+	}
 })
