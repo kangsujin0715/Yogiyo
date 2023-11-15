@@ -2,8 +2,27 @@ import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
 	typography: {
-		htmlFontSize: '10px',
+		HtmlFontSize: '10px',
 	},
-    components:{
-	}
-})
+  components: {
+    MuiButton: {
+      defaultProps: {
+        sx: {
+          fontSize: '1.6rem',
+		
+        },
+        size: 'medium',
+        variant: 'outlined',
+      },
+    },
+  },
+  palette: {
+	primary: {
+		main: '#bfbfbf',
+		contrastText: '#000000',
+	  },
+    text: {
+      primary: '#000000',
+    },
+  },
+});

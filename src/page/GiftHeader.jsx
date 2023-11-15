@@ -5,22 +5,20 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import CloseIcon from '@mui/icons-material/Close';
 
 function GiftHeader() {
   return (
-    <Box sx={{ flexGrow: 1, backgroundColor: '#fff' }}>
-      <AppBar className='header' position="static" sx={{ backgroundColor: '#fff' }}>
+    <Box sx={{ flexGrow: 1}}>
+      <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu">
-            <ArrowBackIosIcon />
-			<CloseIcon/>
+          <IconButton size="large" edge="start" aria-label="menu">
+		  	<button className="black-btn"></button>
+			{/* <button className="close-btn"></button> 취소버튼 */}
           </IconButton>
-          <Typography component="h2" sx={{ flexGrow: 1, color: '#000', fontWeight: '700' }}>
+          <Typography variant="h1" component="h1" sx={{ flexGrow: 1, paddingLeft: '0.8rem' }}>
             선물하기
           </Typography>
-          <button className="gift-icon"></button>
+		  <button className="gift-btn"></button>
         </Toolbar>
       </AppBar>
     </Box>
