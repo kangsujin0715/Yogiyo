@@ -2,7 +2,6 @@ import { Box, List, ListItem, Typography } from '@mui/material';
 import React from 'react';
 import { pageList } from '../App';
 import { Link } from 'react-router-dom';
-import '../include/css/common.css';
 
 function Index() {
   return (

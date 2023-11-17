@@ -1,0 +1,167 @@
+@import url(reset.css);
+
+.block {display: block;}
+.inline {display: inline-block;}
+.flex {display: flex; align-items: center;}
+
+.notice-box {background-color: #f2f2f2; padding: 1.6rem;}
+.notice-box li {font-size: 1.2rem; margin-bottom: 0.4rem; display: flex; color: #666;}
+.notice-box li a {text-decoration: underline; color: #666;}
+.notice-box li:last-child {margin-bottom: 0;}
+.notice-box li::before {display: inline-block; content: '·'; font-weight: 700; padding-right: 0.4rem;}
+
+.red {color: #c00000;}
+.line {border-bottom: 0.1rem solid #f2f2f2; padding-bottom: 2rem; margin-bottom: 2rem;}
+
+span.price {font-size: 1.4rem;}
+strong.price {font-size: 1.8rem;}
+strong.price em {font-size: 2rem;}
+
+/* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
+ 
+.line-box {background-color: #f2f2f2;}
+.padding-box {padding: 1.6rem; margin: 0.8rem 0;}
+.gird-box {display: flex; align-items: center; justify-content: space-between;}
+.btn-box {padding: 2.4rem 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
+
+/* ---Button-------------------------------------------------------------------------------------------------------------------------------------------------- */
+ 
+.from button {background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
+.from button.close-btn {background: url(../../public/images/close.svg) center no-repeat; border: none;}
+.from button.plus-btn::before {display: inline-block; content: ''; width: 2rem; height: 2rem; background: url(../../public/images/plus.svg) left center no-repeat; background-size: 2rem;}
+
+.black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
+.close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
+.gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
+.pay-btn {font-size: 1.4rem; height: auto; display: flex;}
+.pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
+
+.full-btn {width: 100%; max-width: 36rem; background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf;}
+.full-btn.pink {color: #fff; background-color: #fa0050; border: 0.1rem solid #bfbfbf; border: none;}
+.full-btn:disabled {color: #bfbfbf; background-color: #ebebeb; border: none;}
+
+/* ---Contents-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header {width: 100%; height: 5.6rem; display: flex; align-items: center; padding: 0 0.8rem;}
+.header h1 {font-size: 1.6rem; line-height: 2.2rem; font-weight: 700;}
+
+.card-info-box {padding: 1.2rem 0 1.6rem; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.card-info-box .price-info {display: flex; align-items: center; justify-content: center;}
+.card-info-box .price-info .sale {font-size: 1.6rem; font-weight: 700; color: #fa0050;}
+.card-info-box .price-info .price {margin: 0 0.4rem; font-size: 1.6rem; font-weight: 700; color: #333;}
+.card-info-box .price-info .after-price {font-size: 1.2rem; color: #999; text-decoration: line-through;}
+.card-info-box .date {margin-top: 0.4rem; font-size: 1.2rem; color: #999;}
+
+.padding-box .title {margin-bottom: 0.8rem !important; font-weight: 700 !important;}
+.padding-box .title + span {color: #999; margin-left: 0.3rem;}
+.padding-box .title.star::after {content: '*'; font-size: 1.6rem; color: #fa0050; padding-left: 0.4rem;}
+.padding-box .title.mb0 {margin-bottom: 0 !important;}
+/* GiftDetail.js */
+
+.from button, .from input {width: 100%; display: flex; align-items: center; justify-content: center;}
+/* Privacy.js */
+
+.tab-box {display: flex; align-items: center; justify-content: center;}
+.tab-box .MuiTabs-root {width: 100%; height: 4rem; min-height: 4rem !important;}
+.tab-box .MuiTab-root {width: 25%; min-width: 25% !important; height: 4rem; min-height: 4rem !important; font-size: 1.4rem; padding: 0 !important;}
+.tab-box .Mui-selected {font-weight: 700 !important;}
+/* tab.js */
+
+.gift-card {position: relative; padding: 1.6rem 2rem; height: 40.7rem; display: flex; align-items: center; justify-content: center;}
+.card-box {position: absolute; top: 1.6rem; width: 24rem; height: 37.5rem; -webkit-perspective: 800px; -moz-perspective: 800px; -o-perspective: 800px; perspective: 800px;}
+.card-box:not(.manual-flip):hover .card-view,
+.card-box.hover.manual-flip .card-view {-webkit-transform: rotateY( 180deg ); -moz-transform: rotateY( 180deg ); -o-transform: rotateY( 180deg ); transform: rotateY( 180deg ); }
+.card-box .card-view {-webkit-transition: -webkit-transform .5s; -moz-transition: -moz-transform .5s; -o-transition: -o-transform .5s; transition: transform .5s; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
+
+.front, .back {
+width: 100%;
+height: 37.5rem;
+position: absolute;
+top: 0;
+left: 0;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+  
+.front {position: relative; border-radius: 1.8rem; display: flex; flex-direction: column; overflow: hidden;}
+.front .img-view {width: auto; height: 28.5rem;}
+.front .card-info {position: absolute; bottom: 0; width: 100%; height: 9.2rem; padding: 0 1.6rem; display: flex; align-items: center; justify-content: space-between;}
+.front .card-info .logo {width: 4.8rem; height: 4.8rem; border-radius: 50%; border: 0.1rem solid #f2f2f2; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.front .card-info .title-box {text-align: right; color: #fff;}
+.front .card-info .title-box .price, .front .card-info .title-box .price .num {font-size: 2.4rem; font-weight: 700;}
+
+.back {-webkit-transform: rotateY( 180deg ); -moz-transform: rotateY( 180deg ); -o-transform: rotateY( 180deg ); transform: rotateY( 180deg ); z-index: 3; border-radius: 1.8rem; padding: 1.2rem;}
+.back textarea {border: 0; resize: none; border-radius: 0.5rem; width: 100%; height: 100% !important; box-sizing: border-box; padding: 3.2rem 1.2rem 5.6rem 1.2rem;}
+.back textarea:focus {border: none; outline: none;}
+.back textarea::placeholder {color: #000;}
+.click {position: absolute; z-index: 1; left: 2.4rem; bottom: 2.4rem; width: auto; height: 3.2rem; padding: 0 0.8rem; border: 0.1rem solid #333; border-radius: 8rem; line-height: 1.9rem; font-weight: 400;}
+
+/* 카드 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,21 +4,9 @@ export const theme = createTheme({
 	typography: {
 		HtmlFontSize: '10px',
 	},
-  components: {
-    MuiButton: {
-      defaultProps: {
-        sx: {
-          fontSize: '1.6rem',
-		
-        },
-        size: 'medium',
-        variant: 'outlined',
-      },
-    },
-  },
   palette: {
 	primary: {
-		main: '#bfbfbf',
+		main: '#000000',
 		contrastText: '#000000',
 	  },
     text: {

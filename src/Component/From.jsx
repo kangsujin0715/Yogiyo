@@ -13,7 +13,7 @@ function From() {
             <input type="text" placeholder='번호' />
           </Grid>
           <Grid xs={1} display="flex" justifyContent="center" alignItems="center">
-           
+            <button className="close-btn"></button>
           </Grid>
         </Grid>
 

@@ -1,7 +1,8 @@
 import * as React from 'react';
-import CardView from './CardView';
-import From from './From';
+import CardView from '../Component/CardView';
+import From from '../Component/From';
 import { Box, Typography, Link } from '@mui/material';
+import '../css/common.css'
 
 export default function GiftDetail() {
   return (
@@ -27,20 +28,20 @@ export default function GiftDetail() {
         <button className="pay-btn red">결제수단을 선택해주세요</button>
       </Box>
       <Box className="padding-box">
-        <div className="line gird-box">
+        <Box className="line gird-box">
           <Typography variant="h3">상품권금액</Typography>
           <span className="price">
             <em>30,000</em>원
           </span>
-        </div>
-        <div className="gird-box">
+        </Box>
+        <Box className="gird-box">
           <Typography variant="h2" className="title mb0">
             총 결제금액
           </Typography>
           <strong className="price">
             <em>30,000</em>원
           </strong>
-        </div>
+        </Box>
       </Box>
       <ul className="notice-box">
         <li>
