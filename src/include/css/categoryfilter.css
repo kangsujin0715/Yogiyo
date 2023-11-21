@@ -4,18 +4,18 @@
     border-top-right-radius: 16px;
 }
 
-.filterBox{
+.filter-box{
     width: 100% !important;
-    background: url(../img/Rectangle_60.svg)center 10px no-repeat;
-    background-image: url(../img/Rectangle_60.svg);
+    background: url(../../../public/img/Rectangle_60.svg)center 10px no-repeat;
+    
 }
 
-.inFilter{padding: 24px 0 !important; width: 100%;}
-.titleLabel{text-align: center; width: 100%; line-height: 6.4rem !important; font-size: 1.8rem !important; display: block; font-weight: 700 !important; color: #000000 !important;}
-.rightLabal{justify-content : flex-end;
+.in-filter{padding: 24px 0 !important; width: 100%;}
+.title-label{text-align: center; width: 100%; line-height: 6.4rem !important; font-size: 1.8rem !important; display: block; font-weight: 700 !important; color: #000000 !important;}
+.right-labal{justify-content : flex-end;
 margin-right: 0 !important; 
 margin-left: 0 !important;
 padding: 0 1.6rem ; font-size: 1.6rem !important;}
-.rightLabal .css-ahj2mt-MuiTypography-root{font-size: 1.6rem !important; }
+.right-labal .MuiTypography-root{font-size: 1.6rem !important; }
 
 
