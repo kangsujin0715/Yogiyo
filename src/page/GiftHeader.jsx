@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 function GiftHeader() {
   return (
-    <Box className="header" sx={{ backgroundColor: '#CCE2F9' }}>
+    <Box className="header" sx={{ backgroundColor: '#fff' }}>
       <button className="black-btn"></button>
 	  {/* <button className="close-btn"></button> 취소버튼 */}
       <Typography variant="h1" component="h1" sx={{ flexGrow: 1, paddingLeft: '0.8rem' }}>
