@@ -1,48 +1,37 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
-import '../css/cardSparkles.css';
 
-function ImgTab({imgTabUrl}) {
-  const [imgTab, setImgTab] = useState(1);
+function ImgTab() {
+  const [imgTab, setImgTab] = useState(0);
   const imgClick = (imgNumber) => {
-	setImgTab(imgNumber);
-  }
+    setImgTab(imgNumber);
+  };
+
+  const imgTabList = [
+    { img: <img className='img-view' src='/images/gift-card/gift-img.png' alt='이미지 없음' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img01.png' alt='꽃다발' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img02.png' alt='케이크' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img03.png' alt='선물' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img04.png' alt='산타' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img05.png' alt='자동차' /> },
+    { img: <img className='img-view' src='/images/gift-card/gift-img06.png' alt='개구리' /> },
+  ];
 
   return (
-    <>
-      <Box className="horizontal-scroll">
-        <ul className="img-select">
-          <li onClick={() => imgClick(1)} className={imgTab === 1 ? 'selected ' : ''}>
-            <img className="img-view" src={imgTabUrl}/>
-          </li>
-          <li onClick={() => imgClick(2)} className={imgTab === 2 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img01.png'}/>
-          </li>
-          <li onClick={() => imgClick(3)} className={imgTab === 3 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img02.png'}/>
-		  </li>
-          <li onClick={() => imgClick(4)} className={imgTab === 4 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img03.png'}/>
-		  </li>
-          <li onClick={() => imgClick(5)} className={imgTab === 5 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img04.png'}/>
-		  </li>
-          <li onClick={() => imgClick(6)} className={imgTab === 6 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img05.png'}/>
-		  </li>
-          <li onClick={() => imgClick(7)} className={imgTab === 7 ? 'selected ' : ''}>
-            <img className="img-view" src={process.env.PUBLIC_URL + '/images/gift-card/gift-img06.png'}/>
-		  </li>
-        </ul>
-		<button className='view-btn'></button>
-      </Box>
-    </>
+    <Box className='horizontal-scroll'>
+      <ul className='img-select'>
+        {imgTabList.map((list, i) => {
+          return (
+            <li key={i} onClick={() => imgClick(i)} className={imgTab === i ? 'selected ' : ''}>
+              {list.img}
+            </li>
+          );
+        })}
+      </ul>
+      <button className='view-btn'></button>
+    </Box>
   );
-}
-
-ImgTab.defaultProps = {
-    imgTabUrl: '/images/gift-card/gift-img.png'
 }
 
 export default ImgTab;
