@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Index() {
   return (
     <Box>
-      <Typography variant="h1">요기요 선물하기</Typography>
+      <Typography variant="h3">요기요 선물하기</Typography>
       <List>
         {pageList.map(({ title, path }) => (
           <ListItem key={path}>
