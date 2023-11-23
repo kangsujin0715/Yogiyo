@@ -68,7 +68,3 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
-
-.wrap-vertical::-webkit-scrollbar{
-    display: none; 
-}

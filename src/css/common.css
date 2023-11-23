@@ -23,17 +23,18 @@ strong.price em {font-size: 2rem;}
 .padding-box {padding: 1.6rem; margin: 0.8rem 0;}
 .gird-box {display: flex; align-items: center; justify-content: space-between;}
 .btn-box {padding: 2.4rem 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
+.gray-box {background-color: #f2f2f2;}
 
 /* ---Button-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.from button {background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
-.from button.close-btn {background: url(../../public/images/close.svg) center no-repeat; border: none;}
-.from button.plus-btn::before {display: inline-block; content: ''; width: 2rem; height: 2rem; background: url(../../public/images/plus.svg) left center no-repeat; background-size: 2rem;}
+.to button {background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
+.to button.close-btn {background: url(../../public/images/close.svg) center no-repeat; border: none;}
+.to button.plus-btn::before {display: inline-block; content: ''; width: 2rem; height: 2rem; background: url(../../public/images/plus.svg) left center no-repeat; background-size: 2rem;}
 
 .black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.pay-btn {font-size: 1.4rem; height: auto; display: flex;}
+.pay-btn {font-size: 1.4rem; height: auto; display: flex; font-weight: 400;}
 .pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
 .view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .message-btn {position: absolute; z-index: 1; left: 25%; bottom: 10.8rem; background: #fff url(../../public/images/pen.svg) left 0.8rem center no-repeat; padding: 0 1rem 0 2.6rem; height: 3.2rem; border-radius: 36rem; font-weight: 400;}
@@ -55,17 +56,18 @@ strong.price em {font-size: 2rem;}
 .card-info-box .price-info .after-price {font-size: 1.2rem; color: #999; text-decoration: line-through;}
 .card-info-box .date {margin-top: 0.4rem; font-size: 1.2rem; color: #999;}
 
-.horizontal-scroll {width: 100%; height: auto; overflow-x: auto; display: flex; align-items: center;}
+.horizontal-scroll {width: 100%; height: auto; overflow-x: auto; display: flex; align-items: center; -ms-overflow-style: none;}
+.horizontal-scroll::-webkit-scrollbar {display: none;}
 .img-select {display: inline-flex; align-items: center; height: 7.4rem; padding: 0 0.8rem;}
 .img-select li {width: 5.8rem; height: 5.8rem; display: flex; margin: 0 0.4rem; align-items: center; justify-content: center;}
 .img-select li.selected {border: 0.2rem solid #000; border-radius: 1.2rem;}
 .img-select li img {width: 4.8rem; height: 4.8rem;}
 .view-btn {position: absolute; right: 0; width: 4rem; height: 6rem; background-color: #fff ;}
 
-.money-voucher {display: inline-flex; align-items: center; height: 6rem; padding: 0 0.8rem; margin: 0 -0.4rem;}
+.money-voucher {display: inline-flex; align-items: center; height: 6rem; padding: 0 0.8rem; margin: 0 -0.4rem;;}
 .money-voucher li {background-color: #f2f2f2; margin: 0 0.4rem; display: flex; align-items: center; justify-content: center; border-radius: 36rem; width: 8.8rem; height: 4rem; font-size: 1.4rem; color: #333;}
 .money-voucher li.selected {background-color: #333; color: #fff; font-weight: 700;}
-.money-voucher li.disable {background-color: #636464 !important; color: #bfbfbf !important; font-weight: 300 !important;}
+.money-voucher li.disable {background-color: #636464 !important; color: #bfbfbf !important; font-weight: 400 !important;}
 
 .padding-box .title {margin-bottom: 0.8rem !important; font-weight: 700 !important;}
 .padding-box .title + span {color: #999; margin-left: 0.3rem;}
@@ -73,7 +75,7 @@ strong.price em {font-size: 2rem;}
 .padding-box .title.mb0 {margin-bottom: 0 !important;}
 /* GiftDetail.js */
  
-.from button, .from input {width: 100%; display: flex; align-items: center; justify-content: center;}
+.to button, .to input {width: 100%; display: flex; align-items: center; justify-content: center;}
 /* Privacy.js */
 
 .tab-box {display: flex; align-items: center; justify-content: center;}
@@ -82,8 +84,8 @@ strong.price em {font-size: 2rem;}
 .tab-box .Mui-selected {font-weight: 700 !important;}
 /* tab.js */
 
-.gift-card {position: relative; padding: 0.8rem 2rem; height: 35.2rem; display: flex; align-items: center; justify-content: center;}
-.card-box {position: absolute; top: 0.8rem; width: 24rem; height: 33.6rem; -webkit-perspective: 800px; -moz-perspective: 800px; -o-perspective: 800px; perspective: 800px;}
+.gift-card {position: relative; padding: 1.2rem 2rem; display: flex; align-items: center; justify-content: center;}
+.card-box {position: static; top: 0.8rem; left: 50%; width: 24rem; height: 33.6rem; -webkit-perspective: 800px; -moz-perspective: 800px; -o-perspective: 800px; perspective: 800px;}
 .card-box:not(.manual-flip):hover .card-view,
 .card-box.hover.manual-flip .card-view {-webkit-transform: rotateY( 180deg ); -moz-transform: rotateY( 180deg ); -o-transform: rotateY( 180deg ); transform: rotateY( 180deg ); }
 .card-box .card-view {-webkit-transition: -webkit-transform .5s; -moz-transition: -moz-transform .5s; -o-transition: -o-transform .5s; transition: transform .5s; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
