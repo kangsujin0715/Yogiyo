@@ -27,7 +27,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent })
 
   return (
     <Box className='gift-card'>
-      <Box className={`card-box ${isHovered ? 'hover' : ''} manual-flip `}>
+      <Box className={`card-box w-280 ${isHovered ? 'hover' : ''} manual-flip `}>
         <Box className='card-view'>
           <Box className='front card sparkles animated' onClick={rotateCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />

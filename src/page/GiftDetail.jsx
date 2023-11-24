@@ -1,6 +1,9 @@
 import * as React from 'react';
 
 import { Box, Typography, Link } from '@mui/material';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+
 import '../css/common.css';
 
 import CardBox from '../Component/CardBox';
@@ -12,7 +15,6 @@ export default function GiftDetail() {
       <CardBox></CardBox>
 	  <ToBox></ToBox>
 	
-
       <Box className='padding-box'>
         <Typography variant='h2' className='title'>
           보내는 사람
@@ -48,21 +50,17 @@ export default function GiftDetail() {
           </strong>
         </Box>
       </Box>
-      <ul className='notice-box'>
-        <li>
-          <p>
+      <List className='notice-box'>
+        <ListItem>
             <Link href='#'>개인정보 수집 및 제3자 제공 내용</Link>에 동의합니다.
-          </p>
-        </li>
-        <li>
-          <p>
+        </ListItem>
+        <ListItem>
             <Link href='#'>선물하기 이용 및 취소/환불 안내</Link>를 숙지하였습니다.
-          </p>
-        </li>
-        <li>
-          <p>위 내용을 확인하였으며, 결제에 동의합니다.</p>
-        </li>
-      </ul>
+        </ListItem>
+        <ListItem>
+          위 내용을 확인하였으며, 결제에 동의합니다.
+        </ListItem>
+      </List>
       <Box className='btn-box'>
         <button className='full-btn pink' disabled>
           20,000원 선물 결제하기
