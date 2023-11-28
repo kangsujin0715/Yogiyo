@@ -1,65 +1,68 @@
 import * as React from 'react';
-import CardView from '../Component/CardView';
-import From from '../Component/From';
+
 import { Box, Typography, Link } from '@mui/material';
-import '../css/common.css'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+
+import '../css/common.css';
+
+import CardBox from '../Component/CardBox';
+import ToBox from '../Component/ToBox';
 
 export default function GiftDetail() {
   return (
     <>
-      <CardView></CardView>
-      <Box className="padding-box">
-        <Typography variant="h2" className="inline title star">
-          받는 사람
-        </Typography>
-        <span>&#40;최대 100명&#41;</span>
-        <From></From>
-      </Box>
-      <Box className="padding-box">
-        <Typography variant="h2" className="title">
+      <CardBox></CardBox>
+	  <ToBox></ToBox>
+	
+      <Box className='padding-box'>
+        <Typography variant='h2' className='title'>
           보내는 사람
         </Typography>
-        <input placeholder="이름" variant="outlined" />
+        <input placeholder='이름' variant='outlined' />
       </Box>
-      <Box className="padding-box gird-box">
-        <Typography variant="h2" className="title mb0">
-          결제수단
-        </Typography>
-        <button className="pay-btn red">결제수단을 선택해주세요</button>
+      <Box className='padding-box'>
+        <Box className='gird-box'>
+          <Typography variant='h2' className='title mb0'>
+            결제수단
+          </Typography>
+          {/* <button className='pay-btn red'>결제수단을 선택해주세요</button> */}
+          <button className='pay-btn'>요기서 1초결제</button>
+        </Box>
+        <Box className='gird-box gray-box'>
+          <p>삼성카드</p>
+          <span>**** 1234</span>
+        </Box>
       </Box>
-      <Box className="padding-box">
-        <Box className="line gird-box">
-          <Typography variant="h3">상품권금액</Typography>
-          <span className="price">
+      <Box className='padding-box'>
+        <Box className='line gird-box'>
+          <Typography variant='h3'>상품권금액</Typography>
+          <span className='price'>
             <em>30,000</em>원
           </span>
         </Box>
-        <Box className="gird-box">
-          <Typography variant="h2" className="title mb0">
+        <Box className='gird-box'>
+          <Typography variant='h2' className='title mb0'>
             총 결제금액
           </Typography>
-          <strong className="price">
+          <strong className='price'>
             <em>30,000</em>원
           </strong>
         </Box>
       </Box>
-      <ul className="notice-box">
-        <li>
-          <p>
-            <Link href="#">개인정보 수집 및 제3자 제공 내용</Link>에 동의합니다.
-          </p>
-        </li>
-        <li>
-          <p>
-            <Link href="#">선물하기 이용 및 취소/환불 안내</Link>를 숙지하였습니다.
-          </p>
-        </li>
-        <li>
-          <p>위 내용을 확인하였으며, 결제에 동의합니다.</p>
-        </li>
-      </ul>
-      <Box className="btn-box">
-        <button className="full-btn pink" disabled>
+      <List className='notice-box'>
+        <ListItem>
+            <Link href='#'>개인정보 수집 및 제3자 제공 내용</Link>에 동의합니다.
+        </ListItem>
+        <ListItem>
+            <Link href='#'>선물하기 이용 및 취소/환불 안내</Link>를 숙지하였습니다.
+        </ListItem>
+        <ListItem>
+          위 내용을 확인하였으며, 결제에 동의합니다.
+        </ListItem>
+      </List>
+      <Box className='btn-box'>
+        <button className='full-btn pink' disabled>
           20,000원 선물 결제하기
         </button>
       </Box>
