@@ -35,11 +35,11 @@ export default function GiftDetail() {
         </Box>
       </Box>
       <Box className='padding-box'>
-        <Box className='line gird-box'>
+        <Box className='underline gird-box'>
           <Typography variant='h3'>상품권금액</Typography>
           <span className='price'>
             <em>30,000</em>원
-          </span>
+          </span> 
         </Box>
         <Box className='gird-box'>
           <Typography variant='h2' className='title mb0'>
