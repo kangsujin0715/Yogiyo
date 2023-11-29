@@ -3,11 +3,11 @@ import { Box, Typography } from '@mui/material';
 
 import '../css/common.css';
 
-function DetailInfo({pTitle, pInfo}) {
+function DetailInfo({ pTitle, pInfo }) {
   return (
-	<Box className="gird-box">
-	  <Typography variant="h3">{pTitle}</Typography>
-	  <p className="txt-14">{pInfo}</p>
+	<Box className='gird-box'>
+	  <Typography variant='h3'>{pTitle}</Typography>
+	  <p className='txt-14'>{pInfo}</p>
 	</Box>
   )
 }

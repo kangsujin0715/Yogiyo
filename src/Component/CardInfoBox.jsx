@@ -6,11 +6,11 @@ function CardInfoBox({ pSale, pPrice, pAfterPrice, pDate }) {
   return (
     <Box className='card-info-box'>
       <ul className='price-info'>
-        <li className='sale'>{pSale}</li>
-        <li className='price'>{pPrice}</li>
-        <li className='after-price'>{pAfterPrice}</li>
+        <li className='sale'>{pSale ? pSale : <span className='none'></span>}</li>
+        <li className='price'>{pPrice ? pPrice : <span className='none'></span>}</li>
+        <li className='after-price'>{pAfterPrice ? pAfterPrice : <span className='none'></span>}</li>
+        <li className='date'>{pDate ? pDate : <span className='none'></span>}</li>
       </ul>
-      <Typography className='date'>{pDate}</Typography>
     </Box>
   );
 }

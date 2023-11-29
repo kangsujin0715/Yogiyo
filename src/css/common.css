@@ -58,11 +58,12 @@ strong.price em {font-size: 2rem;}
 .header h1 {font-size: 1.6rem; line-height: 2.2rem; font-weight: 700;}
 
 .card-info-box {padding: 1.2rem 0 1.6rem; display: flex; flex-direction: column; align-items: center; justify-content: center;}
-.card-info-box .price-info {display: flex; align-items: center; justify-content: center;}
-.card-info-box .price-info .sale {font-size: 1.6rem; font-weight: 700; color: #fa0050;}
-.card-info-box .price-info .price {margin: 0 0.4rem; font-size: 1.6rem; font-weight: 700; color: #333;}
-.card-info-box .price-info .after-price {font-size: 1.2rem; color: #999; text-decoration: line-through;}
-.card-info-box .date {margin-top: 0.4rem; font-size: 1.2rem; color: #999;}
+.price-info {display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.price-info .sale {font-size: 1.6rem; font-weight: 700; color: #fa0050;}
+.price-info .price {font-size: 1.6rem; font-weight: 700; color: #333; margin: 0 0.4rem;}
+.price-info .after-price {font-size: 1.2rem; color: #999; text-decoration: line-through;}
+.price-info .date {margin-top: 0.4rem; font-size: 1.2rem; color: #999; width: 100%; text-align: center;}
+.price-info li:has(.none) {display: none;}
 
 .horizontal-scroll {width: 100%; height: auto; overflow-x: auto; display: flex; align-items: center; -ms-overflow-style: none;}
 .horizontal-scroll::-webkit-scrollbar {display: none;}
@@ -161,9 +162,17 @@ strong.price em {font-size: 2rem;}
 .line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {color: #333;}
 
 
-
-
-
+.voucher-info-box {padding: 1.6rem;}
+.voucher-info-box .price-info {justify-content: start;}
+.voucher-info-box .price-info li {margin-right: 0.4rem;}
+.voucher-info-box .price-info li:last-child {margin-right: 0;}
+.voucher-info-box .price-info .voucher {width: 100%; font-size: 1.6rem; color: #333; margin-bottom: 0.4rem;}
+.voucher-info-box .price-info .balance {font-size: 1.6rem; color: #333;}
+.voucher-info-box .price-info .price {font-size: 1.8rem; margin-left: 0;}
+.voucher-info-box .price-info .after-price {font-size: 1.6rem;}
+.voucher-info-box .gift-img-info {display: flex; flex-direction: column; align-items: flex-end;}
+.voucher-info-box .gift-img-info .gift-box-info {height: 3rem;}
+.voucher-info-box .gift-img-info .gift-box {width: 4.6rem; height: 4.6rem;}
 
 
 
