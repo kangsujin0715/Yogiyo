@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import '../css/common.css';
 
 import CardDesign2 from '../Component/CardDesign2';
+import DetailInfo from '../Component/DetailInfo';
 
 export default function KakaoComplete() {
   return (
@@ -18,27 +19,15 @@ export default function KakaoComplete() {
         </Typography>
         <Box className="line-box">
           <Box className="detail-info underline">
-            <Box className="gird-box">
-              <Typography variant="h3">보낸 사람</Typography>
-              <p className="txt-14">위대한상상</p>
-            </Box>
-            <Box className="gird-box">
-              <Typography variant="h3">선물명</Typography>
-              <p className="txt-14">VIPS 3만원권</p>
-            </Box>
+            <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'></DetailInfo>
+            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'></DetailInfo>
           </Box>
           <Box className='detail-info'>
-            <Box className="gird-box">
-              <Typography variant="h3">상품권 번호</Typography>
-              <p className="txt-14">123456789</p>
-            </Box>
-            <Box className="gird-box">
-              <Typography variant="h3">유효기간</Typography>
-              <p className="txt-14">2023.04.04 까지</p>
-            </Box>
+            <DetailInfo pTitle='상품권 번호' pInfo='123456789'></DetailInfo>
+            <DetailInfo pTitle='유효기간' pInfo='2023.04.04까지'></DetailInfo>
           </Box>
         </Box>
-        <button className="full-btn line">선물 등록하기</button>
+        <button className="full-btn line mt-8">선물 등록하기</button>
       </Box>
       <List className="notice-box">
         <ListItem>

@@ -20,11 +20,12 @@ strong.price em {font-size: 2rem;}
 .error input {border: 0.1rem solid #c00000;}
 .error .text {padding: 0.2rem 0 0.4rem 0.8rem; font-size: 1.2rem; color: #c00000;}
 
-.mgt-12 {margin-top: 1.2rem;}
+.mt-8 {margin-top: 0.8rem;}
+.mt-12 {margin-top: 1.2rem;}
 
 /* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.2rem; margin-bottom: 0.8rem;}
+.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.2rem;}
 .padding-box {padding: 1.6rem; margin: 0.8rem 0;}
 .gird-box {display: flex; align-items: center; justify-content: space-between;}
 .btn-box {padding: 2.4rem 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
@@ -157,6 +158,7 @@ strong.price em {font-size: 2rem;}
 
 .line-box .detail-info .gird-box {margin-bottom: 0.8rem;}
 .line-box .detail-info .gird-box:last-child {margin-bottom: 0;}
+.line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {color: #333;}
 
 
 

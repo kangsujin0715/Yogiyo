@@ -20,7 +20,7 @@ export default function GiftComplete() {
       </Box>
       <Box className='btn-box col'>
         <button className='full-btn pink'>선물 확인하기</button>
-        <button className='full-btn whit mgt-12'>다른 선물하기</button>
+        <button className='full-btn whit mt-12'>다른 선물하기</button>
       </Box>
     </Box>
   );
