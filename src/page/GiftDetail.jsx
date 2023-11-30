@@ -4,8 +4,6 @@ import { Box, Typography, Link } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-import '../css/common.css';
-
 import CardBox from '../Component/CardBox';
 import ToBox from '../Component/ToBox';
 

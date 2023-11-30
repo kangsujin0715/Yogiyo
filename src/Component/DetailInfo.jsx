@@ -1,8 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material';
 
-import '../css/common.css';
-
 function DetailInfo({ pTitle, pInfo }) {
   return (
 	<Box className='gird-box'>

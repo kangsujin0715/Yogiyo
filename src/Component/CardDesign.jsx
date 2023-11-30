@@ -2,12 +2,14 @@ import * as React from 'react';
 import { useState } from 'react';
 
 import { Box, Typography } from '@mui/material';
+
 import '../css/cardSparkles.css';
+import '../css/cardDesign.css';
 
 function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const rotateCard = () => {
-    setIsHovered((prevState) => !prevState);
+    setIsOpen((prevState) => !prevState);
   };
 
   const [textCount, setTextCount] = useState(0);
@@ -27,7 +29,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent })
 
   return (
     <Box className='gift-card'>
-      <Box className={`card-box w-280 ${isHovered ? 'hover' : ''} manual-flip `}>
+      <Box className={`card-box ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
           <Box className='front card sparkles animated' onClick={rotateCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
@@ -61,16 +63,6 @@ function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent })
               <p className='byte'>{textCount}/150</p>
             </Box>
             {/* 카드 뒤 */}
-
-            {/* <Box className='complete-box' onClick={rotateCard}>
-              <Box className='complete'>
-                <Typography variant='h2' component='h2'>
-                  {pName}
-                </Typography>
-                {pContent}
-              </Box>
-            </Box> */}
-            {/* 카드 완료 */}
           </Box>
         </Box>
       </Box>

@@ -2,8 +2,6 @@ import * as React from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import '../css/common.css';
-
 import CardDesign2 from '../Component/CardDesign2';
 
 export default function GiftComplete() {

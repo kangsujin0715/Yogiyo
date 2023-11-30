@@ -1,17 +1,17 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-import '../css/common.css';
+import '../css/price.css';
 
-function VoucherInfo({ pVoucher, pbalance, pSale, pPrice, pAfterPrice, giftBoxInfoUrl, giftBoxUrl }) {
+function VoucherInfo({ pVoucher, pBalance, pSale, pPrice, pAfterPrice, giftBoxInfoUrl, giftBoxUrl }) {
   return (
     <Box className="voucher-info-box gird-box">
       <ul className="price-info">
-        <li className="voucher">{pVoucher ? pVoucher : <span className='none'></span>}</li>
-        <li className="balance">{pbalance ? pbalance : <span className='none'></span>}</li>
-        <li className="sale">{pSale ? pSale : <span className='none'></span>}</li>
-        <li className="price">{pPrice ? pPrice : <span className='none'></span>}</li>
-        <li className="after-price">{pAfterPrice ? pAfterPrice : <span className='none'></span>}</li>
+	  	{pVoucher && <li className='voucher'>{pVoucher}</li>}
+	  	{pBalance && <li className='balance'>{pBalance}</li>}
+	  	{pSale && <li className='sale'>{pSale}</li>}
+	  	{pPrice && <li className='price'>{pPrice}</li>}
+	  	{pAfterPrice && <li className='after-price'>{pAfterPrice}</li>}
       </ul>
       <Box>
         <ul className="gift-img-info">
@@ -25,7 +25,7 @@ function VoucherInfo({ pVoucher, pbalance, pSale, pPrice, pAfterPrice, giftBoxIn
 
 VoucherInfo.defaultProps = {
   pVoucher: '',
-  pbalance: '',
+  pBalance: '',
   pSale: '',
   pPrice: '',
   pAfterPrice: '',

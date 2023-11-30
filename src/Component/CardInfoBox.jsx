@@ -1,15 +1,17 @@
 import * as React from 'react';
 
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
+
+import '../css/price.css';
 
 function CardInfoBox({ pSale, pPrice, pAfterPrice, pDate }) {
   return (
     <Box className='card-info-box'>
       <ul className='price-info'>
-        <li className='sale'>{pSale ? pSale : <span className='none'></span>}</li>
-        <li className='price'>{pPrice ? pPrice : <span className='none'></span>}</li>
-        <li className='after-price'>{pAfterPrice ? pAfterPrice : <span className='none'></span>}</li>
-        <li className='date'>{pDate ? pDate : <span className='none'></span>}</li>
+        {pSale && <li className='sale'>{pSale}</li>}
+		{pPrice && <li className='price'>{pPrice}</li>}
+		{pAfterPrice && <li className='after-price'>{pAfterPrice}</li>}
+		{pDate && <li className='date'>{pDate}</li>}
       </ul>
     </Box>
   );
@@ -21,4 +23,5 @@ CardInfoBox.defaultProps = {
   pAfterPrice: '',
   pDate: '',
 };
+
 export default CardInfoBox;

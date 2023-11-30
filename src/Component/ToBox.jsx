@@ -6,6 +6,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 import ToInput from './ToInput';
 
+import '../css/to.css';
+
 function ToBox() {
   const [plusClick, setPlusClick] = useState([]);
   const plusBtn = () => {

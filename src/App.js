@@ -1,4 +1,5 @@
 import './App.css';
+import './css/common.css';
 import { Route, Routes } from 'react-router-dom';
 import Index from './page';
 import TestPage from './page/TestPage';

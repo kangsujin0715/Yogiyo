@@ -4,8 +4,6 @@ import { Box, Typography, Link } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-import '../css/common.css';
-
 import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
 import VoucherInfo from '../Component/VoucherInfo';
@@ -14,8 +12,8 @@ export default function SendGiftDetail() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pbalance={false} pPrice={'27,000원'} pAfterPrice='30,000원' giftBoxInfoUrl={'/images/gift-complete.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  {/* <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pbalance={false} pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/> */}
+	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl={'/images/gift-complete.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  {/* <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/> */}
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
