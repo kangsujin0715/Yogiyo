@@ -1,6 +1,8 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import { useState } from 'react';
+import Box from '@mui/material/Box';
+
+import '../css/moneyTab.css';
 
 function MoneyTab() {
   const [moneyTab, setMoneyTab] = useState(0);

@@ -68,3 +68,6 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
+
+.horizontal-scroll {width: 100%; height: auto; overflow-x: auto; display: flex; align-items: center; -ms-overflow-style: none;}
+.horizontal-scroll::-webkit-scrollbar {display: none;}

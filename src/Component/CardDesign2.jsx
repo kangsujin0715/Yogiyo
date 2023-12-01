@@ -6,34 +6,19 @@ import { Box, Typography } from '@mui/material';
 import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
 
-function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }) {
+function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }) {
   const [isOpen, setIsOpen] = useState(false);
   const rotateCard = () => {
     setIsOpen((prevState) => !prevState);
   };
 
-  const [textCount, setTextCount] = useState(0);
-  const onTextHandler = (e) => {
-    setTextCount(e.target.value.length);
-  };
-
-  const labelBox = (
-    <>
-      제 마음이에요.<p>(탭하여 메세지를 작성해보세요.)</p>
-    </>
-  );
-  const [labelText, setLabelText] = useState(labelBox);
-  const clearLabel = () => {
-    setLabelText('');
-  };
-
   return (
     <Box className='gift-card'>
-      <Box className={`card-box ${isOpen ? 'open' : ''} manual-flip `}>
+      <Box className={`card-box w-280 ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
           <Box className='front card sparkles animated' onClick={rotateCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
-            <button className='message-btn'>메세지 쓰기</button>
+            {/* <button className='message-btn'>메세지 쓰기</button> */}
             <Box className='card-info' sx={{ backgroundColor: '#2d863c' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>
@@ -47,22 +32,15 @@ function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent })
           {/* 카드 앞 */}
 
           <Box className='back' sx={{ backgroundColor: '#2d863c' }}>
-            <Box className='text-box'>
-              <label htmlFor='text' className='label-box'>
-                {labelText}
-              </label>
-              <textarea
-                id='text'
-                onChange={onTextHandler}
-                onClick={clearLabel}
-                maxLength='150'
-              ></textarea>
-              <button className='click' onClick={rotateCard}>
-                카드 뒤집기
-              </button>
-              <p className='byte'>{textCount}/150</p>
+            <Box className='complete-box' onClick={rotateCard}>
+              <Box className='complete'>
+                <Typography variant='h2' component='h2'>
+                  {pName}
+                </Typography>
+                {pContent}
+              </Box>
             </Box>
-            {/* 카드 뒤 */}
+            {/* 카드 완료 */}
           </Box>
         </Box>
       </Box>
@@ -70,7 +48,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent })
   );
 }
 
-CardDesign.defaultProps = {
+CardDesign2.defaultProps = {
   imgViewUrl: '/images/gift-card/card-img.png',
   imglogoUrl: '/images/logo/yogiyo.png',
   pBrand: '요기요 상품권',
@@ -81,7 +59,7 @@ CardDesign.defaultProps = {
   ),
   pName: (
     <>
-      To.<span className='name'>김민지</span>
+      To.<span className='name'>김민지 외 13명</span>
     </>
   ),
   pContent: (
@@ -91,5 +69,5 @@ CardDesign.defaultProps = {
   ),
 };
 
-export default CardDesign;
+export default CardDesign2;
 
