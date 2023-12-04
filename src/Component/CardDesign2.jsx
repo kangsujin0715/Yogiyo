@@ -16,10 +16,10 @@ function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }
     <Box className='gift-card'>
       <Box className={`card-box w-280 ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
-		  <Box className='cancel-box'>
+		  {/* <Box className='cancel-box'>
 		  	<Typography className='cancel-txt' variant='h2' component='h2'>선물 취소</Typography>
 			<span className='cancel-popup'>선물을 취소했어요</span>
-		  </Box>
+		  </Box> */}
           <Box className='front card sparkles animated' onClick={rotateCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
             {/* <button className='message-btn'>메세지 쓰기</button> */}

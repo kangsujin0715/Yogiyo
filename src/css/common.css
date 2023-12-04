@@ -13,6 +13,7 @@
 
 .underline {border-bottom: 0.1rem solid #f2f2f2; padding-bottom: 2rem; margin-bottom: 2rem;}
 
+.txt-12 {font-size: 1.2rem;}
 span.price, .txt-14 {font-size: 1.4rem;}
 strong.price {font-size: 1.8rem;}
 strong.price em {font-size: 2rem;}
@@ -23,6 +24,8 @@ strong.price em {font-size: 2rem;}
 .m-0 {margin: 0;}
 .mt-8 {margin-top: 0.8rem;}
 .mt-12 {margin-top: 1.2rem;}
+
+.mb-8 {margin-bottom: 0.8rem;}
 
 /* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
@@ -69,11 +72,6 @@ strong.price em {font-size: 2rem;}
 .gift-complete-card .text-box {margin-top: 3.2rem; padding: 0 5rem 5rem; text-align: center;}
 .gift-complete-card .text-box h2 {font-size: 2.4rem !important; font-weight: 700;}
 .gift-complete-card .text-box p {font-size: 1.4rem; line-height: 1.9rem; margin-top: 0.6rem; letter-spacing: -0.09rem; word-break: keep-all;}
-
-.line-box .detail-info .gird-box {margin-bottom: 0.8rem;}
-.line-box .detail-info .gird-box:last-child {margin-bottom: 0;}
-.line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {color: #333;}
-
 
 
 

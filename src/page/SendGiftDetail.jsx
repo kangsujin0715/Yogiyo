@@ -8,6 +8,8 @@ import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
 import VoucherInfo from '../Component/VoucherInfo';
 
+import '../css/lineBox.css';
+
 export default function SendGiftDetail() {
   return (
     <>
