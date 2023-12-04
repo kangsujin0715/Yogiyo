@@ -7,6 +7,8 @@ import ListItem from '@mui/material/ListItem';
 import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
 
+import '../css/detailInfo.css';
+
 export default function KakaoComplete() {
   return (
     <>
@@ -25,7 +27,9 @@ export default function KakaoComplete() {
             <DetailInfo pTitle='유효기간' pInfo='2023.04.04까지'></DetailInfo>
           </Box>
         </Box>
-        <button className='full-btn line mt-8'>선물 등록하기</button>
+		<Box className='btn-box mt-8'>
+			<button className='full-btn line'>선물 등록하기</button>
+		</Box>
       </Box>
       <List className='notice-box'>
         <ListItem>
