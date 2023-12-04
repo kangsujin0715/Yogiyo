@@ -7,7 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
 
-import '../css/detailInfo.css';
+import '../css/lineBox.css';
 
 export default function KakaoComplete() {
   return (
