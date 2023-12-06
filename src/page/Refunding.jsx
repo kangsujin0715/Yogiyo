@@ -10,7 +10,7 @@ import VoucherInfo from '../Component/VoucherInfo';
 
 import '../css/lineBox.css';
 
-export default function SendGiftDetail() {
+export default function Refunding() {
   return (
     <>
       <CardDesign2/>
@@ -22,7 +22,7 @@ export default function SendGiftDetail() {
         <Box className='line-box'>
           <Box className='detail-info underline'>
             <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'/>
-            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'/>
+            <DetailInfo pTitle='선물명' pInfo='VIPS 상품권 3만원'/>
           </Box>
           <Box className='detail-info'>
             <DetailInfo pTitle='선물코드' pInfo='123456789'/>

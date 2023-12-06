@@ -11,29 +11,29 @@ import UseHistory from '../Component/UseHistory';
 
 import '../css/lineBox.css';
 
-export default function SendGiftDetail() {
+export default function GetGiftDetail() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
+	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='30,000원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='30,000원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='0원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
-          사용 내역
+          선물 사용 내역
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info'>
-            <DetailInfo pTitle='빕스 서초점' pInfo='5,000원'/>
-            <UseHistory pTitle='선물명' pInfo='VIPS 3만원'/>
+            <DetailInfo pTitle='빕스 고속터미널점' pInfo={<span><em>-5,000원</em> 사용</span>}/>
+            <UseHistory pNum='주문번호 0000000000' pDate='2023.04.23 19:53'/>
+          </Box>
+          <Box className='detail-info line-through'>
+            <DetailInfo pTitle='빕스 서초점' pInfo={<span><em>-5,000원</em> 사용취소</span>}/>
+            <UseHistory pNum='주문번호 0000000000' pDate='2023.04.23 19:53'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='빕스 서초점' pInfo='5,000원'/>
-            <UseHistory pTitle='선물명' pInfo='VIPS 3만원'/>
-          </Box>
-          <Box className='detail-info'>
-            <DetailInfo pTitle='빕스 서초점' pInfo='5,000원'/>
-            <UseHistory pTitle='선물명' pInfo='VIPS 3만원'/>
+            <DetailInfo pTitle='상품권' pInfo={<span><em>30,000원</em> 등록</span>}/>
+            <UseHistory pNum='' pDate='2023.04.23 19:53'/>
           </Box>
         </Box>
 	  </Box>
@@ -44,7 +44,6 @@ export default function SendGiftDetail() {
         <Box className='line-box'>
           <Box className='detail-info underline'>
             <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'/>
-            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'/>
           </Box>
           <Box className='detail-info underline'>
             <DetailInfo pTitle='상품권 번호' pInfo='123456789'/>
@@ -52,7 +51,8 @@ export default function SendGiftDetail() {
           </Box>
           <Box className='detail-info'>
             <DetailInfo pTitle='상품권금액' pInfo='30,000원'/>
-            <DetailInfo pTitle='사용금액' pInfo='0 원'/>
+            <DetailInfo pTitle='사용금액' pInfo='30,000원'/>
+            <DetailInfo pTitle='잔액' pInfo='0원'/>
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>

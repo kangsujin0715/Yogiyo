@@ -16,6 +16,7 @@ export default function SendGiftDetail() {
       <CardDesign2/>
 	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-complete.svg' giftBoxUrl='/images/gift-box.svg'/>
 	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-cancel.svg' giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
@@ -23,16 +24,18 @@ export default function SendGiftDetail() {
         <Box className='line-box'>
           <Box className='detail-info underline'>
             <DetailInfo pTitle='받는 사람' pInfo='김민지(010-****-3023)'/>
-            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'/>
           </Box>
           <Box className='detail-info underline'>
             <DetailInfo pTitle='주문번호' pInfo='123456789'/>
             <DetailInfo pTitle='구매일시' pInfo='2023.04.04 22:36'/>
           </Box>
-          <Box className='detail-info'>
+          <Box className='detail-info underline'>
+            <DetailInfo pTitle='상품금액' pInfo='30,000원'/>
+            <DetailInfo pTitle='수량' pInfo='3개'/>
             <DetailInfo pTitle='결제수단' pInfo='요기서 1초 결제'/>
-            <DetailInfo pTitle='상품권금액' pInfo='30,000원'/>
-            <DetailInfo pTitle='결제금액' pInfo='27,000원'/>
+          </Box>
+          <Box className='detail-info txt-16'>
+            <DetailInfo pTitle='총 결제금액' pInfo='90,000원'/>
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>

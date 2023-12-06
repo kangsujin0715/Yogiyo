@@ -19,12 +19,12 @@ export default function KakaoComplete() {
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'></DetailInfo>
-            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'></DetailInfo>
+            <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'/>
+            <DetailInfo pTitle='선물명' pInfo='VIPS 3만원'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='상품권 번호' pInfo='123456789'></DetailInfo>
-            <DetailInfo pTitle='유효기간' pInfo='2023.04.04까지'></DetailInfo>
+            <DetailInfo pTitle='상품권 번호' pInfo='123456789'/>
+            <DetailInfo pTitle='유효기간' pInfo='2023.04.04까지'/>
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>
