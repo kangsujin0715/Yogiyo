@@ -53,11 +53,11 @@ h2 {font-size: 1.6rem !important; font-weight: 700;}
 h3 {font-size: 1.4rem !important;}
 h4 {font-size: 1.2rem !important;}
 
-input, button {text-transform: none; outline: none; height: 4.8rem;}
+input, button, select {text-transform: none; outline: none; height: 4.8rem;}
 
 button {font-size: 1.6rem; font-weight: 700; background-color: transparent;}
-input  {width: 100%; font-size: 1.4rem; padding: 0 1.6rem; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
-input::placeholder {font-size: 1.4rem; color: #333;}
+input, select  {width: 100%; font-size: 1.4rem; padding: 0 1.6rem; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
+input::placeholder {font-size: 1.4rem; color: #999;}
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {border: 0; padding: 0; outline: none;}
