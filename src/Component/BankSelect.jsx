@@ -4,9 +4,12 @@ import '../css/customSelect.css';
 
 const BankSelect = () => {
   const options = [
+    { value: '은행', label: '은행' },
     { value: '우리', label: '우리' },
     { value: '신한', label: '신한' },
     { value: '농협', label: '농협' },
+    { value: '국민', label: '국민' },
+    { value: '하나', label: '하나' },
   ];
 
   const handleSelect = (selectedValue) => {
