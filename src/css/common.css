@@ -37,6 +37,7 @@ strong.price em {font-size: 2rem;}
 .gird-box {display: flex; align-items: center; justify-content: space-between;}
 .btn-box {padding: 2.4rem 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
 .gray-box {background-color: #f2f2f2;}
+.hw-box{display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem)}
 
 /* ---Button-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
@@ -70,60 +71,3 @@ strong.price em {font-size: 2rem;}
 .padding-box .title + span {color: #999; margin-left: 0.3rem;}
 .padding-box .title.star::after {content: '*'; font-size: 1.6rem; color: #fa0050; padding-left: 0.4rem;}
 .padding-box .title.mb0 {margin-bottom: 0 !important;}
-
-.gift-complete-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem)}
-.gift-complete-card .text-box {margin-top: 3.2rem; padding: 0 5rem 5rem; text-align: center;}
-.gift-complete-card .text-box h2 {font-size: 2.4rem !important; font-weight: 700;}
-.gift-complete-card .text-box p {font-size: 1.4rem; line-height: 1.9rem; margin-top: 0.6rem; letter-spacing: -0.09rem; word-break: keep-all;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
