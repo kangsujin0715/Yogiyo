@@ -8,6 +8,7 @@ import GiftDetail from './page/GiftDetail';
 import GiftHeader from './page/GiftHeader';
 import Privacy from './page/Privacy';
 import GiftComplete from './page/GiftComplete';
+import GiftError from './page/GiftError';
 import KakaoComplete from './page/KakaoComplete';
 import SendGiftDetail from './page/SendGiftDetail';
 import SendGiftDetailCancel from './page/SendGiftDetailCancel';
@@ -25,6 +26,7 @@ export const pageList = [
   { title: '선물하기 상세', path: '/test/giftdetail', element: <GiftDetail /> },
   { title: '선물하기 상세 텝', path: '/test/privacy', element: <Privacy /> },
   { title: '선물하기 완료', path: '/test/complete', element: <GiftComplete /> },
+  { title: '선물하기 오류', path: '/test/error', element: <GiftError /> },
   { title: '선물 등록하기 카톡 브라우저', path: '/test/kakaoComplete', element: <KakaoComplete /> },
   { title: '보낸 선물 상세', path: '/test/sendGiftDetail', element: <SendGiftDetail /> },
   { title: '보낸 선물 상세 취소', path: '/test/sendGiftDetailCancel', element: <SendGiftDetailCancel /> },
