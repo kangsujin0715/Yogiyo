@@ -5,6 +5,7 @@ import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 
 import ToInput from './ToInput';
+import Recent from './Recent';
 
 import '../css/to.css';
 
@@ -36,7 +37,7 @@ function ToBox() {
         {plusClick}
         <Grid container spacing={1}>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
-            <button className='plus-btn'>최근</button>
+			<Recent></Recent>
           </Grid>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
             <button className='plus-btn'>역락처</button>

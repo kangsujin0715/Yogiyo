@@ -1,0 +1,9 @@
+.bottomSheet {margin-bottom: 1.6rem; height: 100vh; overflow-y: scroll;}
+.bottomSheet:has(.img-box) {margin-bottom: 0;}
+
+.MuiPaper-root:has(.filter-box), .filter-box, .in-filter {max-height: calc(100vh - 5.6rem) !important;}
+.in-filter:has(.phone-box) .btn-box {margin-top: auto; padding: 0 1.6rem;}
+.in-filter:has(.img-box) {padding-bottom: 0 !important;}
+
+.img-box {display: flex; flex-wrap: wrap; margin: 0 -0.6rem 0.6rem;}
+.img-item {width: 10rem; height: 10rem; border-radius: 0.8rem; overflow: hidden; margin: 0.6rem;}
