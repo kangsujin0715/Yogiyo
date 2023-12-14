@@ -1,0 +1,19 @@
+.card-slide{
+    padding: 3.2rem 1.6rem 1.6rem;
+    margin-top: 0.8rem;
+}
+.card-slide > ul{
+    width: auto;
+    display: flex; 
+    
+    
+}
+
+
+.card-slide > ul > li{
+    display: flex;
+    margin-left: 0.8rem;
+}
+.card-slide > ul > li:first-child{
+    margin-left: 0;
+}

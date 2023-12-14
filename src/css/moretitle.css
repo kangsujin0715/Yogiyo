@@ -1,0 +1,13 @@
+.main-title{
+    width: 100%;
+    position: relative;
+    padding: 1.6rem;
+}
+.main-title > h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.btn-off{display: none;}
+.btn-on{width: 2.4rem; height: 2.4rem; position: absolute; right: 1.6rem; top: 1.6rem; background: url(../../public/images/ic_chevron_right_gray900c_24.svg) center center no-repeat;}
