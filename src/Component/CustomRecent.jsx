@@ -15,7 +15,7 @@ function CustomRecent({ pTitle }) {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
+  const recent = (anchor) => (
     <Box
       className="filter-box"
       sx={{ width: anchor === 'bottom' ? 'auto' : 250 }}
@@ -49,7 +49,7 @@ function CustomRecent({ pTitle }) {
             최근
           </button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
+            {recent(anchor)}
           </Drawer>
         </React.Fragment>
       ))}

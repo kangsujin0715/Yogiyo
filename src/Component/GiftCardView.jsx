@@ -15,7 +15,7 @@ function GiftCardView({ pTitle }) {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
+  const giftcard = (anchor) => (
     <Box
       className="filter-box"
       sx={{ width: anchor === 'bottom' ? 'auto' : 250 }}
@@ -39,7 +39,7 @@ function GiftCardView({ pTitle }) {
         <React.Fragment key={anchor}>
           <button className="view-btn" onClick={toggleDrawer(anchor, true)}></button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
+            {giftcard(anchor)}
           </Drawer>
         </React.Fragment>
       ))}

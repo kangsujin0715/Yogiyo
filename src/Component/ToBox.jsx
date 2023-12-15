@@ -37,7 +37,7 @@ function ToBox() {
         {plusClick}
         <Grid container spacing={1}>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
-			<Recent></Recent>
+			<Recent/>
           </Grid>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
             <button className='plus-btn'>역락처</button>
