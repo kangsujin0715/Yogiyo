@@ -17,7 +17,7 @@ const BankSelect = () => {
   };
 
   return (
-      <CustomSelect pSelectTitle='은행' options={options} onSelect={handleSelect} />
+      <CustomSelect selectTitle='은행' options={options} onSelect={handleSelect} />
   );
 };
 

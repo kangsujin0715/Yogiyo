@@ -14,7 +14,7 @@ const RefundSelect = () => {
   };
 
   return (
-      <CustomSelect pSelectTitle='환불 사유' options={options} onSelect={handleSelect} />
+      <CustomSelect selectTitle='환불 사유' options={options} onSelect={handleSelect} />
   );
 };
 

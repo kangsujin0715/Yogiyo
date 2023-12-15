@@ -4,26 +4,26 @@ import { Box } from '@mui/material';
 
 import '../css/price.css';
 
-function CardInfoBox({ pSale, pPrice, pAfterPrice, pNotice, pDate }) {
+function CardInfoBox({ sale, price, afterPrice, notice, date }) {
   return (
     <Box className='card-info-box'>
       <ul className='price-info'>
-        {pSale && <li className='sale'>{pSale}</li>}
-		{pPrice && <li className='price'>{pPrice}</li>}
-		{pAfterPrice && <li className='after-price'>{pAfterPrice}</li>}
-		{pNotice && <li className='notice'>{pNotice}</li>}
-		{pDate && <li className='date'>{pDate}</li>}
+        {sale && <li className='sale'>{sale}</li>}
+		{price && <li className='price'>{price}</li>}
+		{afterPrice && <li className='after-price'>{afterPrice}</li>}
+		{notice && <li className='notice'>{notice}</li>}
+		{date && <li className='date'>{date}</li>}
       </ul>
     </Box>
   );
 }
 
 CardInfoBox.defaultProps = {
-  pSale: '',
-  pPrice: '',
-  pAfterPrice: '',
-  pNotice: '',
-  pDate: '',
+  sale: '',
+  price: '',
+  afterPrice: '',
+  notice: '',
+  date: '',
 };
 
 export default CardInfoBox;

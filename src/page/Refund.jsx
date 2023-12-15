@@ -16,7 +16,7 @@ export default function Refund() {
         </Typography>
         <Box className="line-box">
           <Box className="detail-info">
-            <DetailInfo pTitle="상품권명" pInfo="후라이드참잘하는집 2만원권" />
+            <DetailInfo title="상품권명" info="후라이드참잘하는집 2만원권" />
           </Box>
         </Box>
       </Box>
@@ -26,9 +26,9 @@ export default function Refund() {
         </Typography>
         <Box className="line-box">
           <Box className="detail-info">
-            <DetailInfo pTitle="상품권 번호(코드)" pInfo="123412341234" />
-            <DetailInfo pTitle="상품권 상태" pInfo="유효기간 만료" />
-            <DetailInfo pTitle="유효기간" pInfo="2023.01.01 - 2023.01.01" />
+            <DetailInfo title="상품권 번호(코드)" info="123412341234" />
+            <DetailInfo title="상품권 상태" info="유효기간 만료" />
+            <DetailInfo title="유효기간" info="2023.01.01 - 2023.01.01" />
           </Box>
         </Box>
       </Box>
