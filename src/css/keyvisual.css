@@ -1,0 +1,13 @@
+.VisualSwiper .swiper-pagination{
+    display: inline-block !important;
+    padding: 0.4rem 0.6rem !important; 
+    border-radius: 1.6rem !important;
+    font-size: 1rem !important;
+    line-height: 1.4rem !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    width: auto !important;
+    right: 0.8rem !important;
+    bottom: 2rem !important;
+    left: auto !important;
+}
