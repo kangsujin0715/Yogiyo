@@ -38,7 +38,7 @@ function FtRadio(props) {
   );
 }
 
-function CategoryFilter({ options, onSelect, pSelectTitle }) {
+function CategoryFilter({ options, onSelect, selectTitle }) {
   const [selectedOption, setSelectedOption] = useState(options[0]?.label || '');
   
   const handleSelect = (value, label) => {
@@ -65,7 +65,7 @@ function CategoryFilter({ options, onSelect, pSelectTitle }) {
     >
       <FormControl className="in-filter">
         <FormLabel id="filter-radio-buttons-group" className="title-label">
-          {pSelectTitle}
+          {selectTitle}
         </FormLabel>
         <RadioGroup
           aria-labelledby="filter-radio-buttons-group"
@@ -90,7 +90,7 @@ function CategoryFilter({ options, onSelect, pSelectTitle }) {
       {['bottom'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Box className="select-box" onClick={toggleDrawer(anchor, true)}>
-            { selectedOption || pSelectTitle }
+            { selectedOption || selectTitle }
           </Box>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             { list(anchor) }

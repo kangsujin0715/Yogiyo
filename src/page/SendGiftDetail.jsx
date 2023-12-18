@@ -14,28 +14,28 @@ export default function SendGiftDetail() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-complete.svg' giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='5%' pBalance='' pPrice='27,000원' pAfterPrice='30,000원' giftBoxInfoUrl='/images/gift-cancel.svg' giftBoxUrl='/images/gift-box-cancel.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-complete.svg' giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-cancel.svg' giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='받는 사람' pInfo='김민지(010-****-3023)'/>
+            <DetailInfo title='받는 사람' info='김민지(010-****-3023)'/>
           </Box>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='주문번호' pInfo='123456789'/>
-            <DetailInfo pTitle='구매일시' pInfo='2023.04.04 22:36'/>
+            <DetailInfo title='주문번호' info='123456789'/>
+            <DetailInfo title='구매일시' info='2023.04.04 22:36'/>
           </Box>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='상품금액' pInfo='30,000원'/>
-            <DetailInfo pTitle='수량' pInfo='3개'/>
-            <DetailInfo pTitle='결제수단' pInfo='요기서 1초 결제'/>
+            <DetailInfo title='상품금액' info='30,000원'/>
+            <DetailInfo title='수량' info='3개'/>
+            <DetailInfo title='결제수단' info='요기서 1초 결제'/>
           </Box>
           <Box className='detail-info txt-16'>
-            <DetailInfo pTitle='총 결제금액' pInfo='90,000원'/>
+            <DetailInfo title='총 결제금액' info='90,000원'/>
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>

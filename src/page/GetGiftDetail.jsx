@@ -15,25 +15,25 @@ export default function GetGiftDetail() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='30,000원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='30,000원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pSale='' pBalance='잔액' pPrice='0원' pAfterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='0원' afterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           선물 사용 내역
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info'>
-            <DetailInfo pTitle='빕스 고속터미널점' pInfo={<span><em>-5,000원</em> 사용</span>}/>
-            <UseHistory pNum='주문번호 0000000000' pDate='2023.04.23 19:53'/>
+            <DetailInfo title='빕스 고속터미널점' info={<span><em>-5,000원</em> 사용</span>}/>
+            <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
           <Box className='detail-info line-through'>
-            <DetailInfo pTitle='빕스 서초점' pInfo={<span><em>-5,000원</em> 사용취소</span>}/>
-            <UseHistory pNum='주문번호 0000000000' pDate='2023.04.23 19:53'/>
+            <DetailInfo title='빕스 서초점' info={<span><em>-5,000원</em> 사용취소</span>}/>
+            <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='상품권' pInfo={<span><em>30,000원</em> 등록</span>}/>
-            <UseHistory pNum='' pDate='2023.04.23 19:53'/>
+            <DetailInfo title='상품권' info={<span><em>30,000원</em> 등록</span>}/>
+            <UseHistory num='' date='2023.04.23 19:53'/>
           </Box>
         </Box>
 	  </Box>
@@ -43,16 +43,16 @@ export default function GetGiftDetail() {
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'/>
+            <DetailInfo title='보낸 사람' info='위대한상상'/>
           </Box>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='상품권 번호' pInfo='123456789'/>
-            <DetailInfo pTitle='유효기간' pInfo='2023.04.04 까지'/>
+            <DetailInfo title='상품권 번호' info='123456789'/>
+            <DetailInfo title='유효기간' info='2023.04.04 까지'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='상품권금액' pInfo='30,000원'/>
-            <DetailInfo pTitle='사용금액' pInfo='30,000원'/>
-            <DetailInfo pTitle='잔액' pInfo='0원'/>
+            <DetailInfo title='상품권금액' info='30,000원'/>
+            <DetailInfo title='사용금액' info='30,000원'/>
+            <DetailInfo title='잔액' info='0원'/>
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>

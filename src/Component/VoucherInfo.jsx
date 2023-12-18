@@ -4,22 +4,22 @@ import { Box } from '@mui/material';
 import '../css/price.css';
 
 function VoucherInfo({
-  pVoucher,
-  pBalance,
-  pSale,
-  pPrice,
-  pAfterPrice,
+  voucher,
+  balance,
+  sale,
+  price,
+  afterPrice,
   giftBoxInfoUrl,
   giftBoxUrl,
 }) {
   return (
     <Box className="voucher-info-box gird-box">
       <ul className="price-info">
-        {pVoucher && <li className="voucher">{pVoucher}</li>}
-        {pBalance && <li className="balance">{pBalance}</li>}
-        {pSale && <li className="sale">{pSale}</li>}
-        {pPrice && <li className="price">{pPrice}</li>}
-        {pAfterPrice && <li className="after-price">{pAfterPrice}</li>}
+        {voucher && <li className="voucher">{voucher}</li>}
+        {balance && <li className="balance">{balance}</li>}
+        {sale && <li className="sale">{sale}</li>}
+        {price && <li className="price">{price}</li>}
+        {afterPrice && <li className="after-price">{afterPrice}</li>}
       </ul>
       <Box>
         <ul className="gift-img-info">
@@ -40,11 +40,11 @@ function VoucherInfo({
 }
 
 VoucherInfo.defaultProps = {
-  pVoucher: '',
-  pBalance: '',
-  pSale: '',
-  pPrice: '',
-  pAfterPrice: '',
+  voucher: '',
+  balance: '',
+  sale: '',
+  price: '',
+  afterPrice: '',
   giftBoxInfoUrl: '',
   giftBoxUrl: '',
 };
