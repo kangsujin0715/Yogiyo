@@ -14,19 +14,19 @@ export default function Refunding() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo pVoucher='VIPS 상품권' pBalance='잔액' pPrice='30,000원' giftBoxInfoUrl='' giftBoxUrl={false}/>
+	  <VoucherInfo voucher='VIPS 상품권' balance='잔액' price='30,000원' giftBoxInfoUrl='' giftBoxUrl={false}/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='보낸 사람' pInfo='위대한상상'/>
-            <DetailInfo pTitle='선물명' pInfo='VIPS 상품권 3만원'/>
+            <DetailInfo title='보낸 사람' info='위대한상상'/>
+            <DetailInfo title='선물명' info='VIPS 상품권 3만원'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='선물코드' pInfo='123456789'/>
-            <DetailInfo pTitle='유효기간' pInfo='2024.04.04 까지'/>
+            <DetailInfo title='선물코드' info='123456789'/>
+            <DetailInfo title='유효기간' info='2024.04.04 까지'/>
           </Box>
         </Box>
       </Box>
@@ -36,19 +36,19 @@ export default function Refunding() {
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='신청자' pInfo='김요기'/>
-            <DetailInfo pTitle='연락처' pInfo='010-1234-1234'/>
-            <DetailInfo pTitle='신청일자' pInfo='2023.01.01'/>
+            <DetailInfo title='신청자' info='김요기'/>
+            <DetailInfo title='연락처' info='010-1234-1234'/>
+            <DetailInfo title='신청일자' info='2023.01.01'/>
           </Box>
           <Box className='detail-info underline'>
-            <DetailInfo pTitle='예금주명' pInfo='김요기'/>
-            <DetailInfo pTitle='은행명' pInfo='요기은행'/>
-            <DetailInfo pTitle='계좌번호' pInfo='0000-0000-0000-0000'/>
-            <DetailInfo pTitle='환불사유' pInfo='유효기간 만료'/>
+            <DetailInfo title='예금주명' info='김요기'/>
+            <DetailInfo title='은행명' info='요기은행'/>
+            <DetailInfo title='계좌번호' info='0000-0000-0000-0000'/>
+            <DetailInfo title='환불사유' info='유효기간 만료'/>
           </Box>
           <Box className='detail-info'>
-            <DetailInfo pTitle='환불금액' pInfo='확인중'/>
-            <DetailInfo pTitle='' pInfo='환불가능한 금액이 없어 불가합니다.'/>
+            <DetailInfo title='환불금액' info='확인중'/>
+            <DetailInfo title='' info='환불가능한 금액이 없어 불가합니다.'/>
           </Box>
         </Box>
       </Box>

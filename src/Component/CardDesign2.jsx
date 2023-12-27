@@ -7,7 +7,7 @@ import Cancel from '../Component/Cancel';
 import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
 
-function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }) {
+function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const rotateCard = () => {
     setIsOpen((prevState) => !prevState);
@@ -25,9 +25,9 @@ function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>
                 <Typography className='brand' variant='h3' component='h3'>
-                  {pBrand}
+                  {brand}
                 </Typography>
-                <Typography className='price'>{pPrice}</Typography>
+                <Typography className='price'>{price}</Typography>
               </Box>
             </Box>
           </Box>
@@ -37,9 +37,9 @@ function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }
             <Box className='complete-box' onClick={rotateCard}>
               <Box className='complete'>
                 <Typography variant='h2' component='h2'>
-                  {pName}
+                  {name}
                 </Typography>
-                {pContent}
+                {content}
               </Box>
             </Box>
             {/* 카드 완료 */}
@@ -53,18 +53,18 @@ function CardDesign2({ imgViewUrl, imglogoUrl, pBrand, pPrice, pName, pContent }
 CardDesign2.defaultProps = {
   imgViewUrl: '/images/gift-card/card-img.png',
   imglogoUrl: '/images/logo/yogiyo.png',
-  pBrand: '요기요 상품권',
-  pPrice: (
+  brand: '요기요 상품권',
+  price: (
     <>
       <span className='num'>30,000</span>원
     </>
   ),
-  pName: (
+  name: (
     <>
       To.<span className='name'>김민지 외 13명</span>
     </>
   ),
-  pContent: (
+  content: (
       <p className='content'>
         최소글자는 1글자, 최대 글자는 150자로 맞춰 놓으면 어떨까요? 충분해 보이는 영역입니다.
       </p>

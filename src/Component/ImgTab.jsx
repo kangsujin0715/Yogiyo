@@ -2,6 +2,8 @@ import * as React from 'react';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 
+import GiftCardViewBtn from './GiftCardViewBtn';
+
 import '../css/imgTab.css';
 
 function ImgTab() {
@@ -31,7 +33,7 @@ function ImgTab() {
           );
         })}
       </ul>
-      <button className='view-btn'></button>
+	  <GiftCardViewBtn></GiftCardViewBtn>
     </Box>
   );
 }

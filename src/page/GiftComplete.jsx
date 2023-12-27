@@ -4,10 +4,12 @@ import { Box, Typography } from '@mui/material';
 
 import CardDesign2 from '../Component/CardDesign2';
 
+import '../css/complete.css';
+
 export default function GiftComplete() {
   return (
-    <Box className='gift-complete-box'>
-      <Box className='gift-complete-card'>
+    <Box className='hw-box'>
+      <Box className='complete-box'>
         <CardDesign2></CardDesign2>
         <Box className='text-box'>
           <Typography className='text' variant='h2' component='h2'>

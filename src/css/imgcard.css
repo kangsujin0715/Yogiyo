@@ -1,0 +1,2 @@
+.img-box{width: 132px; height: 132px; border-radius: 1.6rem; overflow: hidden; text-align: center; display: block;}
+.img-box > img{width: 100%; display: flex; vertical-align: middle; margin: 0 auto; }

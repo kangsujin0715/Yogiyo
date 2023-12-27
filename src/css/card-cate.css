@@ -1,0 +1,30 @@
+.card-cate{
+    padding: 0 1.6rem ;
+}
+
+.card-cate > ul{
+    width: auto;
+    display: flex; 
+    
+}
+
+.card-cate > ul > li{
+    width: auto;
+    display: inline-block;
+    margin-left: 0.8rem;
+    padding: 0 1.2rem;
+    height: 3.4rem;
+    border-radius: 1.7rem;
+    border: 1px solid #E5E5E5;
+    line-height: 3.2rem;
+    box-sizing: border-box;
+    word-break: keep-all;
+    font-size: 1.4rem;
+}
+.card-cate > ul > li:first-child{margin-left: 0;}
+
+.card-cate > ul > li.active{
+    background: #333;
+    color: #fff;
+    font-weight: 700;
+}
