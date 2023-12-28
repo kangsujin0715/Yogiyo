@@ -1,7 +1,7 @@
-.card-slide{
-    padding: 0.2rem 1.6rem 1.6rem;
+.p-card-slide{
+    padding: 1.6rem;
 }
-.card-slide > ul{
+.p-card-slide > ul{
     width: auto;
     display: flex; 
     
@@ -9,10 +9,10 @@
 }
 
 
-.card-slide > ul > li{
+.p-card-slide > ul > li{
     display: flex;
     margin-left: 0.8rem;
 }
-.card-slide > ul > li:first-child{
+.p-card-slide > ul > li:first-child{
     margin-left: 0;
 }

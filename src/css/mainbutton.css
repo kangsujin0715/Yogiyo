@@ -1,0 +1,16 @@
+.main-button{
+    width: 100%;
+    padding: 1.6rem 1.6rem 3.2rem;
+    box-sizing: border-box;
+}
+
+.main-button > button{
+    width: 100%;
+    height: 5rem;
+    border: 0.1rem solid #bfbfbf;
+    border-radius: 1rem;
+    background: #fff;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 700;
+}

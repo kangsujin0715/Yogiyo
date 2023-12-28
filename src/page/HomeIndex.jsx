@@ -1,22 +1,26 @@
 import React from 'react'
-import GiftCardSlide from '../Component/GiftCardSlide';
 import KeyVisual from '../Component/KeyVisual';
+import GiftCardSlide from '../Component/GiftCardSlide';
 import BrandSlide from '../Component/BrandSlide';
 import CardImages from '../Component/CardImages';
 import TopGift from '../Component/TopGift'
 import PriceCate from '../Component/PriceCate'
 import SaleGift from '../Component/SaleGift'
+import MainBottomButton from '../Component/MainBottomButton'
+import '../css/home.css'
 
 export default function HomeIndex() {
   return (
-    <>
-    <KeyVisual></KeyVisual>
-    <GiftCardSlide></GiftCardSlide>
-    <BrandSlide></BrandSlide>
-    <CardImages></CardImages>
-    <TopGift></TopGift>
-    <PriceCate></PriceCate>
-    <SaleGift></SaleGift>
-    </>
+    <div className='giftHome'>
+      
+      <KeyVisual />
+      <GiftCardSlide />
+      <BrandSlide />
+      <CardImages />
+      <TopGift />
+      <PriceCate />
+      <SaleGift />
+      <MainBottomButton />
+    </div>
   )
 }

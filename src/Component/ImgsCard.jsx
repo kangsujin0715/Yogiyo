@@ -3,7 +3,7 @@ import '../css/imgcard.css'
 
 function ImgsCard({imgUrl, linkUrl}) {
   return (
-    <a href={linkUrl} className='img-box'>
+    <a href={linkUrl} className='img-card'>
         <img src={imgUrl} alt='' />
     </a>
   )

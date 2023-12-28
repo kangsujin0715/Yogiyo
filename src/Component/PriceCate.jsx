@@ -1,14 +1,17 @@
 import React from 'react'
 import MoreTitle from '../Component/MoreTitle'
+import PriceSlector from '../Component/PriceSlector'
+import PriceCardSlide from '../Component/PriceCardSlide'
 
 function PriceCate() {
   return (
-    <>
+    <div className='price-pik'>
         <MoreTitle btnMore='btn-off' titleText='가격대별로 골라보세요'/>
         <div>
-            가격대별 슬라이드 영역(작업중)
+          <PriceSlector />
+          <PriceCardSlide />
         </div> 
-    </>
+    </div>
   )
 }
 

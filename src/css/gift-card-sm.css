@@ -1,3 +1,17 @@
-.giftcard-sm{width: 146px;}
-.giftcard-sm > a{display: block;}
-.giftcard-sm > a > img{width: 100%;}
+.giftcard-sm{
+    width: 12rem; 
+    height: 6rem; 
+    border-radius: 1rem; 
+    box-shadow: 0px 1px 8px 0px rgba(25, 48, 64, 0.1), 0px 0px 2px 0px rgba(25, 48, 64, 0.08); 
+    text-align: center;
+}
+
+.giftcard-sm > span{
+    padding-left: 2.2rem;
+    background: url(../../public/images/ic_gift.svg) 0.188rem center no-repeat;
+    font-size: 1.8rem;
+    font-weight: 700; line-height: 2.4rem;
+}
+
+
+
