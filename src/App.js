@@ -11,6 +11,7 @@ import KakaoComplete from './page/KakaoComplete';
 import SendGiftDetail from './page/SendGiftDetail';
 import SendGiftDetailCancel from './page/SendGiftDetailCancel';
 import GetGiftDetail from './page/GetGiftDetail';
+import GetInfo from './page/GetInfo';
 import Refund from './page/Refund';
 import Refunding from './page/Refunding';
 import RefundAskInfo from './page/RefundAskInfo';
@@ -31,6 +32,7 @@ export const pageList = [
   { title: '보낸 선물 상세', path: '/test/sendGiftDetail', element: <SendGiftDetail /> },
   { title: '보낸 선물 상세 취소', path: '/test/sendGiftDetailCancel', element: <SendGiftDetailCancel /> },
   { title: '받은 선물 상세', path: '/test/getGiftDetail', element: <GetGiftDetail /> },
+  { title: '받은 사람 (총 100명)', path: '/test/getInfo', element: <GetInfo /> },
   { title: '환불', path: '/test/refund', element: <Refund /> },
   { title: '환불 진행 상태', path: '/test/refunding', element: <Refunding /> },
   { title: '환불 신청 정보', path: '/test/refundAskInfo', element: <RefundAskInfo /> },

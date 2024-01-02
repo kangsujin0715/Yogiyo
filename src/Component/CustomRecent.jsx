@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Drawer, FormControl, FormLabel, Typography } from '@mui/material';
-import PhoneNumber from './PhoneNumber';
+import PhoneCheckBox from './PhoneCheckBox';
 
 import '../include/css/categoryfilter.css';
 import '../css/bottomSheet.css';
@@ -30,7 +30,7 @@ function CustomRecent({ pTitle }) {
           총 <span className="num">2</span>명 선택
         </Typography>
 		<Box className='bottomSheet'>
-        	<PhoneNumber></PhoneNumber>
+        	<PhoneCheckBox></PhoneCheckBox>
 		</Box>
         <Box className="btn-box">
           <button className="full-btn pink" onClick={toggleDrawer(anchor, false)}>

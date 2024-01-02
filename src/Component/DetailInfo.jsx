@@ -5,7 +5,7 @@ function DetailInfo({ title, info }) {
   return (
 	<Box className='gird-box'>
 	  <Typography variant='h3'>{title}</Typography>
-	  <p className='txt-14'>{info}</p>
+	  	<p className='txt-14'>{info}</p>
 	</Box>
   )
 }

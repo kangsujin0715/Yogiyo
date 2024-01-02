@@ -5,13 +5,13 @@
 .flex {display: flex; align-items: center;}
 .col {display: flex; align-items: center; flex-direction: column;}
 
-.notice-box {background-color: #f2f2f2; padding: 1.6rem 0 !important;}
+.notice-box {background-color: #f2f2f2; padding: 1.6rem 0 !important; margin-bottom: 3.2rem !important;}
 .notice-box li {font-size: 1.2rem; padding: 0 1.6rem 0.4rem; display: flex; color: #666;}
 .notice-box li a {text-decoration: underline !important; color: #666;}
 .notice-box li:last-child {padding-bottom: 0;}
 .notice-box li::before {display: inline-block; content: '·'; font-weight: 700; padding-right: 0.4rem;}
 
-.underline {border-bottom: 0.1rem solid #f2f2f2; padding-bottom: 2rem; margin-bottom: 2rem;}
+.underline {border-bottom: 0.1rem solid #f2f2f2; padding-bottom: 1.4rem; margin-bottom: 1.4rem;}
 
 .txt-12 {font-size: 1.2rem;}
 span.price, .txt-14 {font-size: 1.4rem;}
@@ -20,6 +20,7 @@ strong.price em {font-size: 2rem;}
 
 .error input {border: 0.1rem solid #c00000;}
 .error .text {padding: 0.2rem 0 0.4rem 0.8rem; font-size: 1.2rem; color: #c00000;}
+.error .notice-text {font-size: 1.2rem; text-align: center; color: #c00000;}
 
 .m-0 {margin: 0;}
 .mt-0 {margin-top: 0 !important;}
