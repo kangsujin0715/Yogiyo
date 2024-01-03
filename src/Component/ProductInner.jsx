@@ -1,24 +1,24 @@
 import React from 'react'
-import RabalRecommend from './RabalRecommend'
 import '../include/css/productinner.css'
 import '../include/css/reset.css'
 
-function ProductInner({imgUrl, name, price, rate, brand}) {
+function ProductInner({imgUrl, name, price, rate, brand, badge}) {
   return (
     <div className='product-inner'>
         <div className='thumbnail-img'>
             <img src={imgUrl} alt=''/>
         </div>
         <div className='product-explan'>
+            <div className='brand-name'>{brand}</div>
             <div className='product-name'>
-                <span>{name}</span><RabalRecommend />
+                <span>{name}</span>
             </div>
             <div className='product-price'>
                 <span className='discount-rate'>{rate} </span>
                 <span>{price}</span>
             </div>
-            <div className='brand-name'>{brand}</div>
         </div>
+        <i className={badge}>추천</i>
     </div>
   )
 }
