@@ -5,12 +5,12 @@ import ImgSlide from './ImgSlide'
 
 function CardImages() {
   return (
-    <>
+    <div className='img-card-slide'>
         <MoreTitle btnMore='btn-off' titleText='요기요 상품권에 어울리는 카드는?'/>
         <CardCate></CardCate>
         <ImgSlide></ImgSlide>
         
-    </>
+    </div>
   )
 }
 

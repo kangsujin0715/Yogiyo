@@ -1,18 +1,17 @@
 import React from 'react'
 import '../css/gift-card-sm.css'
 
-function GiftCard({linkUrl, imgUrl}) {
+function GiftCard({price}) {
   return (
-    <div className='giftcard-sm'>
-        <a href={linkUrl}> <img src={imgUrl} alt="" /></a>
-    </div>
+    <button className='giftcard-sm'> 
+      <span>{price}</span>
+    </button>
+    
   )
 } 
 
 GiftCard.defaultProps = {
-    linkUrl: '#',
-    imgUrl: '/images/gift-card-sm/card_10.png',
-    
+    price: '10,000원',
 }
 
 export default GiftCard 
