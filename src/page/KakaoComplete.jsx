@@ -33,10 +33,10 @@ export default function KakaoComplete() {
       </Box>
       <List className='notice-box'>
         <ListItem>
-          <Link href='#'>상품필수 표기정보</Link>안내
+			<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
         </ListItem>
         <ListItem>
-          <Link href='#'>선물하기 이용 및 취소/환불 안내</Link>
+			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
         </ListItem>
       </List>
     </>

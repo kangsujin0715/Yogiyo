@@ -21,7 +21,7 @@ function VoucherInfo({
         {price && <li className="price">{price}</li>}
         {afterPrice && <li className="after-price">{afterPrice}</li>}
       </ul>
-      <Box>
+      <Box className="shrink">
         <ul className="gift-img-info">
           {giftBoxInfoUrl && (
             <li className="gift-box-info">
