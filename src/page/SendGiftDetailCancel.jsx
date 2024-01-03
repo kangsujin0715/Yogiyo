@@ -6,6 +6,7 @@ import ListItem from '@mui/material/ListItem';
 
 import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
+import DetailInfoLink from '../Component/DetailInfoLink';
 import VoucherInfo from '../Component/VoucherInfo';
 
 import '../css/lineBox.css';
@@ -14,14 +15,17 @@ export default function SendGiftDetail() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl={'/images/gift-cancel.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
-      <Box className='padding-box detail-info-box'>
+	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl={'/images/gift-fail.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
+      <Box className='error'>
+	  	<p className='notice-text'>서비스 오류로 전체 발행에 실패했어요.<br/>다시 한번 시도해주세요.</p>
+	  </Box>
+	  <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
         </Typography>
         <Box className='line-box'>
           <Box className='detail-info underline'>
-            <DetailInfo title='받는 사람' info='김민지(010-****-3023)'/>
+		  <DetailInfoLink title='받는 사람' infoLink='김민지 외 100명'/>
           </Box>
           <Box className='detail-info underline'>
             <DetailInfo title='주문번호' info='123456789'/>
@@ -36,6 +40,9 @@ export default function SendGiftDetail() {
             <DetailInfo title='총 결제금액' info='90,000원'/>
           </Box>
         </Box>
+		<Box className='btn-box mt-8'>
+			<button className='full-btn line'>다시 선물하기</button>
+		</Box>
       </Box>
       <List className='notice-box'>
         <ListItem>
