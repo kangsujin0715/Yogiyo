@@ -50,13 +50,13 @@ export default function GiftDetail() {
       </Box>
       <List className='notice-box'>
         <ListItem>
-            <Link href='#'>개인정보 수집 및 제3자 제공 내용</Link>에 동의합니다.
+            <Box><Link href='#'>개인정보 수집 및 제3자 제공 내용</Link>에 동의합니다.</Box>
         </ListItem>
         <ListItem>
-            <Link href='#'>선물하기 이용 및 취소/환불 안내</Link>를 숙지하였습니다.
+			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link>를 숙지하였습니다.</Box>
         </ListItem>
         <ListItem>
-          위 내용을 확인하였으며, 결제에 동의합니다.
+			<Box>위 내용을 확인하였으며, 결제에 동의합니다.</Box>
         </ListItem>
       </List>
       <Box className='btn-box'>

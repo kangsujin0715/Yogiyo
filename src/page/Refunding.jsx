@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import CardDesign2 from '../Component/CardDesign2';
 import DetailInfo from '../Component/DetailInfo';
 import VoucherInfo from '../Component/VoucherInfo';
+import UseHistory from '../Component/UseHistory';
 
 import '../css/lineBox.css';
 
@@ -14,7 +15,8 @@ export default function Refunding() {
   return (
     <>
       <CardDesign2/>
-	  <VoucherInfo voucher='VIPS 상품권' balance='잔액' price='30,000원' giftBoxInfoUrl='' giftBoxUrl={false}/>
+	  <VoucherInfo voucher='요기요 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='요기요 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-refunding.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
@@ -22,7 +24,6 @@ export default function Refunding() {
         <Box className='line-box'>
           <Box className='detail-info underline'>
             <DetailInfo title='보낸 사람' info='위대한상상'/>
-            <DetailInfo title='선물명' info='VIPS 상품권 3만원'/>
           </Box>
           <Box className='detail-info'>
             <DetailInfo title='선물코드' info='123456789'/>
@@ -30,6 +31,27 @@ export default function Refunding() {
           </Box>
         </Box>
       </Box>
+
+	  <Box className='padding-box detail-info-box'>
+        <Typography variant='h2' className='title'>
+          선물 사용 내역
+        </Typography>
+        <Box className='line-box'>
+          <Box className='detail-info'>
+            <DetailInfo title='빕스 고속터미널점' info={<span><em>-5,000원</em> 사용</span>}/>
+            <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
+          </Box>
+          <Box className='detail-info line-through'>
+            <DetailInfo title='빕스 서초점' info={<span><em>-5,000원</em> 사용취소</span>}/>
+            <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
+          </Box>
+          <Box className='detail-info'>
+            <DetailInfo title='상품권' info={<span><em>30,000원</em> 등록</span>}/>
+            <UseHistory num='' date='2023.04.23 19:53'/>
+          </Box>
+        </Box>
+	  </Box>
+
 	  <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           환불 신청 정보
@@ -48,16 +70,19 @@ export default function Refunding() {
           </Box>
           <Box className='detail-info'>
             <DetailInfo title='환불금액' info='확인중'/>
-            <DetailInfo title='' info='환불가능한 금액이 없어 불가합니다.'/>
+            <DetailInfo title='' info='어떠한 이유로 환불이 불가합니다.'/>
           </Box>
         </Box>
       </Box>
       <List className='notice-box'>
         <ListItem>
-          <Link href='#'>상품필수 표기정보</Link>안내
+        	<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
         </ListItem>
         <ListItem>
-          <Link href='#'>선물하기 이용 및 취소/환불 안내</Link>
+			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
+        </ListItem>
+        <ListItem>
+			<Box>상품권 <Link href='#'>이용가능 매장</Link>안내</Box>
         </ListItem>
       </List>
     </>
