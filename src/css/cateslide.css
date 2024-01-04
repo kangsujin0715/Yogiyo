@@ -1,0 +1,15 @@
+.category-selecter{width: 100%; position: relative;}
+.category-selecter .dimmed{
+    position: absolute;
+    width: 4.8rem; 
+    height: 7rem; 
+    right: 0; 
+    top: 0;
+    border-radius: var(--radius-r-00, 0px);
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 88.24%);
+    z-index: 2;
+}
+.cate-slide{padding: 0.6rem 0.8rem 0.4rem 0.8rem; position: relative;}
+.cate-slide > ul{display: flex;}
+.cate-slide > ul > li{display: inline-block; width: 6rem; margin-left: 0.4rem;}
+.cate-slide > ul > li:first-child{margin-left: 0;}
