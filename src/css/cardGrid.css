@@ -1,0 +1,23 @@
+.card-grid{
+    width: 100%;
+    padding: 1rem;
+}
+.card-grid > ul{
+    width: 100%;
+    font-size: 0;
+}
+.card-grid > ul > li{
+    display: inline-block;
+    width: 11.3rem;
+    padding: 0.6rem;
+}
+.card-grid > ul > li > a{
+    display: block;
+    width: 100%;
+    height: 10.1rem;
+}
+.card-grid > ul > li > img{width: 100% !important;}
+
+@media (max-width: 280px) {
+	.card-grid > ul{text-align: center;}
+}

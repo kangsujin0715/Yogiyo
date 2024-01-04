@@ -18,6 +18,7 @@ import CategoryFilter from './page/CategoryFilter';
 import ProductList from './page/ProductList';
 import HomeIndex from './page/HomeIndex';
 import MainHeader from './Component/MainHeader';
+import CardAllView from './page/CardAllView';
 
 export const pageList = [
   { title: '인덱스', path: '/', element: <Index /> },
@@ -35,6 +36,7 @@ export const pageList = [
   { title: '환불 신청 완료', path: '/test/refundComplete', element: <RefundComplete /> },
   { title: '카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
   { title: '상품리스트 테스트', path: '/pooduct/list', element: <ProductList /> },
+  { title: '선물카드 전체보기', path: '/card/list', element: <CardAllView /> },
 ];
 
 function App() {
