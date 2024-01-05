@@ -19,7 +19,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
 
   const labelBox = (
     <>
-      제 마음이에요.<p>(탭하여 메세지를 작성해보세요.)</p>
+      제 마음이에요.
     </>
   );
   const [labelText, setLabelText] = useState(labelBox);
@@ -27,14 +27,15 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
     setLabelText('');
   };
 
+
   return (
     <Box className='gift-card'>
       <Box className={`card-box ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
-          <Box className='front card sparkles animated' onClick={rotateCard}>
+          <Box className='front card sparkles animated' onClick={rotateCard} >
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
             <button className='message-btn'>메세지 쓰기</button>
-            <Box className='card-info' sx={{ backgroundColor: '#2d863c' }}>
+            <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>
                 <Typography className='brand' variant='h3' component='h3'>
@@ -46,8 +47,8 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
           </Box>
           {/* 카드 앞 */}
 
-          <Box className='back' sx={{ backgroundColor: '#2d863c' }}>
-            <Box className='text-box'>
+          <Box className='back' sx={{ backgroundColor: '#2C4299' }}>
+            <Box className='text-box' >
               <label htmlFor='text' className='label-box'>
                 {labelText}
               </label>
@@ -71,12 +72,12 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
 }
 
 CardDesign.defaultProps = {
-  imgViewUrl: '/images/gift-card/card-img.png',
+  imgViewUrl: '/images/gift-card/gift-card-test.gif',
   imglogoUrl: '/images/logo/yogiyo.png',
   brand: '요기요 상품권',
   price: (
     <>
-      <span className='num'>30,000</span>원
+      <span className='num'>50,000</span>원
     </>
   ),
   name: (

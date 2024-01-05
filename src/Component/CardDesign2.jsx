@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useState } from 'react';
 
 import { Box, Typography } from '@mui/material';
-import Cancel from '../Component/Cancel';
 
 import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
@@ -17,11 +16,11 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
     <Box className='gift-card'>
       <Box className={`card-box w-280 ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
-		  <Cancel pCancel='선물 취소'></Cancel>
+		  {/* <Cancel pCancel='선물 취소'></Cancel> */}
           <Box className='front card sparkles animated' onClick={rotateCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
             {/* <button className='message-btn'>메세지 쓰기</button> */}
-            <Box className='card-info' sx={{ backgroundColor: '#2d863c' }}>
+            <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>
                 <Typography className='brand' variant='h3' component='h3'>
@@ -33,7 +32,7 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
           </Box>
           {/* 카드 앞 */}
 
-          <Box className='back' sx={{ backgroundColor: '#2d863c' }}>
+          <Box className='back' sx={{ backgroundColor: '#2C4299' }}>
             <Box className='complete-box' onClick={rotateCard}>
               <Box className='complete'>
                 <Typography variant='h2' component='h2'>
@@ -51,7 +50,7 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
 }
 
 CardDesign2.defaultProps = {
-  imgViewUrl: '/images/gift-card/card-img.png',
+  imgViewUrl: '/images/gift-card/gift-card-test.gif',
   imglogoUrl: '/images/logo/yogiyo.png',
   brand: '요기요 상품권',
   price: (

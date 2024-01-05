@@ -54,7 +54,6 @@ strong.price em {font-size: 2rem;}
 .pay-btn {font-size: 1.4rem; height: auto; display: flex; font-weight: 400;}
 .pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
 .view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.message-btn {position: absolute; z-index: 1; left: 25%; bottom: 10.8rem; background: #fff url(../../public/images/pen.svg) left 0.8rem center no-repeat; padding: 0 1rem 0 2.6rem; height: 3.2rem; border-radius: 36rem; font-weight: 400;}
 
 .full-btn {width: 100%; max-width: 36rem; background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf;}
 .full-btn.pink {color: #fff; background-color: #fa0050; border: none;}
