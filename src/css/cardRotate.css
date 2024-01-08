@@ -1,0 +1,14 @@
+.your-object {
+	animation: rotate-axis 5s linear infinite;
+}
+
+@keyframes rotate-axis {
+	from {
+		transform: perspective(280rem) rotateY(0deg);
+	}
+	to {
+		transform: perspective(280rem) rotateY(360deg);
+	}
+}
+
+/* 로테이트 예시 */

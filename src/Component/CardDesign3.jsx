@@ -5,7 +5,6 @@ import { Box, Typography } from '@mui/material';
 
 import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
-import '../css/cardRotate.css';
 
 function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +12,9 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
     setIsOpen((prevState) => !prevState);
   };
 
-
   return (
-    <Box className='gift-card '>
-      <Box className={`card-box w-280 ${isOpen ? 'open' : ''} your-object manual-flip `}>
+    <Box className='gift-card'>
+      <Box className={`card-box w-280 ${isOpen ? 'open' : ''} manual-flip `}>
         <Box className='card-view'>
 		  {/* <Cancel pCancel='선물 취소'></Cancel> */}
           <Box className='front card sparkles animated' onClick={rotateCard}>
