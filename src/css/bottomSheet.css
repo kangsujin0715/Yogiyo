@@ -1,6 +1,10 @@
-.bottomSheet {margin-bottom: 1.6rem; height: 100vh; overflow-y: scroll;}
+.bottomSheet {margin-bottom: 1.6rem; overflow-y: auto;}
+/* height: 100vh;  */
 .bottomSheet:has(.img-box) {margin-bottom: 0;}
+.bottomSheet-btn {position: absolute; top: 2rem; right: 1.6rem; width: 2.4rem; height: 2.4rem; background: url(../../public/images/close-24.svg) center no-repeat; background-size: 2.4rem;}
 
+.bottomSheet ~ .btn-box {padding: 0 1.6rem 0;}
+.full-btn {max-width: 100% !important;}
 .MuiPaper-root:has(.filter-box), .filter-box, .in-filter {max-height: calc(100vh - 5.6rem) !important;}
 .in-filter:has(.phone-box) .btn-box {margin-top: auto; padding: 0 1.6rem;}
 .in-filter:has(.img-box) {padding-bottom: 0 !important;}
