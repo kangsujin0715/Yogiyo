@@ -1,0 +1,17 @@
+.giftcard-list{
+    width: 100%;
+    
+}
+
+.giftcard-list ul{
+    width: 100%;
+    padding: 2rem 1.6rem;
+    
+}
+.giftcard-list li{
+    margin-top: 1.2rem;
+}
+
+.giftcard-list li:first-child{
+    margin-top: 0;
+}

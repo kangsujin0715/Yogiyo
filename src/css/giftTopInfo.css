@@ -1,0 +1,39 @@
+#giftTopInfo{
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#giftTopInfo.none{display: none;}
+#giftTopInfo.single{display: block;}
+#giftTopInfo.double{display: block;}
+
+#giftTopInfo > p{
+    text-align: center;
+    padding: 0.7rem 0 0.6rem;
+}
+#giftTopInfo > p > span{
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+#giftTopInfo > p > strong{
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+#giftTopInfo > i{
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #666;
+}
+#giftTopInfo.single > i{
+    display: none;
+}
+#giftTopInfo.double{display: block;}
+

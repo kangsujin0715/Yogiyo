@@ -18,7 +18,7 @@ time, mark, audio, video {
     border: 0;
     font: inherit;
     font-weight: 400;
-	font-family: 'roboto' !important;
+	font-family: 'roboto' sans-serif !important;
     vertical-align: inherit;
     box-sizing: border-box;
     word-break: break-all;

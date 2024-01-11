@@ -1,0 +1,132 @@
+#gift-content{
+    width: 100%;
+    border: 0.1rem solid #e5e5e5;
+    border-radius: 0.8rem;
+    background: #fff;
+    padding: 0.4rem 1.6rem 0.4rem 0.4rem;
+    font-size: 0;
+}
+
+#gift-content .gift-img{
+    position: relative;
+    display: inline-block;
+    width: 11.2rem;
+    height: 11.2rem;
+    vertical-align: middle;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+#gift-content .gift-img > img{width: 100%;}
+
+#gift-content .gift-img .brand-logo{
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0.1rem solid #f6f6f6;
+    border-radius: 2.2rem;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+    overflow: hidden;
+}
+
+#gift-content .gift-img .brand-logo > img{width: 100%;}
+#gift-content .gift-img .dim{
+    display: none;
+}
+#gift-content .gift-img .dim > i{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+
+#gift-content .gift-info{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 11.2rem);
+    padding: 0 1.6rem;
+}
+#gift-content .gift-info #bage{
+    width: auto;
+    display: inline-block;
+    background: #e8f5fa;
+    border-radius: 0.4rem;
+    padding: 0 0.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+#gift-content .gift-info #bage > strong{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #003f55;
+}
+#gift-content .gift-info #bage > i{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #003f55;
+}
+
+#gift-content .gift-info #bage.single > i{
+    display: none;
+}
+
+#gift-content .gift-info #bage.none{
+    display: none;
+}
+
+#gift-content .gift-info .balance{
+    width: 100%;
+    
+}
+#gift-content .gift-info .balance > span{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #333;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+#gift-content .gift-info .balance > strong{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-left: 0.4rem;
+}
+
+#gift-content .gift-info .gift-name{
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#gift-content .gift-info .from-text{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #999;
+}
+
+#gift-content.use .gift-img .dim, 
+#gift-content.refund .gift-img .dim,
+#gift-content.cancle .gift-img .dim{
+    display: table;
+    width: 11.2rem;
+    height: 11.2rem;
+    background: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+#gift-content.use .gift-info, #gift-content.refund .gift-info, #gift-content.cancle .gift-info{
+    opacity: 0.3;
+}
+
