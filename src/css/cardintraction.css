@@ -1,0 +1,52 @@
+/* 메세지 쓰기, 카드 뒤집기 버튼 click 시 같은 방향으로 회전  */
+
+.gift-card {opacity: 0; animation: fadeIn 350ms ease-in-out 700ms forwards;}
+.card-box {--duration: 400ms; --duration-translate: 600ms; --transition-in: ease-in; --transition-out: ease-out;}
+.front, .back {transform-origin: center center;}
+
+.card-box .front {
+	z-index: 3;
+	opacity: 1;
+	transform: rotate3d(0, 1, 0, -90deg);
+	animation: fadeIn 0ms var(--duration) forwards,
+		flipCardOut var(--duration) var(--transition-out) var(--duration) forwards;
+	transition: opacity var(--duration) var(--transition-out),
+		transform var(--duration-translate) var(--transition-out);
+}
+
+.card-box:not(.manual-flip):hover .front,
+.card-box.open.manual-flip .front {
+	opacity: 1; 
+	animation: flipCardIn var(--duration) var(--transition-in) 0ms forwards;
+}
+
+.card-box .back {transform: rotate3d(0, 1, 0, -90deg); animation: flipCardIn var(--duration) var(--transition-in) 0ms forwards;}
+.card-box:not(.manual-flip):hover .back,
+.card-box.open.manual-flip .back {animation: flipCardOut var(--duration) var(--transition-out) var(--duration) forwards;}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes flipCardIn {
+	from {
+		transform: rotate3d(0, 1, 0, 0deg);
+	}
+	to {
+		transform: rotate3d(0, 1, 0, 90deg);
+	}
+} 
+
+@keyframes flipCardOut {
+	from {
+		transform: rotate3d(0, 1, 0, -90deg);
+	}
+	to {
+		transform: rotate3d(0, 1, 0, 0);
+	}
+}

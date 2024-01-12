@@ -37,7 +37,7 @@ strong.price em {font-size: 2rem;}
 .line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.2rem;}
 .padding-box {padding: 1.6rem;}
 .gird-box {display: flex; align-items: center; justify-content: space-between;}
-.btn-box {padding: 2.4rem 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
+.btn-box {padding: 0 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
 .gray-box {background-color: #f2f2f2;}
 .hw-box{display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem)}
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, Drawer, FormControl, FormLabel } from '@mui/material';
 
 import GiftCardViewImg from './GiftCardViewImg';
+import CardCate from './CardCate';
 
 import '../include/css/categoryfilter.css';
 
@@ -27,6 +28,7 @@ function GiftCardView({ pTitle }) {
           {pTitle}
         </FormLabel>
         <Box className="bottomSheet">
+			<CardCate></CardCate>
 			<GiftCardViewImg onClick={toggleDrawer(anchor, false)}></GiftCardViewImg>
         </Box>
       </FormControl>
