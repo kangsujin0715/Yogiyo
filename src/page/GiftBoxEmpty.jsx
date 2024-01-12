@@ -1,7 +1,7 @@
 import React from 'react'
 import GiftCodeAdd from '../Component/GiftCodeAdd'
 import GiftBoxTap from '../Component/GiftBoxTap'
-import GiftBoxList from '../Component/GiftBoxList'
+import GiftBoxListEmpty from '../Component/GiftBoxListEmpty.jsx'
 import GiftBoxBtn from '../Component/GiftBoxBtn'
 
 export default function GiftBox() {
@@ -9,8 +9,8 @@ export default function GiftBox() {
       <div className='gift-box'>
         <GiftCodeAdd />
         <GiftBoxTap active_01='active' />
-        <GiftBoxList />
-        <GiftBoxBtn />
+        <GiftBoxListEmpty emptyText='받은 선물이 없어요.'/>
+        <GiftBoxBtn size='sm' />
       </div>
     )
   }

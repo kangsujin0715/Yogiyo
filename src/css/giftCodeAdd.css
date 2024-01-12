@@ -39,6 +39,10 @@
     color: #999;
 }
 
+.gift-code-area .textfild-area > span > input:disabled{
+    background: rgba(0, 0, 0, 0.08);
+}
+
 .gift-code-area .textfild-area > span > button {
     width: 100%;
     height: 4.8rem;
@@ -48,5 +52,10 @@
     line-height: 1.9rem;
     color: #333;
     font-weight: 700;
+}
+
+.gift-code-area .textfild-area > span > button:disabled{
+    background: rgba(0, 0, 0, 0.08);
+    color: #bfbfbf;
 }
     

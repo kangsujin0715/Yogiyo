@@ -115,7 +115,8 @@
 
 #gift-content.use .gift-img .dim, 
 #gift-content.refund .gift-img .dim,
-#gift-content.cancle .gift-img .dim{
+#gift-content.cancle .gift-img .dim,
+#gift-content.fail .gift-img .dim{
     display: table;
     width: 11.2rem;
     height: 11.2rem;
@@ -126,7 +127,11 @@
     top: 0;
 }
 
-#gift-content.use .gift-info, #gift-content.refund .gift-info, #gift-content.cancle .gift-info{
+#gift-content.use .gift-info, 
+#gift-content.refund .gift-info{
     opacity: 0.3;
 }
-
+#gift-content.cancle .gift-info,
+#gift-content.fail .gift-info{
+    opacity: 1;
+}

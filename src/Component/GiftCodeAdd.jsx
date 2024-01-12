@@ -7,7 +7,7 @@ function GiftCodeAdd() {
          <h2>상품권 번호 등록</h2>
          <div className='textfild-area'>
             <span>
-              <input type='number' placeholder='상품권 번호 입력'/>
+              <input type='text' placeholder='상품권 번호 입력'/>
             </span>
             <span>
               <button>등록</button>
