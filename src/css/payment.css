@@ -1,4 +1,3 @@
-.payment-box {}
 .payment-list {position: relative; margin: 0 1.6rem; width: calc(100% - 3.2rem); height: 5.2rem; display: flex; align-items: center;}
 .payment-list .flex {width: 100%;}
 .payment-list .title {display: flex; align-items: center; font-weight: 700 !important;}
@@ -7,15 +6,12 @@
 .info-box {display: none; vertical-align: baseline; width: 22rem; z-index: 3; line-height: 1.6rem; font-size: 1.2rem; position: absolute; top: 3.7rem; left: 0; border: 0.1rem solid #bfbfbf; background-color: #fff; padding: 0.8rem 1.2rem; border-radius: 0.6rem;}
 .info-box span {font-weight: 700;}
 .payment-list .title .info:focus ~ .info-box {display: block;}
-
-
 .payment-list .title.app::after {display: flex; content: '앱에서 미리 결제'; color: #999; font-size: 1.2rem; margin-left: 0.6rem;}
-
-
 .card-btn {flex-shrink: 0; margin-left: auto; height: 2.8rem; border: 0.1rem solid #bfbfbf; border-radius: 0.6rem; font-size: 1.2rem; padding: 0 1rem;}
 
-
-
+.pay-result-box {padding: 1.2rem 0.8rem; border-radius: 0.6rem; background-color: #f2f2f2;}
+.pay-result-box img {width: auto; height: 2.4rem;}
+.pay-result-box .num {font-size: 1.4rem; font-weight: 700; flex-shrink: 0;}
 
 
 

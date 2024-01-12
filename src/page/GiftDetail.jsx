@@ -8,6 +8,8 @@ import CardBox from '../Component/CardBox';
 import ToBox from '../Component/ToBox';
 import Payment from '../Component/Payment';
 
+import '../css/payment.css';
+
 export default function GiftDetail() {
   return (
     <>
@@ -22,9 +24,9 @@ export default function GiftDetail() {
       </Box>
       <Box className='padding-box'>
 			<Payment/>
-        <Box className='gird-box gray-box'>
-          <p>삼성카드</p>
-          <span>**** 1234</span>
+        <Box className='gird-box pay-result-box'>
+        	<img src='/images/samsung.svg' alt='' />
+          <span className='num'>**** 1234</span>
         </Box>
       </Box>
       <Box className='padding-box'>

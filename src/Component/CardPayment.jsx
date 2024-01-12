@@ -5,7 +5,6 @@ import { Box, Typography } from '@mui/material';
 import CardSwiper from './CardSwiper';
 import AppPay from './AppPay';
 
-import '../css/payment.css';
 
 export default function CardPayment() {
   return (
