@@ -11,7 +11,7 @@ function MainHeader() {
         window.addEventListener('scroll', updateScroll);
     });
     return (
-        <div className={scrollPosition < 100 ? "original_header" : "change_header"}>
+        <div className={scrollPosition < 30 ? "original_header" : "change_header"}>
             <button className="btn_prev"></button>
             <h1 className="title">선물하기</h1>
             <button className="btn_gift"></button>
