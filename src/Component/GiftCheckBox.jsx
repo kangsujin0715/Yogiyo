@@ -1,10 +1,10 @@
 import React from 'react'
 import '../css/gift-checkbox.css'
 
-function GiftChackBox({status, labelName, giftimgUrl, ciUrl, statusText, bage, boldText, inText, balance, giftname, fromName, counter, noticetext}) {
+function Giftcheckbox({status, labelName, giftimgUrl, ciUrl, statusText, bage, boldText, inText, balance, giftname, fromName, counter}) {
   return (
-    <div id='gift-chackbox' className={status}>
-        <input type='checkbox' id={labelName} disabled></input>
+    <div id='gift-checkbox' className={status}>
+        <input type='checkbox' id={labelName} ></input>
         <label for={labelName}>
             <div className='gift-img'>
                 <img src={giftimgUrl} alt='' />
@@ -27,23 +27,22 @@ function GiftChackBox({status, labelName, giftimgUrl, ciUrl, statusText, bage, b
                 <p className='gift-name'>{giftname}</p>
                 <p className='from-text'>{fromName}</p>
             </div>
-            <div className='chack-circel'>
+            <div className='check-circel'>
                 <span className='circel'>
                     <i>{counter}</i>
                 </span>
             </div>
         </label>
-        <p>{noticetext}</p>
     </div>
   )
 }
 
-GiftChackBox.defaultProps = { 
+Giftcheckbox.defaultProps = { 
     status:'normal', //사용불가- 'not'
     giftimgUrl: '/images/gift-card/listitem_02.png',   
     ciUrl: '/images/logo/frank.png',
-    statusText: '사용불가',
-    bage: 'offers', //받은선물 - 'offers', 없음 - 'none'
+    statusText: '사용완료',
+    bage: 'offers', //받은선물 - 'offers', 보낸선물 - 'single' 없음 - 'none'
     boldText: '00일',
     inText:'잔액',
     balance: '700원',
@@ -52,4 +51,4 @@ GiftChackBox.defaultProps = {
     
 }
 
-export default GiftChackBox
+export default Giftcheckbox
