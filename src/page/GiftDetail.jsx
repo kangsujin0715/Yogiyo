@@ -6,6 +6,9 @@ import ListItem from '@mui/material/ListItem';
 
 import CardBox from '../Component/CardBox';
 import ToBox from '../Component/ToBox';
+import Payment from '../Component/Payment';
+
+import '../css/payment.css';
 
 export default function GiftDetail() {
   return (
@@ -20,16 +23,10 @@ export default function GiftDetail() {
         <input placeholder='이름' variant='outlined' />
       </Box>
       <Box className='padding-box'>
-        <Box className='gird-box'>
-          <Typography variant='h2' className='title mb0'>
-            결제수단
-          </Typography>
-          {/* <button className='pay-btn red'>결제수단을 선택해주세요</button> */}
-          <button className='pay-btn'>요기서 1초결제</button>
-        </Box>
-        <Box className='gird-box gray-box'>
-          <p>삼성카드</p>
-          <span>**** 1234</span>
+			<Payment/>
+        <Box className='gird-box pay-result-box'>
+        	<img src='/images/samsung.svg' alt='' />
+          <span className='num'>**** 1234</span>
         </Box>
       </Box>
       <Box className='padding-box'>
