@@ -21,6 +21,9 @@ import ProductList from './page/ProductList';
 import HomeIndex from './page/HomeIndex';
 import MainHeader from './Component/MainHeader';
 import CardAllView from './page/CardAllView';
+import GiftBox from './page/GiftBox';
+import GiftBoxSent from './page/GiftBoxSent';
+import GiftBoxEmpty from './page/GiftBoxEmpty';
 
 export const pageList = [
   { title: '인덱스', path: '/', element: <Index /> },
@@ -41,6 +44,10 @@ export const pageList = [
   { title: '카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
   { title: '상품리스트 테스트', path: '/pooduct/list', element: <ProductList /> },
   { title: '선물카드 전체보기', path: '/card/list', element: <CardAllView /> },
+  { title: '받은선물함', path: '/giftbox', element: <GiftBox /> },
+  { title: '보낸선물함', path: '/giftboxsent', element: <GiftBoxSent /> },
+  { title: '선물함(리스트없음)', path: '/giftboxempty', element: <GiftBoxEmpty /> },
+  
 ];
 
 function App() {

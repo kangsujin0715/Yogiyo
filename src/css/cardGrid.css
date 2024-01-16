@@ -18,6 +18,6 @@
 }
 .card-grid > ul > li > img{width: 100% !important;}
 
-@media (max-width: 280px) {
+@media (max-width: 320px) {
 	.card-grid > ul{text-align: center;}
 }

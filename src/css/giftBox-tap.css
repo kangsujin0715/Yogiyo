@@ -1,0 +1,47 @@
+.giftBox-tap{
+    width: 100%;
+    position: relative;
+    border-bottom: 0.1rem solid #f2f2f2;
+    height: 4rem;
+}
+
+.giftBox-tap > ul{
+    width: 100%;
+    position: absolute;
+    padding: 0 1.6rem;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+.giftBox-tap > ul > li{
+    width: 50%;
+    display: inline-block;
+    height: 4rem;
+    position: relative;
+    vertical-align: middle;
+    padding: 1rem 1.2rem 0;
+}
+
+.giftBox-tap > ul > li > p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    text-align: center;
+}
+.giftBox-tap > ul > li > span{
+    display: none;
+}
+.giftBox-tap > ul > li.active > p{
+    font-weight: 700;
+}
+
+.giftBox-tap > ul > li.active > span{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background: #333;
+
+}

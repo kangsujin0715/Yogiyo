@@ -1,0 +1,12 @@
+.gift-empty{
+    width: 100%; 
+    text-align: center;
+    padding: 8.25rem 0 3.2rem;
+}
+.gift-empty > img{width: 12rem;}
+.gift-empty > p{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #999;
+    padding-top: 1.6rem;
+}
