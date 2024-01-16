@@ -19,6 +19,7 @@ span.price, .txt-14 {font-size: 1.4rem;}
 strong.price {font-size: 1.8rem;}
 strong.price em {font-size: 2rem;}
 
+.red {color: #c00000;}
 .error input {border: 0.1rem solid #c00000;}
 .error .text {padding: 0.2rem 0 0.4rem 0.8rem; font-size: 1.2rem; color: #c00000;}
 .error .notice-text {font-size: 1.2rem; text-align: center; color: #c00000;}
@@ -51,7 +52,7 @@ strong.price em {font-size: 2rem;}
 .black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.pay-btn {font-size: 1.4rem; height: auto; display: flex; font-weight: 400;}
+.pay-btn {font-size: 1.4rem; height: auto; display: flex; align-items: center; font-weight: 400; margin-bottom: 0.8rem;}
 .pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
 .view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 
