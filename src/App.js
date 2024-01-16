@@ -27,7 +27,7 @@ import GiftBoxEmpty from './page/GiftBoxEmpty';
 import UseGiftBox from './page/UseGiftBox';
 
 export const pageList = [
-  { title: '인덱스', path: '/', element: <Index /> },
+  { title: '인덱스', path: '/*', element: <Index /> },
   { title: '홈', path: '/home', element: <HomeIndex /> },
   { title: '선물하기 상세', path: '/test/giftdetail', element: <GiftDetail /> },
   { title: '선물하기 상세 텝', path: '/test/privacy', element: <Privacy /> },
@@ -53,9 +53,10 @@ export const pageList = [
 ];
 
 function App() {
+	console.log("pathname",window.location.pathname)
   return (
 	<>
-    {window.location.pathname === "/home" ? <MainHeader/> : <GiftHeader/>}
+    {window.location.pathname === "/home" || window.location.pathname === "/"? <MainHeader/> : <GiftHeader/>}
 		<Routes>
 		{pageList.map(({ path, element }) => (
 			<Route key={path} path={path} element={element} />
