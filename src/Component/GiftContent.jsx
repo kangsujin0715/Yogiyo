@@ -20,7 +20,7 @@ function GiftContent({status, statusText, giftimgUrl, ciUrl, bage, boldText, inT
             </div>
             <div className='balance'>
                 <span>{inText}</span>
-                <strong>{balance}</strong>
+                <strong>{balance}원</strong>
             </div>
             <p className='gift-name'>{giftname}</p>
             <p className='from-text'>{fromName}</p>
@@ -37,7 +37,7 @@ GiftContent.defaultProps = {
     bage: 'offers', //받은선물 - 'offers', 보낸선물 - 'single' 없음 - 'none'
     boldText: '00일',
     inText:'잔액',
-    balance: '700원',
+    balance: '700',
     giftname: '상품이름',
     
 }
