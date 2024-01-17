@@ -12,7 +12,7 @@ import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
 // 카드 디자인
 
-// import '../css/cardIntraction.css';
+import '../css/cardIntraction.css';
 // 버튼 클릭시 한 방향으로 도는 인터렉션
 
 
