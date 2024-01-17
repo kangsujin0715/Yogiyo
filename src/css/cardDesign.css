@@ -34,7 +34,7 @@
 
 .gift-card:has(.w-280) {margin: 1.6rem 0 6.5rem;}
 .card-box.w-280 {width: 28rem; height: 37.6rem;}
-.w-280 .front, .w-280 .back  {height: 37.6rem;}
+.w-280 .front, .w-280 .back {width: 100%; height: 37.6rem;}
 .w-280 .front .img-view  {height: 28rem;}
 .w-280 .front .card-info .logo {width: 6.4rem; height: 6.4rem;}
 .w-280 .front .card-info .title-box h3 {font-size: 1.6rem !important;}
@@ -42,7 +42,7 @@
  
 @media (max-width: 320px) {
 	.card-box.w-280 {width: 24rem; height: 33.6rem;}
-	.w-280 .front, .w-280 .back  {height: 33.6rem;}
+	.w-280 .front, .w-280 .back {width: 100%; height: 33.6rem;}
 	.w-280 .front .img-view  {height: 24.4rem;}
 	.w-280 .front .card-info  {height: 9.2rem;}
 	.w-280 .front .card-info .logo {width: 4.8rem; height: 4.8rem;}
