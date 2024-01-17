@@ -3,12 +3,21 @@ import { useState, useEffect } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
+import '../css/cardReflect.css';
+// 로딩시간이 걸려 틀어지는 오류가 생김 - 미러효과 css를 따로 만들어서 처음에 올려둠
+
+import '../css/cardSparkles.css';
+// 빛반사
+
 import '../css/cardDesign.css';
-// import '../css/cardSparkles.css';
-// import '../css/cardintraction.css';
-// 계속 실행
-// import '../css/cardRotate.css';
+// 카드 디자인
+
+import '../css/cardIntraction.css';
+// 버튼 클릭시 한 방향으로 도는 인터렉션
+
+import '../css/cardRotate.css';
 // 로테이트 시작시 실행 후 삭제
+
 
 function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +40,11 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
 
   return (
     <Box className='gift-card'>
-      <Box className={`card-box w-280 ${isOpen ? 'open' : ''} ${showClass ? 'rotate' : ''} manual-flip `}>
+      <Box className={`card-box ${isOpen ? 'open' : ''} ${showClass ? 'rotate' : ''} manual-flip`}>
         <Box className='card-view'>
-		  {/* <Cancel pCancel='선물 취소'></Cancel> */}
-          <Box className='front card sparkles animated' onClick={rotateCard}>
+          <Box className='front card sparkles animated' onClick={rotateCard} >
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
-            {/* <button className='message-btn'>메세지 쓰기</button> */}
+            <button className='message-btn'>메세지 쓰기</button>
             <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>

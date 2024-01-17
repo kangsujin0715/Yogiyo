@@ -10,20 +10,6 @@
 .cancel-box .cancel-txt {color: #fff; font-size: 1.8rem; font-weight: 700;}
 .cancel-box .cancel-popup {color: #fff; font-size: 1.4rem; background-color: rgba(0,0,0,0.9); padding: 1.6rem 2rem; border-radius: 2rem; position: absolute; bottom: 6.4rem; }
 
-.front, .back {
-	width: 100%;
-	height: 33.6rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 1.8rem;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-box-reflect: below 0 linear-gradient(transparent, transparent, transparent, transparent,  transparent, transparent, transparent, rgba(255, 255, 255, 0.4));
-}
-
 .front {position: relative;display: flex; flex-direction: column; overflow: hidden;}
 .front .img-view {width: auto; height: 24rem;}
 .front .card-info {position: absolute; bottom: 0; width: 100%; height: 9.6rem; padding: 0 1.6rem; display: flex; align-items: center; justify-content: space-between;}

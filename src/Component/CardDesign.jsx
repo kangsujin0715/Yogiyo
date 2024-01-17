@@ -3,11 +3,19 @@ import { useState, useEffect } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import '../css/cardDesign.css';
-import '../css/cardSparkles.css';
-// import '../css/cardintraction.css';
-// 계속 실행
- import '../css/cardRotate.css';
+// import '../css/cardReflect.css';
+// 로딩시간이 걸려 틀어지는 오류가 생김 - 미러효과 css를 따로 만들어서 처음에 올려둠
+
+// import '../css/cardSparkles.css';
+// 빛반사
+
+// import '../css/cardDesign.css';
+// 카드 디자인
+
+// import '../css/cardIntraction.css';
+// 버튼 클릭시 한 방향으로 도는 인터렉션
+
+// import '../css/cardRotate.css';
 // 로테이트 시작시 실행 후 삭제
 
 function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
@@ -39,7 +47,6 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
     // 컴포넌트가 언마운트되면 타임아웃을 정리합니다.
     return () => clearTimeout(timeoutId);
   }, []); // 빈 배열은 컴포넌트가 마운트될 때만 실행하도록 합니다.
-
 
 
   return (
