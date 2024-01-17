@@ -8,12 +8,13 @@
 	
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-webkit-box-reflect: below 0px -webkit-linear-gradient(transparent, transparent, transparent, transparent,  transparent, transparent, transparent, rgba(255, 255, 255, 0.4));
-	-webkit-box-reflect: below 0px linear-gradient(transparent, transparent, transparent, transparent,  transparent, transparent, transparent, rgba(255, 255, 255, 0.4));
-	-moz-box-reflect: below 0px linear-gradient(transparent, transparent, transparent, transparent,  transparent, transparent, transparent, rgba(255, 255, 255, 0.4));
-	-o-box-reflect: below 0px linear-gradient(transparent, transparent, transparent, transparent,  transparent, transparent, transparent, rgba(255, 255, 255, 0.4));
+	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.88, transparent), to(rgba(255, 255, 255, 0.4)));
+	-moz-box-reflect: below 0 -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.88, transparent), to(rgba(255, 255, 255, 0.4)));
+	-ms-box-reflect: below 0 -ms-gradient(linear, left top, left bottom, from(transparent), color-stop(0.88, transparent), to(rgba(255, 255, 255, 0.4)));
+	-o-box-reflect: below 0 -o-gradient(linear, left top, left bottom, from(transparent), color-stop(0.88, transparent), to(rgba(255, 255, 255, 0.4)));
 }
 
 /* 카드 미러효과 */
