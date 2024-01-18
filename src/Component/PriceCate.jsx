@@ -5,7 +5,7 @@ import PriceCardSlide from '../Component/PriceCardSlide'
 
 function PriceCate() {
   return (
-    <div className='pricePick'>
+    <div className='price-pik'>
         <MoreTitle btnMore='btn-off' titleText='가격대별로 골라보세요'/>
         <div>
           <PriceSlector />

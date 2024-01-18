@@ -1,6 +1,6 @@
 import React from 'react'
-import '../include/css/productinner.css'
-import '../include/css/reset.css'
+import '../css/productinner.css'
+
 
 function ProductInner({imgUrl, name, price, rate, brand, badge}) {
   return (
@@ -24,7 +24,7 @@ function ProductInner({imgUrl, name, price, rate, brand, badge}) {
 }
 
 ProductInner.defaultProps = {
-    imgUrl: '/img/pThumbnail.png',
+    imgUrl: '/images/brand/yogiyo.png',
     name:'상품명',
     price:'상품가격',
     brand:'요기요'

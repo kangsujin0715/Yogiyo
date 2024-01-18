@@ -10,8 +10,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { styled } from '@mui/material/styles';
 
-import '../include/css/reset.css';
-import '../include/css/categoryfilter.css';
+import '../css/categoryfilter.css';
 
 const FtIcon = styled('span')(({
     borderRadius: '50%',
@@ -23,7 +22,7 @@ const FtIcon = styled('span')(({
 const FtCheckedIcon = styled(FtIcon)({
     width: 24,
     height: 24,
-    backgroundImage: 'url(/img/ic_check_s.svg)',
+    backgroundImage: 'url(/images/ic_check_s.svg)',
     fontWeight: 'bold'
     },
 );

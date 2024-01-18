@@ -10,6 +10,6 @@
     z-index: 2;
 }
 .cate-slide{padding: 0.6rem 0.8rem 0.4rem 0.8rem; position: relative;}
-.cate-slide > ul{display: flex;}
+.cate-slide > ul{display: flex; padding-right: 1.2rem;} 
 .cate-slide > ul > li{display: inline-block; width: 6rem; margin-left: 0.4rem;}
 .cate-slide > ul > li:first-child{margin-left: 0;}

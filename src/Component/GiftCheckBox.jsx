@@ -4,8 +4,8 @@ import '../css/gift-checkbox.css'
 function Giftcheckbox({status, labelName, giftimgUrl, ciUrl, statusText, bage, boldText, inText, balance, giftname, fromName, counter}) {
   return (
     <div id='gift-checkbox' className={status}>
-        <input type='checkbox' id={labelName} ></input>
-        <label for={labelName}>
+        <input type='checkbox' id={labelName}></input>
+        <label htmlFor={labelName}>
             <div className='gift-img'>
                 <img src={giftimgUrl} alt='' />
                 <i className='brand-logo'>

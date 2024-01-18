@@ -1,3 +1,4 @@
+
 import React, {useState, useEffect} from 'react';
 import '../css/mainHeader.css';
 
@@ -16,6 +17,7 @@ function MainHeader() {
             <h1 className="title">선물하기</h1>
             <button className="btn_gift"></button>
         </div>
+        
     )
 }
 

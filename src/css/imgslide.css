@@ -5,14 +5,22 @@
 .imgslide-area > ul{
     width: auto;
     display: flex; 
-    
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: flex-start;
+    flex-direction: column;
+    height: 27.6rem;
 }
 .imgslide-area > ul > li{
     width: auto;
     display: inline-block;
+    margin-top: 1.2rem;
     margin-left: 1.2rem;
 }
-.imgslide-area > ul > li:first-child{margin-left: 0;}
+.imgslide-area > ul > li:first-child{margin-top: 0; margin-left: 0;}
+.imgslide-area > ul > li:nth-child(2){margin-left: 0;}
+.imgslide-area > ul > li:nth-child(2n+1){margin-top: 0;}
+.imgslide-area > ul > li:last-child{height: 27.6rem; margin-top: 0;}
 
 li > a{margin-top: 1.2rem;}
 li > a:first-child{margin-top: 0;}

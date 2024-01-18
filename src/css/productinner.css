@@ -3,7 +3,7 @@
     position: relative;
     font-size: 0;
     color: #333;
-    display: table;
+    display: block;
 }
 
 .thumbnail-img{
@@ -11,9 +11,11 @@
     height: 6.4rem;
     border-radius: 1.2rem;
     overflow: hidden;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
+    border: 0.1rem solid #f6f6f6;
 }
+
 .product-inner > i{
     display: none;
     height: 1.8rem;
@@ -33,7 +35,7 @@
 .product-inner > i.active{display: inline-block;}
 .product-explan{
     width: calc(100% - 6.4rem);
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     padding-left: 1.2rem;
     vertical-align: middle;
