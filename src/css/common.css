@@ -62,11 +62,6 @@ strong.price em {font-size: 2rem;}
 .full-btn.whit {color: #333; background-color: #fff; border: none;}
 .full-btn:disabled {color: #bfbfbf; background-color: #ebebeb; border: none;}
 
-/* ---Contents-------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-.header {width: 100%; height: 5.6rem; display: flex; align-items: center; padding: 0 0.8rem;}
-.header h1 {font-size: 1.6rem; line-height: 2.2rem; font-weight: 700;}
-
 /* ---header 임시-------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .padding-box .title {margin-bottom: 0.8rem !important; font-weight: 700 !important;}
@@ -78,3 +73,5 @@ strong.price em {font-size: 2rem;}
 .gift-complete-card .text-box {margin-top: 3.2rem; padding: 0 5rem 5rem; text-align: center;}
 .gift-complete-card .text-box h2 {font-size: 2.4rem !important; font-weight: 700;}
 .gift-complete-card .text-box p {font-size: 1.4rem; line-height: 1.9rem; margin-top: 0.6rem; letter-spacing: -0.09rem; word-break: keep-all;}
+
+.MuiContainer-root{padding: 5.6rem 0 0 !important; }

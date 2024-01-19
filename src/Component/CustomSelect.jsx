@@ -10,7 +10,7 @@ import {
   styled,
 } from '@mui/material';
 
-import '../include/css/categoryfilter.css';
+import '../css/categoryfilter.css';
 
 const FtIcon = styled('span')({
   borderRadius: '50%',

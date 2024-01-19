@@ -5,7 +5,7 @@ function Giftcheckbox({status, labelName, giftimgUrl, ciUrl, statusText, bage, b
   return (
     <div id='gift-checkbox' className={status}>
         <input type='checkbox' id={labelName} disabled></input>
-        <label for={labelName}>
+        <label htmlFor={labelName}>
             <div className='gift-img'>
                 <img src={giftimgUrl} alt='' />
                 <i className='brand-logo'>

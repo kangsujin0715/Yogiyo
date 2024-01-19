@@ -11,3 +11,5 @@
     bottom: 2rem !important;
     left: auto !important;
 }
+
+.VisualSwiper .swiper-pagination > span{color: #fff !important;}

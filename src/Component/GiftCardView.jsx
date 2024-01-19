@@ -4,7 +4,7 @@ import { Box, Drawer, FormControl, FormLabel } from '@mui/material';
 import GiftCardViewImg from './GiftCardViewImg';
 import CardCate from './CardCate';
 
-import '../include/css/categoryfilter.css';
+import '../css/categoryfilter.css';
 
 function GiftCardView({ pTitle }) {
   const [state, setState] = useState({ bottom: false });

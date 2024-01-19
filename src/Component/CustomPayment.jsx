@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Drawer, FormControl, FormLabel, Typography } from '@mui/material';
 
-import '../include/css/categoryfilter.css';
+import '../css/categoryfilter.css';
 import '../css/bottomSheet.css';
 
 import CardPayment from './CardPayment';
