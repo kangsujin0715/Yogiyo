@@ -29,8 +29,8 @@ import Container from '@mui/material/Container';
 
 export const pageList = [
   { title: '-------------------', path: '/', element: <Index /> },
-  { title: '선물카드 전체보기', path: '/card/list', element: <CardAllView /> },
   { title: '상품리스트 전체보기', path: '/pooduct/list', element: <ProductList /> },
+  { title: '선물카드 전체보기', path: '/card/list', element: <CardAllView /> },
   { title: '선물하기 상세', path: '/test/giftdetail', element: <GiftDetail /> },
   { title: '선물하기 상세 (이용안내 등 tab)', path: '/test/privacy', element: <Privacy /> },
   { title: '선물하기 완료 (보내는중)', path: '/test/complete', element: <GiftComplete /> },
