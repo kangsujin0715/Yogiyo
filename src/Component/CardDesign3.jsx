@@ -13,7 +13,7 @@ import '../css/cardDesign.css';
 // 카드 디자인
 
 
-function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
+function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content, txt }) {
 	const [showHide, setShowHide] = useState(true);
 	useEffect(() => {
 	  // 컴포넌트가 마운트된 후 실행될 코드
@@ -50,7 +50,7 @@ function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
       <Box className={`card-box w-280 manual-flip`}>
         <Box className='card-view'>
 		<Box className='cancel-box'>
-			<p className='cancel-txt'>선물 취소</p>	
+			<p className='cancel-txt'>{txt}</p>	
 		</Box>
           <Box className={`front`} onClick={flipCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
@@ -83,6 +83,7 @@ function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
 }
 
 CardDesign3.defaultProps = {
+  txt: '',	
   imgViewUrl: '/images/gift-card/gift-card-test.gif',
   imglogoUrl: '/images/logo/yogiyo.png',
   brand: '요기요 상품권',

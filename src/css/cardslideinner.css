@@ -9,7 +9,7 @@
 .card-register-inner input[type=checkbox]:checked + label::before {background: url(../../public/images/card-register-check-on.svg) left center no-repeat; background-size: 2rem;}
 
 .card-register-inner .brand-logo {width: auto; height: 2.8rem;}
-.card-register-inner .card-num {font-size: 1.4rem; margin-left: auto;}
+.card-register-inner .card-num {font-size: 1.4rem; margin-left: auto; color: #fff;}
 
 .card-register .card-add {display: flex; align-items: center; justify-content: center; background-color: #e5e5e5; font-size: 1.6rem; font-weight: 700; color: #666;}
 .card-register .card-add::before {display: block; content: ''; background: url(../../public/images/card-add.svg) center no-repeat; background-size: 2.4rem; margin-right: 0.1rem; width: 2.4rem; height: 2.4rem;}

@@ -22,3 +22,5 @@
 	background: url('../../public/images/down-arrow.svg') center no-repeat;
 	background-size: 2rem;
 }
+.w-auto {justify-content: right !important;}
+.w-auto .select-box {width: auto; padding-right: 3.2rem;}

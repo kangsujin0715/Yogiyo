@@ -16,9 +16,9 @@ export default function SendGiftDetail() {
     <>
       <CardDesign2/>
 	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-part.svg' giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-complete.svg' giftBoxUrl='/images/gift-box.svg'/>
+	  {/* <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-complete.svg' giftBoxUrl='/images/gift-box.svg'/>
 	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-ing.svg' giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-cancel.svg' giftBoxUrl='/images/gift-box-cancel.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl='/images/gift-cancel.svg' giftBoxUrl='/images/gift-box-cancel.svg'/> */}
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보

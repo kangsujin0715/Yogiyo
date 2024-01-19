@@ -1,7 +1,7 @@
 .gift-error-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem);}
 .gift-error {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 0 1.6rem; text-align: center;}
-.gift-error img {width: 18rem; height: 18rem;}
-.gift-error h2 {margin: 1.6rem 0; font-size: 1.8rem !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
+.gift-error img {width: auto; height: auto;}
+.gift-error h2 {margin: 3.8rem 0 1.6rem; font-size: 1.8rem !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
 .gift-error p {font-size: 1.4rem !important; line-height: 1.9rem; color: rgba(0, 0, 0, 0.6); word-break: keep-all;}
 
 
