@@ -20,7 +20,7 @@ function GiftContent({status, statusText, giftimgUrl, ciUrl, bage, boldText, inT
             </div>
             <div className='balance'>
                 <span>{inText}</span>
-                <strong>{balance}원</strong>
+                <strong>{balance}</strong>
             </div>
             <p className='gift-name'>{giftname}</p>
             <p className='from-text'>{fromName}</p>
