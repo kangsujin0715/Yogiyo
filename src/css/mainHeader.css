@@ -1,26 +1,29 @@
 
-.original_header {
+#header{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0);
     font-size:0;
     width: 100%;
     height: 5.6rem;
     top: 0;
     padding: 1.2rem 0.8rem;
-    z-index: 100;
+    z-index: 100;}
+
+.original_header {
+    background-color: rgba(255, 255, 255, 0);
+    animation: fadeout 1s;
+    -moz-animation: fadeout 1s; /* Firefox */
+    -webkit-animation: fadeout 1s; /* Safari and Chrome */
+    -o-animation: fadeout 1s; /* Opera */
 }
 
 .change_header {
-    position: fixed;
     background-color: rgba(255, 255, 255, 1);
-    font-size:0;
-    width: 100%;
-    height: 5.6rem;
-    top: 0;
-    padding: 1.2rem 0.8rem;
-    z-index: 100;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
- 
+
 h1.title{
     display: inline-block; 
     vertical-align: middle; 
@@ -33,3 +36,70 @@ h1.title{
 }
 .btn_prev{width: 3.2rem; height: 3.2rem; background: url(../../public/images/leftAction.png) no-repeat; display: inline-block; vertical-align: middle; background-size: 100%;}
 .btn_gift{width: 3.2rem; height: 3.2rem; background: url(../../public/images/rightActions.png) no-repeat; display: inline-block; vertical-align: middle; background-size: 100%;}
+
+
+@keyframes fadeout {
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes fadein {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
