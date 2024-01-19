@@ -56,6 +56,7 @@ export const pageList = [
 ];
 
 function App() {
+	console.log("pathname",window.location.pathname)
   return (
     <>
       <Routes>

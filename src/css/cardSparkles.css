@@ -1,25 +1,18 @@
 :root {
 	--color1: rgba(255, 255, 255);
-	--color2: rgba(255, 255, 255);
+	--color2: rgba(255, 255, 255, 1);
 }
 
-.card {
+.sparkles {
 	position: relative;
 	overflow: hidden;
 	z-index: 10;
 	touch-action: none;
-	border-radius: 5% / 3.5%;
-	box-shadow:
-		-5px -5px 5px -5px var(--color1),
-		5px 5px 5px -5px var(--color2),
-		-7px -7px 10px -5px transparent,
-		7px 7px 10px -5px transparent;
-
 	transition: transform 0.5s ease;
 	will-change: transform, filter;
 }
 
-.card:before {
+.sparkles:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -32,45 +25,40 @@
 	transition: all .33s ease;
 }
 
-.card:before {
-	background-position: 50% 50%;
-	background-size: 300% 300%;
+.sparkles:before {
+	background-position: 50% 100%;
+	background-size: 100% 800%;
 	background-image: linear-gradient(115deg,
-			transparent 0%,
-			var(--color1) 25%,
-			transparent 47%,
-			transparent 53%,
-			var(--color2) 75%,
-			transparent 100%);
-	opacity: .5;
+			transparent,
+			transparent,
+			var(--color2),
+			transparent ,
+			transparent);
+	opacity: 1;
 	filter: brightness(.5) contrast(1);
 	z-index: 1;
-}
-
-.card.animated:before {
 	transition: none;
-	animation: holoGradient 12s ease-in-out 0s 1;
+	animation: holoGradient 15s ease-in-out 0s 1;
 }
 
 @keyframes holoGradient {
-	0%,
-	100% {
-		opacity: 0.5;
-		background-position: 50% 50%;
+	0% {
+		background-position: 0% 0%;
 		filter: brightness(.5) contrast(1);
 	}
 
 	5%,
 	9% {
 		background-position: 100% 100%;
-		opacity: 1;
 		filter: brightness(.75) contrast(1.25);
 	}
 
 	13%,
 	17% {
 		background-position: 0% 0%;
-		opacity: 0;
 		filter: brightness(.5) contrast(1);
+	}
+	100% {
+		background-position: 0% 0%;
 	}
 }

@@ -47,10 +47,10 @@ export default function Privacy() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box className='tab-box' sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box className='tab-box' sx={{ borderBottom: 1, borderColor: 'divider', padding: '0 1.2rem' }}>
         <Tabs value={value} onChange={handleChange} aria-label='basic tabs example'>
-          <Tab label='이용 안내' {...a11yProps(0)} />
-          <Tab label='상품표기정보' {...a11yProps(1)} />
+          <Tab label='이용안내' {...a11yProps(0)} />
+          <Tab label='상품정보' {...a11yProps(1)} />
           <Tab label='개인정보' {...a11yProps(2)} />
           <Tab label='탭 아이템' {...a11yProps(3)} />
         </Tabs>
@@ -59,7 +59,7 @@ export default function Privacy() {
         이용안내
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        상품표기정보
+        상품정보
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         개인정보
