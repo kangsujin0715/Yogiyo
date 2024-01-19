@@ -2,15 +2,13 @@ import * as React from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import CardDesign2 from '../Component/CardDesign2';
+import '../css/error.css';
 
-import '../css/complete.css';
-
-export default function RefundComplete() {
+export default function RefundComplete({imgRefundUrl}) {
   return (
-    <Box className='hw-box'>
-      <Box className='complete-box'>
-        <CardDesign2></CardDesign2>
+    <Box className='gift-error-box'>
+		<Box className='gift-error'>
+	 	<img src={imgRefundUrl} alt="환불신청 완료 이미지" />
         <Box className='text-box'>
           <Typography className='text' variant='h2' component='h2'>
             환불신청 완료!
@@ -24,4 +22,8 @@ export default function RefundComplete() {
       </Box>
     </Box>
   );
+}
+
+RefundComplete.defaultProps = {
+	imgRefundUrl: '/images/refund.svg',
 }

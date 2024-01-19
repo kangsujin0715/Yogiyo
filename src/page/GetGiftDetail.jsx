@@ -16,8 +16,8 @@ export default function GetGiftDetail() {
     <>
       <CardDesign2/>
 	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='0원' afterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
+	  {/* <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='0원' afterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/> */}
 	  <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
@@ -67,7 +67,7 @@ export default function GetGiftDetail() {
             <DetailInfo title='빕스 고속터미널점' info={<span><em>-5,000원</em> 사용</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
-          <Box className='detail-info line-through'>
+          <Box className='detail-info'>
             <DetailInfo title='빕스 서초점' info={<span><em>-5,000원</em> 사용취소</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
@@ -87,7 +87,7 @@ export default function GetGiftDetail() {
             <DetailInfo title='빕스 고속터미널점' info={<span><em>-5,000원</em> 사용</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
-          <Box className='detail-info line-through'>
+          <Box className='detail-info'>
             <DetailInfo title='빕스 서초점' info={<span><em>-5,000원</em> 사용취소</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>

@@ -14,7 +14,7 @@ import '../css/lineBox.css';
 export default function SendGiftDetail() {
   return (
     <>
-      <CardDesign3/>
+      <CardDesign3 txt='선물 취소'/>
 	  <VoucherInfo voucher='VIPS 상품권' sale='5%' balance='' price='27,000원' afterPrice='30,000원' giftBoxInfoUrl={'/images/gift-fail.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='error'>
 	  	<p className='notice-text'>서비스 오류로 전체 발행에 실패했어요.<br/>다시 한번 시도해주세요.</p>

@@ -4,7 +4,7 @@ import { Box, Typography, Link } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-import CardDesign2 from '../Component/CardDesign2';
+import CardDesign3 from '../Component/CardDesign3';
 import DetailInfo from '../Component/DetailInfo';
 import VoucherInfo from '../Component/VoucherInfo';
 import UseHistory from '../Component/UseHistory';
@@ -14,7 +14,7 @@ import '../css/lineBox.css';
 export default function Refunding() {
   return (
     <>
-      <CardDesign2/>
+      <CardDesign3 txt='환불 접수'/>
 	  <VoucherInfo voucher='요기요 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
 	  <VoucherInfo voucher='요기요 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-refunding.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
       <Box className='padding-box detail-info-box'>
@@ -41,7 +41,7 @@ export default function Refunding() {
             <DetailInfo title='빕스 고속터미널점' info={<span><em>-5,000원</em> 사용</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>
-          <Box className='detail-info line-through'>
+          <Box className='detail-info'>
             <DetailInfo title='빕스 서초점' info={<span><em>-5,000원</em> 사용취소</span>}/>
             <UseHistory num='주문번호 0000000000' date='2023.04.23 19:53'/>
           </Box>

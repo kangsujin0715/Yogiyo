@@ -13,7 +13,7 @@ export default function GiftError({ imgErrorUrl }) {
           <Typography className='text' variant='h2' component='h2'>
             선물하기를 완료하지 못했어요
           </Typography>
-          <p>일시적인 오류로 선물하기 결제에 실패했어요.<br/>잠시 후 다시 시도해주세요.<br/>문제가 계속되면 고객센터로 문의해주세요.</p>
+          <p>일시적인 오류로 선물하기 결제에 실패했어요.<br/>문제가 계속되면 고객센터로 문의해주세요.</p>
         </Box>
       </Box>
       <Box className='btn-box col'>

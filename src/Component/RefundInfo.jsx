@@ -39,7 +39,7 @@ function RefundInfo() {
 				환불사유
 			</Typography>
           </Grid>
-          <Grid xs={8} display='flex' justifyContent='center' alignItems='center'>
+          <Grid xs={8} className='w-auto' display='flex' justifyContent='center' alignItems='center'>
 		  <RefundSelect></RefundSelect>
           </Grid>
         </Grid>
