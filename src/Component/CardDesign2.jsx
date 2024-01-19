@@ -12,7 +12,7 @@ import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
 // 카드 디자인
 
-import '../css/cardIntraction.css';
+// import '../css/cardintraction.css';
 // 버튼 클릭시 한 방향으로 도는 인터렉션
 
 
@@ -52,7 +52,7 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
     <Box className={`gift-card ${showHide ? 'rotate' : 'intraction'}`}>
       <Box className={`card-box w-280 ${isOpen ? 'open' : ''} ${plusFlip ? 'flip' : ''} manual-flip`}>
         <Box className='card-view'>
-          <Box className={`front ${showHide ? 'sparkles' : ''}  ${isSparkles ? '' : 'sparkles'}`} onClick={flipCard}>
+          <Box className={`front ${showHide ? 'sparkles' : ''} ${isSparkles ? '' : 'sparkles'}`} onClick={flipCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
             <button className='message-btn'>메세지 쓰기</button>
             <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
