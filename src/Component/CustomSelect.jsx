@@ -22,7 +22,7 @@ const FtIcon = styled('span')({
 const FtCheckedIcon = styled(FtIcon)({
   width: 24,
   height: 24,
-  backgroundImage: 'url(/img/ic_check_s.svg)',
+  backgroundImage: 'url(/images/ic_check_s.svg)',
   fontWeight: 'bold',
 });
 

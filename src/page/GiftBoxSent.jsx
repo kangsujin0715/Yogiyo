@@ -7,7 +7,7 @@ export default function GiftBox() {
     return (
       <div className='gift-box'>
         <GiftCodeAdd />
-        <GiftBoxTap active_01='active' />
+        <GiftBoxTap active_02='active' />
         <GiftBoxSentList />
         <GiftBoxBtn />
       </div>
