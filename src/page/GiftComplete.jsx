@@ -4,12 +4,12 @@ import { Box, Typography } from '@mui/material';
 
 import CardDesign2 from '../Component/CardDesign2';
 
-import '../css/error.css';
+import '../css/giftCenter.css';
 
 export default function GiftComplete() {
   return (
-    <Box className="gift-error-box">
-      <Box className="gift-error">
+    <Box className="gift-center-box">
+      <Box className="gift-center">
         <CardDesign2></CardDesign2>
         <Box className="text-box">
           <Typography className="text mt-0" variant="h2" component="h2">

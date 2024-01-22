@@ -2,12 +2,12 @@ import * as React from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import '../css/error.css';
+import '../css/giftCenter.css';
 
 export default function GiftError({ imgErrorUrl }) {
   return (
-    <Box className='gift-error-box'>
-      <Box className='gift-error'>
+    <Box className='gift-center-box'>
+      <Box className='gift-center'>
 		<img src={imgErrorUrl} alt="에러이미지" />
         <Box className='text-box'>
           <Typography className='text' variant='h2' component='h2'>
