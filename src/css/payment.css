@@ -9,21 +9,6 @@
 .payment-list .title.app::after {display: flex; content: '앱에서 미리 결제'; color: #999; font-size: 1.2rem; margin-left: 0.6rem;}
 .card-btn {flex-shrink: 0; margin-left: auto; height: 2.8rem; border: 0.1rem solid #bfbfbf; border-radius: 0.6rem; font-size: 1.2rem; padding: 0 1rem;}
 
-.pay-result-box {padding: 1.2rem 0.8rem; border-radius: 0.6rem; background-color: #f2f2f2;}
+.pay-result-box {margin-top: 1.6rem; padding: 1.2rem 0.8rem; border-radius: 0.6rem; background-color: #f2f2f2;}
 .pay-result-box img {width: auto; height: 2.4rem;}
 .pay-result-box .num {font-size: 1.4rem; font-weight: 700; flex-shrink: 0;}
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
