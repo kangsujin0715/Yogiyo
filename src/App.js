@@ -26,6 +26,7 @@ import GiftBoxSent from './page/GiftBoxSent';
 import GiftBoxEmpty from './page/GiftBoxEmpty';
 import UseGiftBox from './page/UseGiftBox';
 import Container from '@mui/material/Container';
+import ToastPop from './page/ToastPop';
 
 export const pageList = [
   { title: '-------------------', path: '/', element: <Index /> },
@@ -49,6 +50,7 @@ export const pageList = [
   { title: '환불 신청 완료', path: '/test/refundComplete', element: <RefundComplete /> },
   { title: '사용하기', path: '/usegift', element: <UseGiftBox /> },
   { title: '(Sample) 카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
+  { title: '(Sample) 토스트 팝업', path: '/toastpop', element: <ToastPop /> },
 ];
 
 function App() {
