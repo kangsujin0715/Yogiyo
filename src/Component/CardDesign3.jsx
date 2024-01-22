@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
@@ -14,37 +13,6 @@ import '../css/cardDesign.css';
 
 
 function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content, txt }) {
-	const [showHide, setShowHide] = useState(true);
-	useEffect(() => {
-	  // 컴포넌트가 마운트된 후 실행될 코드
-	  // 여기서는 3초 후에 클래스를 숨기는 코드를 작성합니다.
-	  const timeoutId = setTimeout(() => {
-		  setShowHide(false);
-	  }, 2500);
-  
-	  // 컴포넌트가 언마운트되면 타임아웃을 정리합니다.
-	  return () => clearTimeout(timeoutId);
-	}, []); // 빈 배열은 컴포넌트가 마운트될 때만 실행하도록 합니다.
-  
-  
-	// 클릭 횟수 상태 변수와 업데이트 함수 정의
-	const [clickCount, setClickCount] = useState(0);
-	const [isOpen, setIsOpen] = useState(false);
-	const [isSparkles, setIsSparkles] = useState(true);
-  
-	// 클릭 이벤트 핸들러
-	 const flipCard = () => {
-	   setIsOpen((prevState) => !prevState);
-	   // sparkles 클릭
-	   setIsSparkles((prevState) => !prevState);
-	   // 클릭 횟수 업데이트
-	   setClickCount((prevCount) => prevCount + 1);
-	 };
-  
-	// 클릭 횟수가 1 이상이면 true, 아니면 false
-	const plusFlip = clickCount >= 1;
-  
-
   return (
     <Box className={`gift-card`}>
       <Box className={`card-box w-280 manual-flip`}>
@@ -52,7 +20,7 @@ function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content, txt 
 		<Box className='cancel-box'>
 			<p className='cancel-txt'>{txt}</p>	
 		</Box>
-          <Box className={`front`} onClick={flipCard}>
+          <Box className={`front`}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
             <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
@@ -66,7 +34,7 @@ function CardDesign3({ imgViewUrl, imglogoUrl, brand, price, name, content, txt 
           </Box>
           {/* 카드 앞 */}
           <Box className='back' sx={{ backgroundColor: '#2C4299' }}>
-            <Box className='complete-box' onClick={flipCard}>
+            <Box className='complete-box'>
               <Box className='complete'>
                 <Typography variant='h2' component='h2'>
                   {name}

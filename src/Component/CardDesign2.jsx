@@ -54,7 +54,6 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
         <Box className='card-view'>
           <Box className={`front ${showHide ? 'sparkles' : ''} ${isSparkles ? '' : 'sparkles'}`} onClick={flipCard}>
             <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
-            <button className='message-btn'>메세지 쓰기</button>
             <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
               <Box className='title-box'>
