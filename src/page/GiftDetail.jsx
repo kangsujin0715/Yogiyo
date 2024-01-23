@@ -23,7 +23,7 @@ export default function GiftDetail() {
         <input placeholder='이름' variant='outlined' />
       </Box>
       <Box className='padding-box'>
-			<Payment/>
+		<Payment/>
         <Box className='gird-box pay-result-box'>
         	<img src='/images/samsung.svg' alt='' />
           <span className='num'>**** 1234</span>
