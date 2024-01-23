@@ -11,7 +11,7 @@ import '../css/checkbox.css';
 export default function ToInfo() {
   return (
     <Box className='get-info-box'>
-      <Box className="padding-box detail-info-box mt-0 pt-0">
+      <Box className="padding-box detail-info-box">
         <Typography variant="h3" className="title">
           확인중 3명
         </Typography>
@@ -21,7 +21,7 @@ export default function ToInfo() {
           </Box>
         </Box>
       </Box>
-	  <Box className="padding-box detail-info-box mt-0 pt-0">
+	  <Box className="padding-box detail-info-box">
         <Typography variant="h3" className="title">
           확인완료 3명
         </Typography>
@@ -31,7 +31,7 @@ export default function ToInfo() {
           </Box>
         </Box>
       </Box>
-	  <Box className="padding-box detail-info-box mt-0 pt-0">
+	  <Box className="padding-box detail-info-box">
         <Typography variant="h3" className="title">
           선물취소 3명
         </Typography>
@@ -41,7 +41,7 @@ export default function ToInfo() {
           </Box>
         </Box>
       </Box>
-	  <Box className="padding-box detail-info-box mt-0 pt-0">
+	  <Box className="padding-box detail-info-box">
         <Typography variant="h3" className="title">
           발행 실패 100명
         </Typography>
