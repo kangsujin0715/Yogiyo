@@ -72,17 +72,19 @@ export default function SendGiftDetail() {
 	 	<p className='notice-text'>이 상품권의 선물취소는 발행사의 고객센터로 문의해주세요.</p>
 	 	<p className='notice-text'>이 상품권의 환불은 발행사의 고객센터(1661-8191)로 문의해주세요</p>
       </Box>
-      <List className='notice-box'>
-        <ListItem>
-		<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
-        </ListItem>
-        <ListItem>
-		<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
-        </ListItem>
-        <ListItem>
-		<Box><Link href='#'>일부매장</Link>에서는 사용이 불가합니다.</Box>
-        </ListItem>
-      </List>
+      <Box className="footer-box">
+		<List className='notice-box'>
+			<ListItem>
+			<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
+			</ListItem>
+			<ListItem>
+			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
+			</ListItem>
+			<ListItem>
+			<Box><Link href='#'>일부매장</Link>에서는 사용이 불가합니다.</Box>
+			</ListItem>
+		</List>
+	  </Box>
     </>
   );
 }

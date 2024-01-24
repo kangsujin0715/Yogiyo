@@ -72,7 +72,7 @@ function App() {
             element={
               <>
                 <GiftHeader />
-                <Container>{element}</Container>
+                <Container className='col'>{element}</Container>
               </>
             }
           />
