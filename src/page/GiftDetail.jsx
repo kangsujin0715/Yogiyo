@@ -13,11 +13,11 @@ import '../css/payment.css';
 export default function GiftDetail() {
   return (
     <>
-      <CardBox></CardBox>
-      <ToBox></ToBox>
-
-      <Box className="padding-box">
-        <Typography variant="h2" className="title">
+      <CardBox/>
+	    <ToBox/>
+	
+      <Box className='padding-box'>
+        <Typography variant='h2' className='title'>
           보내는 사람
         </Typography>
         <input placeholder="이름" variant="outlined" />

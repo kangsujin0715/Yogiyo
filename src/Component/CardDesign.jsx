@@ -82,12 +82,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
               <label htmlFor='text' className='label-box'>
                 {labelText}
               </label>
-              <textarea
-                id='text'
-                onChange={onTextHandler}
-                onClick={clearLabel}
-                maxLength='150'
-              ></textarea>
+              <textarea id='text' onChange={onTextHandler} onClick={clearLabel} maxLength='150'/>
               <button className='click' onClick={flipCard}>
                 카드 뒤집기
               </button>

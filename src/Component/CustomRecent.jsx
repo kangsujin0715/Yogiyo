@@ -30,7 +30,7 @@ function CustomRecent({ pTitle }) {
           총 <span className="num">2</span>명 선택
         </Typography>
 		<Box className='bottomSheet'>
-        	<PhoneCheckBox></PhoneCheckBox>
+        	<PhoneCheckBox/>
 		</Box>
         <Box className="btn-box">
           <button className="full-btn pink" onClick={toggleDrawer(anchor, false)}>

@@ -33,7 +33,7 @@ function ImgTab() {
           );
         })}
       </ul>
-	  <GiftCardViewBtn></GiftCardViewBtn>
+	  <GiftCardViewBtn/>
     </Box>
   );
 }
