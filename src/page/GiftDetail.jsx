@@ -25,6 +25,7 @@ export default function GiftDetail() {
       <Box className='padding-box'>
 			<Payment/>
         <Box className='grid-box pay-result-box'>
+
         	<img src='/images/samsung.svg' alt='' />
           <span className='num'>**** 1234</span>
         </Box>
