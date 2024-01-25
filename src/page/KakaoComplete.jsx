@@ -31,14 +31,16 @@ export default function KakaoComplete() {
 			<button className='full-btn line'>선물 등록하기</button>
 		</Box>
       </Box>
-      <List className='notice-box'>
-        <ListItem>
-			<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
-        </ListItem>
-        <ListItem>
-			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
-        </ListItem>
-      </List>
+      <Box className="footer-box">
+		<List className='notice-box'>
+			<ListItem>
+				<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
+			</ListItem>
+			<ListItem>
+				<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
+			</ListItem>
+		</List>
+	  </Box>
     </>
   );
 }

@@ -74,17 +74,19 @@ export default function Refunding() {
           </Box>
         </Box>
       </Box>
-      <List className='notice-box'>
-        <ListItem>
-        	<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
-        </ListItem>
-        <ListItem>
-			<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
-        </ListItem>
-        <ListItem>
-			<Box>상품권 <Link href='#'>이용가능 매장</Link>안내</Box>
-        </ListItem>
-      </List>
+      <Box className="footer-box">
+		<List className='notice-box'>
+			<ListItem>
+				<Box><Link href='#'>상품필수 표기정보</Link>안내</Box>
+			</ListItem>
+			<ListItem>
+				<Box><Link href='#'>선물하기 이용 및 취소/환불 안내</Link></Box>
+			</ListItem>
+			<ListItem>
+				<Box>상품권 <Link href='#'>이용가능 매장</Link>안내</Box>
+			</ListItem>
+		</List>
+	  </Box>
     </>
   );
 }

@@ -6,10 +6,12 @@ import GiftDetail from './page/GiftDetail';
 import GiftHeader from './Component/GiftHeader';
 import Privacy from './page/Privacy';
 import GiftComplete from './page/GiftComplete';
+import GiftSending from './page/GiftSending';
 import GiftError from './page/GiftError';
 import KakaoComplete from './page/KakaoComplete';
 import SendGiftDetail from './page/SendGiftDetail';
 import SendGiftDetailCancel from './page/SendGiftDetailCancel';
+import SendingGiftDetail from './page/SendingGiftDetail';
 import GetGiftDetail from './page/GetGiftDetail';
 import GetInfo from './page/GetInfo';
 import Refund from './page/Refund';
@@ -33,7 +35,8 @@ export const pageList = [
   { title: '선물카드 전체보기', path: '/card/list', element: <CardAllView /> },
   { title: '선물하기 상세', path: '/test/giftdetail', element: <GiftDetail /> },
   { title: '선물하기 상세 (이용안내 등 tab)', path: '/test/privacy', element: <Privacy /> },
-  { title: '선물하기 완료 (보내는중)', path: '/test/complete', element: <GiftComplete /> },
+  { title: '선물하기 완료 (선물 완료)', path: '/test/complete', element: <GiftComplete /> },
+  { title: '선물하기 완료 (보내는중)', path: '/test/complete', element: <GiftSending /> },
   { title: '선물하기 오류', path: '/test/error', element: <GiftError /> },
   { title: '알림톡 이동화면 (카톡 브라우저)', path: '/test/kakaoComplete', element: <KakaoComplete /> },
   { title: '받은선물함', path: '/giftbox', element: <GiftBox /> },
@@ -42,6 +45,7 @@ export const pageList = [
   { title: '보낸 선물 상세', path: '/test/sendGiftDetail', element: <SendGiftDetail /> },
   { title: '받은 사람 (총 100명)', path: '/test/getInfo', element: <GetInfo /> },
   { title: '보낸 선물 상세 취소', path: '/test/sendGiftDetailCancel', element: <SendGiftDetailCancel /> },
+  { title: '선물 보내는 중', path: '/test/SendingGiftDetail', element: <SendingGiftDetail /> },
   { title: '받은 선물 상세', path: '/test/getGiftDetail', element: <GetGiftDetail /> },
   { title: '환불', path: '/test/refund', element: <Refund /> },
   { title: '환불 진행 상태', path: '/test/refunding', element: <Refunding /> },
@@ -72,7 +76,7 @@ function App() {
             element={
               <>
                 <GiftHeader />
-                <Container>{element}</Container>
+                <Container className='col'>{element}</Container>
               </>
             }
           />

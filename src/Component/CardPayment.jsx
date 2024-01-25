@@ -5,13 +5,14 @@ import { Box, Typography } from '@mui/material';
 import CardSwiper from './CardSwiper';
 import AppPay from './AppPay';
 
+import '../css/apppay.css';
 
 export default function CardPayment() {
   return (
     <Box className="payment-box">
       <Box className="payment-list">
-        <input type="radio" id="card" name="pay" />
-        <label htmlFor="card" className="flex">
+        <input type="radio" id="card" name="pay" defaultChecked={true}/>
+        <label htmlFor="card" className="pay flex">
           <Typography variant="h2" className="title">
             요기서 1초 결제
             <button className="info"></button>
@@ -28,7 +29,7 @@ export default function CardPayment() {
       <CardSwiper />
       <Box className="payment-list">
         <input type="radio" id="app" name="pay" />
-        <label htmlFor="app">
+        <label htmlFor="app" className='pay'>
           <Typography variant="h2" className="title app">
             요기서 결제
           </Typography>
