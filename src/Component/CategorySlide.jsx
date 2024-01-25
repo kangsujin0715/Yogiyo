@@ -1,46 +1,27 @@
 import React, { useState } from 'react';
 import LottieIcon from './LottieIcon';
-import all from '../lottieData/all_lottie_42_42.json';
-import yogigy from '../lottieData/yogigy_42_42.json';
-import chicken from '../lottieData/chicken_lottie_42_42.json';
-import burger from '../lottieData/burger_lottie_42_42.json';
-import hansik from '../lottieData/hansik_lottie_42_42.json';
-import donkatsu from '../lottieData/donkatsu_lottie_42_42.json';
-import jokbal from '../lottieData/jokbal_lottie_42_42.json';
-import chineses from '../lottieData/chineses_lottie_42_42.json';
-import boonsik from '../lottieData/boonsik_lottie_42_42.json';
-import asian from '../lottieData/asian_lottie_42_42.json';
-import pizza from '../lottieData/pizza_lottie_42_42.json';
-import dessert from '../lottieData/dessert_lottie_42_42.json';
-import salad from '../lottieData/salad_lottie_42_42.json';
-import dosirak from '../lottieData/dosirak_lottie_42_42.json';
-import tang from '../lottieData/tang_lottie_42_42.json';
-import meat from '../lottieData/meat_lottie_42_42.json';
-import sushi from '../lottieData/sushi_lottie_42_42.json';
-import sandwitch from '../lottieData/sandwitch_lottie_42_42.json';
-
 import '../css/cateslide.css'
 
 function CategorySlide() {
   const iconList=[
-    {icon:all, cateName:'전체'},
-    {icon:yogigy, cateName:'요기요'}, 
-    {icon:chicken, cateName:'치킨'}, 
-    {icon:burger, cateName:'햄버거'}, 
-    {icon:hansik, cateName:'한식'}, 
-    {icon:donkatsu, cateName:'돈가스'}, 
-    {icon:jokbal, cateName:'족발/보쌈'}, 
-    {icon:chineses, cateName:'중식'}, 
-    {icon:boonsik, cateName:'분식'}, 
-    {icon:asian, cateName:'아시안'}, 
-    {icon:pizza, cateName:'피자'}, 
-    {icon:dessert, cateName:'카페/디저트'}, 
-    {icon:salad, cateName:'샐러드'}, 
-    {icon:dosirak, cateName:'죽/도시락'}, 
-    {icon:tang, cateName:'찜/탕'}, 
-    {icon:meat, cateName:'고기/구이'}, 
-    {icon:sushi, cateName:'회/초밥'}, 
-    {icon:sandwitch, cateName:'샌드위치'}, 
+    {icon:require("../lottieData/all_lottie_42_42.json"), cateName:'전체'},
+    {icon:require("../lottieData/yogigy_42_42.json"), cateName:'요기요'},
+    {icon:require("../lottieData/chicken_lottie_42_42.json"), cateName:'치킨'},
+    {icon:require("../lottieData/burger_lottie_42_42.json"), cateName:'햄버거'},
+    {icon:require("../lottieData/hansik_lottie_42_42.json"), cateName:'한식'},
+    {icon:require("../lottieData/donkatsu_lottie_42_42.json"), cateName:'돈가스'},
+    {icon:require("../lottieData/jokbal_lottie_42_42.json"), cateName:'족발/보쌈'},
+    {icon:require("../lottieData/chineses_lottie_42_42.json"), cateName:'중식'},
+    {icon:require("../lottieData/boonsik_lottie_42_42.json"), cateName:'분식'},
+    {icon:require("../lottieData/asian_lottie_42_42.json"), cateName:'아시안'},
+    {icon:require("../lottieData/pizza_lottie_42_42.json"), cateName:'피자'},
+    {icon:require("../lottieData/dessert_lottie_42_42.json"), cateName:'카페/디저트'},
+    {icon:require("../lottieData/salad_lottie_42_42.json"), cateName:'샐러드'},
+    {icon:require("../lottieData/dosirak_lottie_42_42.json"), cateName:'죽/도시락'},
+    {icon:require("../lottieData/tang_lottie_42_42.json"), cateName:'찜/탕'},
+    {icon:require("../lottieData/meat_lottie_42_42.json"), cateName:'고기/구이'},
+    {icon:require("../lottieData/sushi_lottie_42_42.json"), cateName:'회/초밥'},
+    {icon:require("../lottieData/sandwitch_lottie_42_42.json"), cateName:'샌드위치'},
   ]  
   const [currentIndex, setCurrentIndex] = useState(0);
   
