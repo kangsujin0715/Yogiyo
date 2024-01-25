@@ -2,5 +2,5 @@
 .gift-center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 0 1.6rem;}
 .gift-center img {width: auto; height: auto;}
 .gift-center .text-box {margin-bottom: 4rem; text-align: center;}
-.gift-center .text-box h2 {margin: 3.8rem 0 1.6rem; font-size: 1.8rem !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
+.gift-center .text-box h2 {margin: 3.8rem 0 0.8rem; font-size: 2.4rem !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
 .gift-center .text-box p {font-size: 1.4rem !important; line-height: 1.9rem; color: rgba(0, 0, 0, 0.6); word-break: keep-all;}
