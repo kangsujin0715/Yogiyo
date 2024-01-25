@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 function DetailInfo({ title, info }) {
   return (
-	<Box className='gird-box'>
+	<Box className='grid-box'>
 	  <Typography variant='h3'>{title}</Typography>
 	  	<p className='txt-14'>{info}</p>
 	</Box>

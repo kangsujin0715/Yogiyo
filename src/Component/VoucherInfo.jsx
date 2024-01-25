@@ -13,7 +13,7 @@ function VoucherInfo({
   giftBoxUrl,
 }) {
   return (
-    <Box className="voucher-info-box gird-box">
+    <Box className="voucher-info-box grid-box">
       <ul className="price-info">
         {voucher && <li className="voucher">{voucher}</li>}
         {balance && <li className="balance">{balance}</li>}

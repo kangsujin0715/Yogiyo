@@ -45,7 +45,7 @@ function CustomPayment({ pTitle }) {
     <>
       {['bottom'].map((anchor) => (
         <React.Fragment key={anchor}>
-		  <Box className='gird-box' onClick={toggleDrawer(anchor, true)}>
+		  <Box className='grid-box' onClick={toggleDrawer(anchor, true)}>
 			<Typography variant='h2' className='title'>
 				결제 수단
 			</Typography>
