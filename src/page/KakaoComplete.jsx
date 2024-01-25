@@ -12,7 +12,7 @@ import '../css/lineBox.css';
 export default function KakaoComplete() {
   return (
     <>
-      <CardDesign2></CardDesign2>
+      <CardDesign2/>
       <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보

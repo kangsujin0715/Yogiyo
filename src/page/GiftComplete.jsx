@@ -10,7 +10,7 @@ export default function GiftComplete() {
   return (
     <Box className="gift-center-box">
       <Box className="gift-center">
-        <CardDesign2></CardDesign2>
+        <CardDesign2/>
         <Box className="text-box">
           <Typography className="text mt-0" variant="h2" component="h2">
             선물하기 완료!

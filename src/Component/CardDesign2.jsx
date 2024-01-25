@@ -12,7 +12,7 @@ import '../css/cardSparkles.css';
 import '../css/cardDesign.css';
 // 카드 디자인
 
-// import '../css/cardintraction.css';
+import '../css/cardintraction.css';
 // 버튼 클릭시 한 방향으로 도는 인터렉션
 
 
@@ -67,7 +67,8 @@ function CardDesign2({ imgViewUrl, imglogoUrl, brand, price, name, content }) {
           {/* 카드 앞 */}
           <Box className='back' sx={{ backgroundColor: '#2C4299' }}>
             <Box className='complete-box' onClick={flipCard}>
-              <Box className='complete'>
+              <Box className={`complete  ${showHide ? 'rotateImg360' : ''}`}>
+				<Box className='img360' alt="360도 회전" />
                 <Typography variant='h2' component='h2'>
                   {name}
                 </Typography>

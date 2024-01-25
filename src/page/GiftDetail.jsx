@@ -13,8 +13,8 @@ import '../css/payment.css';
 export default function GiftDetail() {
   return (
     <>
-      <CardBox></CardBox>
-	  <ToBox></ToBox>
+      <CardBox/>
+	  <ToBox/>
 	
       <Box className='padding-box'>
         <Typography variant='h2' className='title'>
