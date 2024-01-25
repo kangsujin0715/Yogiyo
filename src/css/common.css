@@ -36,7 +36,8 @@ strong.price em {font-size: 2rem;}
 
 /* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.2rem;}
+.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.4rem;}
+.line-box:has(.phone-box) {padding: 1.6rem 1.2rem;}
 .padding-box {padding: 1.6rem;}
 .grid-box {display: flex; align-items: center; justify-content: space-between;}
 .btn-box {padding: 0 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}

@@ -5,7 +5,7 @@ function DetailInfoLink({ title, infoLink }) {
   return (
 	<Box className='grid-box'>
 	  <Typography variant='h3'>{title}</Typography>
-	  <Link href='#' className='info-link'>{infoLink}</Link>
+	  <Link href='#' className='info-link disabled-link'>{infoLink}</Link>
 	</Box>
   )
 }
