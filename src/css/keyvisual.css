@@ -1,15 +1,2 @@
-.VisualSwiper .swiper-pagination{
-    display: inline-block !important;
-    padding: 0.4rem 0.6rem !important; 
-    border-radius: 1.6rem !important;
-    font-size: 1rem !important;
-    line-height: 1.4rem !important;
-    color: #fff !important;
-    background: rgba(0, 0, 0, 0.6) !important;
-    width: auto !important;
-    right: 0.8rem !important;
-    bottom: 2rem !important;
-    left: auto !important;
-}
-
-.VisualSwiper .swiper-pagination > span{color: #fff !important;}
+.VisualSwiper .swiper-pagination {display: inline-block !important; padding: 4px 6px !important;  border-radius: 16px !important; font-size: 10px !important; line-height: 14px !important; color: #fff !important; background: rgba(0, 0, 0, 0.6) !important; width: auto !important; right: 8px !important; bottom: 20px !important; left: auto !important;}
+.VisualSwiper .swiper-pagination > span {color: #fff !important;}

@@ -22,15 +22,15 @@ function RefundInfo() {
 			</Typography>
           </Grid>
           <Grid xs={8} display='flex' justifyContent='center' alignItems='center'>
-            <input type='text' placeholder='김요기' />
+            <input type='text' placeholder='이름' />
           </Grid>
         </Grid>
         <Grid container spacing={1} sx={{ mb: '2px' }}>
           <Grid xs={4} display='flex' justifyContent='start' alignItems='center'>
-			<BankSelect></BankSelect>
+			<BankSelect/>
           </Grid>
           <Grid xs={8} display='flex' justifyContent='center' alignItems='center'>
-            <input type='text' placeholder='0000-0000-0000-0000' />
+            <input type='text' placeholder='계좌번호 입력' />
           </Grid>
         </Grid>
         <Grid container spacing={1} sx={{ mb: '2px' }}>
@@ -40,7 +40,7 @@ function RefundInfo() {
 			</Typography>
           </Grid>
           <Grid xs={8} className='w-auto' display='flex' justifyContent='center' alignItems='center'>
-		  <RefundSelect></RefundSelect>
+		  <RefundSelect/>
           </Grid>
         </Grid>
       </Box>

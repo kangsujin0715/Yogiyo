@@ -3,78 +3,79 @@
 .block {display: block;}
 .inline {display: inline-block;}
 .flex {display: flex; align-items: center;}
-.col {display: flex; align-items: center; flex-direction: column;}
+.col {display: flex !important; flex-direction: column; height: 100vh;}
+.center {display: flex; align-items: center; flex-direction: column;}
 .shrink {flex-shrink: 0;}
 
-.notice-box {background-color: #f2f2f2; padding: 1.6rem 0 !important; margin-bottom: 2.4rem !important;}
-.notice-box li {font-size: 1.2rem; padding: 0 1.6rem 0.4rem; display: flex; color: #666;}
-.notice-box li a {text-decoration: underline !important; color: #666;}
-.notice-box li:last-child {padding-bottom: 0;}
-.notice-box li::before {display: inline-block; content: '·'; font-weight: 700; padding-right: 0.4rem;}
+.underline {border-bottom: 1px solid #f2f2f2; padding-bottom: 14px; margin-bottom: 14px;}
 
-.underline {border-bottom: 0.1rem solid #f2f2f2; padding-bottom: 1.4rem; margin-bottom: 1.4rem;}
-
-.txt-12 {font-size: 1.2rem;}
-span.price, .txt-14 {font-size: 1.4rem;}
-strong.price {font-size: 1.8rem;}
-strong.price em {font-size: 2rem;}
+.txt-12 {font-size: 12px;}
+span.price, .txt-14 {font-size: 14px;}
+strong.price {font-size: 18px;}
+strong.price em {font-size: 20px;}
 
 .red {color: #c00000;}
 .green {color: #2591B5;}
-.error input {border: 0.1rem solid #c00000;}
-.error .text {padding: 0.2rem 0 0.4rem 0.8rem; font-size: 1.2rem; color: #c00000;}
-.error .notice-text {font-size: 1.2rem; text-align: center; color: #c00000;}
+.error input {border: 1px solid #c00000;}
+.error .text {padding: 2px 0 4px 8px; font-size: 12px; color: #c00000;}
+.error .notice-text {font-size: 12px; text-align: center; color: #c00000;}
 
 .m-0 {margin: 0;}
 .mt-0 {margin-top: 0 !important;}
-.mt-8 {margin-top: 0.8rem;}
-.mt-12 {margin-top: 1.2rem;}
+.mt-8 {margin-top: 8px;}
+.mt-12 {margin-top: 12px;}
 
-.mb-8 {margin-bottom: 0.8rem;}
+.mb-8 {margin-bottom: 8px;}
 
 .pt-0 {padding-top: 0 !important;}
 
 /* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.4rem;}
-.line-box:has(.phone-box) {padding: 1.6rem 1.2rem;}
-.padding-box {padding: 1.6rem;}
+.line-box {border: 1px solid #bfbfbf; border-radius: 10px; padding: 16px 14px;}
+.line-box:has(.phone-box) {padding: 16px 12px;}
+.padding-box {padding: 16px;}
 .grid-box {display: flex; align-items: center; justify-content: space-between;}
-.btn-box {padding: 0 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
+.btn-box {padding: 0 12px 16px; display: flex; align-items: center; justify-content: center;}
 .gray-box {background-color: #f2f2f2;}
-.hw-box{display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem)}
+.hw-box{display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 56px)}
+.footer-box {margin-top: auto;}
+.notice-box {background-color: #f2f2f2; padding: 16px 0 !important; margin-bottom: 32px !important;}
+.notice-box li {font-size: 12px; padding: 0 16px 4px; display: flex; color: #666;}
+.notice-box li a {text-decoration: underline !important; color: #666;}
+.notice-box li:last-child {padding-bottom: 0;}
+.notice-box li::before {display: inline-block; content: '·'; font-weight: 700; padding-right: 4px;}
 
 /* ---Button-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.to button {background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf; box-sizing: border-box;}
+.to button {background-color: #fff; border-radius: 10px; border: 1px solid #bfbfbf; box-sizing: border-box;}
 .to button.close-btn {background: url(../../public/images/close.svg) center no-repeat; border: none;}
-.to button.plus-btn::before {display: inline-block; content: ''; width: 2rem; height: 2rem; background: url(../../public/images/plus.svg) left center no-repeat; background-size: 2rem;}
+.to button.plus-btn::before {display: inline-block; content: ''; width: 20px; height: 20px; background: url(../../public/images/plus.svg) left center no-repeat; background-size: 20px;}
 .to.disable input {border-color:red;} 
 
-.black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.pay-btn {font-size: 1.4rem; height: auto; display: flex; align-items: center; font-weight: 400;}
-.pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
-.view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
+.black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 32px; padding: 0; width: 32px; height: 32px;}
+.close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 32px; padding: 0; width: 32px; height: 32px;}
+.gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 32px; padding: 0; width: 32px; height: 32px;}
+.pay-btn {font-size: 14px; height: auto; display: flex; align-items: center; font-weight: 400;}
+.pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 20px; width: 20px; height: 20px;}
+.view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 32px; padding: 0; width: 32px; height: 32px;}
 
-.full-btn {width: 100%; max-width: 36rem; background-color: #fff; border-radius: 1rem; border: 0.1rem solid #bfbfbf;}
+.full-btn {width: 100%; max-width: 360px; background-color: #fff; border-radius: 10px; border: 1px solid #bfbfbf;}
 .full-btn.pink {color: #fff; background-color: #fa0050; border: none;}
-.full-btn.line {color: #333; border: 0.1rem solid #bfbfbf;}
+.full-btn.line {color: #333; border: 1px solid #bfbfbf;}
 .full-btn.whit {color: #333; background-color: #fff; border: none;}
-.full-btn:disabled {color: #bfbfbf; background-color: #ebebeb; border: none;}
+.full-btn:disabled {color: rgba(0, 0, 0, 0.4); background-color: rgba(0, 0, 0, 0.08); border: none;}
 
 /* ---header 임시-------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.padding-box .title {margin-bottom: 0.8rem !important; font-weight: 700 !important;}
-.padding-box .title + span {color: #999; margin-left: 0.3rem;}
-.padding-box .title.star::after {content: '*'; font-size: 1.6rem; color: #fa0050; padding-left: 0.4rem;}
+.padding-box .title {margin-bottom: 8px !important; font-weight: 700 !important;}
+.padding-box .title + span {color: #999; margin-left: 3px;}
+.padding-box .title.star::after {content: '*'; font-size: 16px; color: #fa0050; padding-left: 4px;}
 .padding-box .title.mb0 {margin-bottom: 0 !important;}
 
-.gift-complete-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem);}
-.gift-complete-card .text-box {margin-top: 3.2rem; padding: 0 5rem 5rem; text-align: center;}
-.gift-complete-card .text-box h2 {font-size: 2.4rem !important; font-weight: 700;}
-.gift-complete-card .text-box p {font-size: 1.4rem; line-height: 1.9rem; margin-top: 0.6rem; letter-spacing: -0.09rem; word-break: keep-all;}
+.gift-complete-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 56px);}
+.gift-complete-card .text-box {margin-top: 32px; padding: 0 50px 50px; text-align: center;}
+.gift-complete-card .text-box h2 {font-size: 24px !important; font-weight: 700;}
+.gift-complete-card .text-box p {font-size: 14px; line-height: 19px; margin-top: 6px; letter-spacing: -00.9px; word-break: keep-all;}
 
-.MuiContainer-root{padding: 5.6rem 0 0 !important;}
+.MuiContainer-root{padding: 56px 0 0 !important;}
 .grid-box:has(.pay-btn) .title {margin-bottom: 0 !important;}

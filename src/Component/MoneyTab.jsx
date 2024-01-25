@@ -20,19 +20,21 @@ function MoneyTab() {
   ];
 
   return (
-    <Box className='horizontal-scroll'>
-      <ul className='money-voucher'>
-        <li className='disable'>10,000원</li>
-		{/* disable 처리 */}
-        {moneyTabList.map((list, i) => {
-          return (
-            <li key={i} onClick={() => moneyClick(i)} className={moneyTab === i ? 'selected' : ''}>
-              {list.price}
-            </li>
-          );
-        })}
-      </ul>
-    </Box>
+	<Box>
+		<Box className='horizontal-scroll'>
+		<ul className='money-voucher'>
+			<li className='disable'>10,000원</li>
+			{/* disable 처리 */}
+			{moneyTabList.map((list, i) => {
+			return (
+				<li key={i} onClick={() => moneyClick(i)} className={moneyTab === i ? 'selected' : ''}>
+				{list.price}
+				</li>
+			);
+			})}
+		</ul>
+		</Box>
+	</Box>
   );
 }
 

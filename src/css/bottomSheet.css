@@ -1,13 +1,13 @@
-.bottomSheet {margin-bottom: 1.6rem; overflow-y: auto;}
-/* height: 100vh;  */
-.bottomSheet:has(.img-box) {margin-bottom: 0;}
-.bottomSheet-btn {position: absolute; top: 2rem; right: 1.6rem; width: 2.4rem; height: 2.4rem; background: url(../../public/images/close-24.svg) center no-repeat; background-size: 2.4rem;}
+.bottomSheet {margin-bottom: 16px; overflow-y: auto;}
 
-.bottomSheet ~ .btn-box {padding: 0 1.6rem 0;}
+.bottomSheet:has(.img-box) {margin-bottom: 0;}
+.bottomSheet-btn {position: absolute; top: 20px; right: 16px; width: 24px; height: 24px; background: url(../../public/images/close-24.svg) center no-repeat; background-size: 24px;}
+
+.bottomSheet ~ .btn-box {padding: 0 16px 0;}
 .full-btn {max-width: 100% !important;}
-.MuiPaper-root:has(.filter-box), .filter-box, .in-filter {max-height: calc(100vh - 5.6rem) !important;}
-.in-filter:has(.phone-box) .btn-box {margin-top: auto; padding: 0 1.6rem;}
+.MuiPaper-root:has(.filter-box), .filter-box, .in-filter {max-height: calc(100vh - 56px) !important;}
+.in-filter:has(.phone-box) .btn-box {margin-top: auto; padding: 0 16px;}
 .in-filter:has(.img-box) {padding-bottom: 0 !important;}
 
-.img-box {display: flex; flex-wrap: wrap; margin: 0 -0.6rem 0.6rem;}
-.img-item {width: 10rem; height: 10rem; border-radius: 0.8rem; overflow: hidden; margin: 0.6rem;}
+.img-box {display: flex; flex-wrap: wrap; margin: 0 -6px 6px;}
+.img-item {width: 100px; height: 100px; border-radius: 8px; overflow: hidden; margin: 6px;}

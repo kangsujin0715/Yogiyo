@@ -1,3 +1,38 @@
+.rotateImg360:has(.img360) .img360 {
+	animation: fadeInOut 1600ms ease-in-out;
+}
+
+.img360 {
+	opacity: 0;
+	width: 72px;
+	height: 72px;
+	z-index: 20;
+	background: url(../../public/images/360.svg) center no-repeat;
+	background-size: 72px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -36px;
+	margin-left: -36px;
+}
+
+@keyframes fadeInOut {
+	35% {
+		opacity: 0;
+	}
+
+	70%, 80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/* 360도 회전 이미지 반영 */
+
+
 .rotate {
 	--duration: 2500ms;
 	--duration-translate: 5000ms;
@@ -20,33 +55,41 @@
 	0% {
 		transform: scale(1) rotate3d(0, 1, 0, -180deg);
 	}
+
 	10% {
 		transform: scale(0.95) rotate3d(0, 1, 0, -180deg);
 	}
+
 	50% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
 	}
+
 	90% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 180deg);
 	}
+
 	100% {
 		transform: scale(1) rotate3d(0, 1, 0, 180deg);
 	}
 }
 
 @keyframes rotateOut {
-	0%  {
+	0% {
 		transform: scale(1) rotate3d(0, 1, 0, 0deg);
 	}
+
 	10% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
 	}
+
 	50% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 180deg);
 	}
+
 	90% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 360deg);
 	}
+
 	100% {
 		transform: scale(1) rotate3d(0, 1, 0, 360deg);
 	}
@@ -55,10 +98,21 @@
 /* 360도 회전 css */
 
 
-.intraction .card-box {--duration: 850ms; --duration-translate: 850ms; --transition-in: ease-in; --transition-out: ease-out;}
-.intraction .front, .back {transform-origin: center center;}
+.intraction .card-box {
+	--duration: 850ms;
+	--duration-translate: 850ms;
+	--transition-in: ease-in;
+	--transition-out: ease-out;
+}
 
-.intraction .card-box .front {transform: rotate3d(0, 1, 0, 0deg);}
+.intraction .front,
+.back {
+	transform-origin: center center;
+}
+
+.intraction .card-box .front {
+	transform: rotate3d(0, 1, 0, 0deg);
+}
 
 .intraction .card-box.flip .front {
 	transform: rotate3d(0, 1, 0, -90deg);
@@ -66,9 +120,9 @@
 	-moz-transform: rotate3d(0, 1, 0, -90deg);
 	-ms-transform: rotate3d(0, 1, 0, -90deg);
 	-o-transform: rotate3d(0, 1, 0, -90deg);
-	
+
 	animation: fadeIn 0ms var(--duration) forwards,
-		flipOut var(--duration) var(--transition-out) var(--duration) forwards; 
+		flipOut var(--duration) var(--transition-out) var(--duration) forwards;
 	-webkit-animation: fadeIn 0ms var(--duration) forwards,
 		flipOut var(--duration) var(--transition-out) var(--duration) forwards;
 	-moz-animation: fadeIn 0ms var(--duration) forwards,
@@ -77,7 +131,7 @@
 		flipOut var(--duration) var(--transition-out) var(--duration) forwards;
 	-o-animation: fadeIn 0ms var(--duration) forwards,
 		flipOut var(--duration) var(--transition-out) var(--duration) forwards;
-	
+
 	transition: opacity var(--duration) var(--transition-out),
 		transform var(--duration-translate) var(--transition-out);
 	-webkit-transition: opacity var(--duration) var(--transition-out),
@@ -99,15 +153,17 @@
 	-o-animation: flipIn var(--duration) var(--transition-in) 0ms forwards;
 }
 
-.intraction .card-box .back {transform: rotate3d(0, 1, 0, -90deg);}
+.intraction .card-box .back {
+	transform: rotate3d(0, 1, 0, -90deg);
+}
 
 .intraction .card-box.flip .back {
-	transform: rotate3d(0, 1, 0, -90deg); 
-	-webkit-transform: rotate3d(0, 1, 0, -90deg); 
-	-moz-transform: rotate3d(0, 1, 0, -90deg); 
-	-ms-transform: rotate3d(0, 1, 0, -90deg); 
-	-o-transform: rotate3d(0, 1, 0, -90deg); 
-	
+	transform: rotate3d(0, 1, 0, -90deg);
+	-webkit-transform: rotate3d(0, 1, 0, -90deg);
+	-moz-transform: rotate3d(0, 1, 0, -90deg);
+	-ms-transform: rotate3d(0, 1, 0, -90deg);
+	-o-transform: rotate3d(0, 1, 0, -90deg);
+
 	animation: flipIn var(--duration) var(--transition-in) 0ms forwards;
 	-webkit-animation: flipIn var(--duration) var(--transition-in) 0ms forwards;
 	-moz-animation: flipIn var(--duration) var(--transition-in) 0ms forwards;
@@ -128,6 +184,7 @@
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -137,45 +194,29 @@
 	0% {
 		transform: scale(1) rotate3d(0, 1, 0, 0deg);
 	}
+
 	30% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
 	}
+
 	100% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 90deg);
 	}
-} 
+}
 
 
 @keyframes flipOut {
 	0% {
 		transform: scale(0.95) rotate3d(0, 1, 0, -90deg);
 	}
+
 	70% {
 		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
 	}
+
 	100% {
 		transform: scale(1) rotate3d(0, 1, 0, 0deg);
 	}
 }
-
-/* 
-@keyframes flipIn {
-	0% {
-		transform: scale(1) rotate3d(0, 1, 0, 0deg);
-	}
-	100% {
-		transform: scale(1) rotate3d(0, 1, 0, 90deg);
-	}
-} 
-
-
-@keyframes flipOut {
-	0% {
-		transform: scale(1) rotate3d(0, 1, 0, -90deg);
-	}
-	100% {
-		transform: scale(1) rotate3d(0, 1, 0, 0deg);
-	}
-} */
 
 /* 버튼 click 시 같은 방향으로 회전  */

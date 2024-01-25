@@ -28,7 +28,7 @@ function GiftCardView({ pTitle }) {
           {pTitle}
         </FormLabel>
         <Box className="bottomSheet">
-			<CardCate></CardCate>
+			<CardCate/>
 			<GiftCardViewImg onClick={toggleDrawer(anchor, false)}></GiftCardViewImg>
         </Box>
       </FormControl>

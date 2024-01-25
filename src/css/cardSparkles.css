@@ -1,6 +1,6 @@
 :root {
-	--color1: rgba(255, 255, 255);
-	--color2: rgba(255, 255, 255, 1);
+	--color1: rgb(255, 255, 255);
+	--color2: rgb(255, 255, 255);
 }
 
 .sparkles {

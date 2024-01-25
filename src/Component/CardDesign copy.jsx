@@ -16,7 +16,7 @@ import '../css/cardintraction.css';
 // 버튼 클릭시 한 방향으로 도는 인터렉션
 
 
-function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {  
+function CardDesign({ imgViewUrl, imglogoUrl, brand, moneySelected, moneyTabList }) {  
   const [textCount, setTextCount] = useState(0);
   const onTextHandler = (e) => {
     setTextCount(e.target.value.length);
@@ -71,8 +71,7 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {
                 <Typography className='brand' variant='h3' component='h3'>
                   {brand}
                 </Typography>
-				<Typography className='price'><span className='num'>{money.toLocaleString()}</span>원</Typography>
-                {/* <Typography className='price'><span className='num'>{moneySelected !== null ? moneyTabList[moneySelected].price : ''}</span>원</Typography> */}
+                <Typography className='price'><span className='num'>{moneySelected !== null ? moneyTabList[moneySelected].price : ''}</span>원</Typography>
               </Box>
             </Box>
           </Box>

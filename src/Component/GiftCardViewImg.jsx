@@ -20,7 +20,7 @@ function GiftCardViewImg() {
   ];
 
   return (
-	<Box className="giftcard-box" sx={{ paddingTop: '1.6rem' }}>
+	<Box className="giftcard-box" sx={{ paddingTop: '16px' }}>
 		<ul className="img-box">
 		{giftCardImgList.map((list, i) => {
 			return (
