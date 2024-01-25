@@ -15,6 +15,7 @@ strong.price {font-size: 1.8rem;}
 strong.price em {font-size: 2rem;}
 
 .red {color: #c00000;}
+.green {color: #2591B5;}
 .error input {border: 0.1rem solid #c00000;}
 .error .text {padding: 0.2rem 0 0.4rem 0.8rem; font-size: 1.2rem; color: #c00000;}
 .error .notice-text {font-size: 1.2rem; text-align: center; color: #c00000;}
@@ -30,9 +31,10 @@ strong.price em {font-size: 2rem;}
 
 /* ---Box-------------------------------------------------------------------------------------------------------------------------------------------------- */
  
-.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.2rem;}
+.line-box {border: 0.1rem solid #bfbfbf; border-radius: 1rem; padding: 1.6rem 1.4rem;}
+.line-box:has(.phone-box) {padding: 1.6rem 1.2rem;}
 .padding-box {padding: 1.6rem;}
-.gird-box {display: flex; align-items: center; justify-content: space-between;}
+.grid-box {display: flex; align-items: center; justify-content: space-between;}
 .btn-box {padding: 0 1.2rem 1.6rem; display: flex; align-items: center; justify-content: center;}
 .gray-box {background-color: #f2f2f2;}
 .hw-box{display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem)}
@@ -53,7 +55,7 @@ strong.price em {font-size: 2rem;}
 .black-btn {background: url(../../public/images/left-arrow.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .close-btn {background: url(../../public/images/close.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 .gift-btn {background: url(../../public/images/gift.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
-.pay-btn {font-size: 1.4rem; height: auto; display: flex; align-items: center; font-weight: 400; margin-bottom: 0.8rem;}
+.pay-btn {font-size: 1.4rem; height: auto; display: flex; align-items: center; font-weight: 400;}
 .pay-btn::after {display: inline-block; content: ''; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; width: 2rem; height: 2rem;}
 .view-btn {background: url(../../public/images/view.svg) center no-repeat; background-size: 3.2rem; padding: 0; width: 3.2rem; height: 3.2rem;}
 
@@ -75,4 +77,5 @@ strong.price em {font-size: 2rem;}
 .gift-complete-card .text-box h2 {font-size: 2.4rem !important; font-weight: 700;}
 .gift-complete-card .text-box p {font-size: 1.4rem; line-height: 1.9rem; margin-top: 0.6rem; letter-spacing: -0.09rem; word-break: keep-all;}
 
-.MuiContainer-root{padding: 5.6rem 0 0 !important; }
+.MuiContainer-root{padding: 5.6rem 0 0 !important;}
+.grid-box:has(.pay-btn) .title {margin-bottom: 0 !important;}

@@ -36,6 +36,7 @@ export default function GiftDetail() {
             <em>30,000</em>원
           </span>
         </Box>
+
         <Box className="gird-box">
           <Typography variant="h2" className="title mb0">
             총 결제금액

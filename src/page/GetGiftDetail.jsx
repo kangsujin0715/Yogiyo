@@ -16,8 +16,8 @@ export default function GetGiftDetail() {
     <>
       <CardDesign2/>
 	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-unused.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  {/* <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
-	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='0원' afterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/> */}
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='30,000원' afterPrice='' giftBoxInfoUrl={'/images/gift-using.svg'} giftBoxUrl='/images/gift-box.svg'/>
+	  <VoucherInfo voucher='VIPS 상품권' sale='' balance='잔액' price='0원' afterPrice='' giftBoxInfoUrl={'/images/gift-used.svg'} giftBoxUrl='/images/gift-box-cancel.svg'/>
 	  <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
           상세 정보
@@ -41,10 +41,16 @@ export default function GetGiftDetail() {
 		</Box>
 		<Box className='btn-box mt-8'>
 			<button className='full-btn line'>환불하기</button>
+		</Box>
+		<Box className='btn-box mt-8'>
+			<button className='full-btn line'>유효기간 연장하기</button>
+		</Box>
+		<Box className='btn-box mt-8'>
+			<button className='full-btn line'>환불하기</button>
 			<button className='full-btn line'>유효기간 연장하기</button>
 		</Box>
 		<p className="notice-text">이 상품권은 기업전용 상품권으로 환불 및 연장이 불가합니다.</p>
-		<p className="notice-text">이 상품권의 환불은 발행사의 고객센터(1661-8191)로 문의해주세요</p>
+		<p className="notice-text">이 상품권의 환불은<br/>발행사의 고객센터(1661-8191)로 문의해주세요</p>
       </Box>
 	  <Box className='padding-box detail-info-box'>
         <Typography variant='h2' className='title'>
@@ -100,6 +106,7 @@ export default function GetGiftDetail() {
 		  </Box>
         </Box>
 	  </Box>
+
 	  <Box className="footer-box">
 		<List className='notice-box'>
 			<ListItem>
