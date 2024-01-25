@@ -40,7 +40,7 @@ function ToBox() {
 			<Recent/>
           </Grid>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
-            <button className='plus-btn'>역락처</button>
+            <button className='plus-btn'>연락처</button>
           </Grid>
           <Grid xs display='flex' justifyContent='center' alignItems='center'>
             <button className='plus-btn' onClick={() => { plusBtn(); }}>직접</button>

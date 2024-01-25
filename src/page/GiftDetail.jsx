@@ -23,20 +23,27 @@ export default function GiftDetail() {
         <input placeholder='이름' variant='outlined' />
       </Box>
       <Box className='padding-box'>
-		<Payment/>
-        <Box className='gird-box pay-result-box'>
+			<Payment/>
+        <Box className='grid-box pay-result-box'>
+
         	<img src='/images/samsung.svg' alt='' />
           <span className='num'>**** 1234</span>
         </Box>
       </Box>
       <Box className='padding-box'>
-        <Box className='underline gird-box'>
+        <Box className='grid-box'>
           <Typography variant='h3'>상품권금액</Typography>
           <span className='price'>
             <em>30,000</em>원
           </span> 
         </Box>
-        <Box className='gird-box'>
+        <Box className='underline grid-box mt-12'>
+          <Typography variant='h3' className='green'>할인</Typography>
+          <span className='price green'>
+            -<em className='green'>6,000</em>원
+          </span> 
+        </Box>
+        <Box className='grid-box'>
           <Typography variant='h2' className='title mb0'>
             총 결제금액
           </Typography>
