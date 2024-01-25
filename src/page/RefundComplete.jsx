@@ -16,7 +16,7 @@ export default function RefundComplete({imgRefundUrl}) {
           <p>영업일 기준 7일 이내에<br/>입력하신 계좌로 환불될 거예요.</p>
         </Box>
       </Box>
-      <Box className='btn-box col'>
+      <Box className='btn-box center'>
         <button className='full-btn pink'>환불 신청내역 보기</button>
         <button className='full-btn whit mt-12'>선물함으로 돌아가기</button>
       </Box>

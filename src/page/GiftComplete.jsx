@@ -18,7 +18,7 @@ export default function GiftComplete() {
           <p>보낸 선물함에서 상세하게 확인할 수 있어요.</p>
         </Box>
       </Box>
-      <Box className="btn-box col">
+      <Box className="btn-box center">
         <button className="full-btn pink">선물 확인하기</button>
         <button className="full-btn whit mt-12">다른 선물하기</button>
       </Box>
