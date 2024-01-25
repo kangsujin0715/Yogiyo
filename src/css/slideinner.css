@@ -1,14 +1,5 @@
-.slide-inner{
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    text-align: center;
-    position: relative;
-    
-}
-
-.slide-inner > img{width: auto !important; height: 200px !important; text-align: center;}
-
-.slidertext{position: absolute; left: 2rem; top: 2rem; text-align: left;}
-.slidertext > p{font-size: 2.4rem; line-height: 3.2rem; font-weight: 700; text-align: left;}
-.slidertext > a{border: 1px solid #333; height: 3rem; line-height: 2.8rem; border-radius: 1.5rem; padding: 0 1.1rem; font-size: 1.2rem; margin-top: 1.8rem; display: inline-block; color: #333;}
+.slide-inner {width: 100%; height: 200px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); text-align: center; position: relative;}
+.slide-inner > img {width: auto !important; height: 200px !important; text-align: center;}
+.slidertext {position: absolute; left: 20px; top: 20px; text-align: left;}
+.slidertext > p {font-size: 24px; line-height: 32px; font-weight: 700; text-align: left;}
+.slidertext > a {border: 1px solid #333; height: 30px; line-height: 28px; border-radius: 15px; padding: 0 11px; font-size: 12px; margin-top: 18px; display: inline-block; color: #333;}

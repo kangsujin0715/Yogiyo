@@ -63,6 +63,6 @@ export default function KeyVisual() {
 
 const Box = styled.div`
   background-color: ${(props) => props.color};
-  padding-top : 5.6rem; 
+  padding-top : 56px; 
 `;
 

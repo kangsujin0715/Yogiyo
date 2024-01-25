@@ -1,37 +1,38 @@
-.filterBtn-Group > button{
+.filterBtn-Group > button {
     width: auto;
-    padding: 0.8rem;
-    height: 3.4rem;
-    border-radius: 1.7rem;
-    border: 0.1rem solid #e5e5e5;
-    margin-left: 0.4rem;
-}
-.filterBtn-Group > button:first-child{margin-left: 0;}
-.filterBtn-Group > button > p{
-    padding: 0 2rem 0 0.4rem;
-    position: relative;
-    line-height: 1.6rem;
-    font-size: 1.4rem;
+    padding: 8px;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid #e5e5e5;
+    margin-left: 4px;
 }
 
-.filterBtn-Group > button > p > i{
-    width: 1.6rem;
-    height: 1.6rem;
+.filterBtn-Group > button:first-child {margin-left: 0;}
+.filterBtn-Group > button > p {
+    padding: 0 20px 0 4px;
+    position: relative;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.filterBtn-Group > button > p > i {
+    width: 16px;
+    height: 16px;
     position: absolute;
-    right: 0.2rem;
+    right: 2px;
     background: url(../../public/images/ic_chevron_down_s.svg) center center no-repeat;
 }
 
-
-.filterBtn-Group > button.active{
+.filterBtn-Group > button.active {
     border: 0;
     background: #333;
 }
-.filterBtn-Group > button.active > p{
+
+.filterBtn-Group > button.active > p {
     color: #fff;
     font-weight: 700;
 }
 
-.filterBtn-Group > button.active > p > i{
+.filterBtn-Group > button.active > p > i {
     background: url(../../public/images/ic_chevron_down_s_w.svg) center center no-repeat;
 }

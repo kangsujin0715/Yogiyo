@@ -1,23 +1,9 @@
-.card-grid{
-    width: 100%;
-    padding: 1rem;
-}
-.card-grid > ul{
-    width: 100%;
-    font-size: 0;
-}
-.card-grid > ul > li{
-    display: inline-block;
-    width: 11.3rem;
-    padding: 0.6rem;
-}
-.card-grid > ul > li > a{
-    display: block;
-    width: 100%;
-    height: 10.1rem;
-}
-.card-grid > ul > li > img{width: 100% !important;}
+.card-grid {width: 100%; padding: 10px;}
+.card-grid > ul {width: 100%; font-size: 0;}
+.card-grid > ul > li {display: inline-block; width: 113px; padding: 6px;}
+.card-grid > ul > li > a {display: block; width: 100%; height: 101px;}
+.card-grid > ul > li > img {width: 100% !important;}
 
 @media (max-width: 320px) {
-	.card-grid > ul{text-align: center;}
+	.card-grid > ul {text-align: center;}
 }

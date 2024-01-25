@@ -1,5 +1,5 @@
 
-.slide-area {padding: 0 1.6rem 1.6rem; box-sizing: border-box;}
-.brand-slide ul{width: auto; display: flex;}
-.brand-slide ul > li{display: flex; margin-left: 1.6rem; vertical-align: top;}
-.brand-slide ul > li:first-child{margin-left: 0;}
+.slide-area {padding: 0 16px 16px; box-sizing: border-box;}
+.brand-slide ul {width: auto; display: flex;}
+.brand-slide ul > li {display: flex; margin-left: 16px; vertical-align: top;}
+.brand-slide ul > li:first-child {margin-left: 0;}

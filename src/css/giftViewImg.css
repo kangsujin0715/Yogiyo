@@ -1,6 +1,6 @@
-.giftcard-box {padding: 0 1.6rem; overflow-y: scroll;}
-.img-box {display: flex; flex-wrap: wrap; margin: 0 -0.6rem 0.6rem;}
-.img-item {width: 10rem; height: 10rem; border-radius: 0.8rem; overflow: hidden; margin: 0.6rem;}
+.giftcard-box {padding: 0 16px; overflow-y: scroll;}
+.img-box {display: flex; flex-wrap: wrap; margin: 0 -6px 6px;}
+.img-item {width: 100px; height: 100px; border-radius: 8px; overflow: hidden; margin: 6px;}
 
 @media (max-width: 320px) {
 	.img-box {justify-content: center;}

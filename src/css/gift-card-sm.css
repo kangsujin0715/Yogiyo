@@ -1,17 +1,14 @@
-.giftcard-sm{
-    width: 12rem; 
-    height: 6rem; 
-    border-radius: 1rem; 
-    box-shadow: 0px 1px 8px 0px rgba(25, 48, 64, 0.1), 0px 0px 2px 0px rgba(25, 48, 64, 0.08); 
+.giftcard-sm {
+    width: 120px; 
+    height: 60px; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 8px 0 rgba(25, 48, 64, 0.1), 0 0 2px 0 rgba(25, 48, 64, 0.08); 
     text-align: center;
 }
 
-.giftcard-sm > span{
-    padding-left: 2.2rem;
-    background: url(../../public/images/ic_gift.svg) 0.188rem center no-repeat;
-    font-size: 1.8rem;
-    font-weight: 700; line-height: 2.4rem;
+.giftcard-sm > span {
+    padding-left: 22px;
+    background: url(../../public/images/ic_gift.svg) 1.88px center no-repeat;
+    font-size: 18px;
+    font-weight: 700; line-height: 24px;
 }
-
-
-

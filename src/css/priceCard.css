@@ -1,79 +1,68 @@
-.price_card{
-    display: block;
-    width: 13.2rem;
-}
-.priceCard-img{
-    width: 13.2rem;
-    height: 13.2rem;
-    border-radius: 1.2rem;
+.price_card {display: block; width: 132px;}
+.priceCard-img {
+    width: 132px;
+    height: 132px;
+    border-radius: 12px;
     overflow: hidden;
     position: relative;
 }
-.priceCard-img > img{width: 100%;}
 
-
-.brand-ci{
+.priceCard-img > img {width: 100%;}
+.brand-ci {
     position: absolute;
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 44px;
+    height: 44px;
     border: 1px solid #f2f2f2;
-    border-radius: 2.2rem;
+    border-radius: 22px;
     box-sizing: border-box;
     overflow: hidden;
-    top: 0.6rem;
-    left: 0.6rem;
-}
-.brand-ci > img{width: 100%;}
-
-
-.product-explan2{
-    padding: 0.6rem 0 0 0; color: #333;    
+    top: 6px;
+    left: 6px;
 }
 
-.brand-name{
+.brand-ci > img {width: 100%;}
+.product-explan2 {padding: 6px 0 0 0; color: #333;}
+.brand-name {
     width: 100%;
     display: block;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 12px;
+    line-height: 16px;
     color: #666;
 }
 
-
-.product-name{
+.product-name {
     width: 100%;
     display: block;
-    margin-top: 0.4rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 700;
 }
 
-.price_info{margin-top: 0.2rem; font-size: 0;}
-.price_info .discount-rate{}
-
-.product-name > i{
+.price_info {margin-top: 2px; font-size: 0;}
+.product-name > i {
     display: inline-block;
-    height: 1.8rem;
-    padding: 0 0.4rem;
-    border-radius: 0.4rem;
+    height: 18px;
+    padding: 0 4px;
+    border-radius: 4px;
     background: #FFE6EE;
     vertical-align: middle;
-    font-size: 1rem;
+    font-size: 10px;
     font-weight: 700;
-    line-height: 1.8rem;
+    line-height: 18px;
     color: #FA0050;
     text-align: center;
-    margin-left: 0.4rem;
-
-
+    margin-left: 4px;
 }
-.product-price{
+
+.product-price {
     width: 100%;
     display: block;
-    margin-top: 0.3rem;
-    font-size: 1.4rem;
+    margin-top: 3px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 1.9rem;
+    line-height: 19px;
 }
-.product-price > span{font-weight: 700;}
-.product-price .discount-rate{color: #FA0050;}
+
+.product-price > span {font-weight: 700;}
+.product-price .discount-rate {color: #FA0050;}
