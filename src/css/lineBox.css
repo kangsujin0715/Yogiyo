@@ -2,12 +2,13 @@
 .detail-info-box .btn-box button {margin: 0 0.4rem; max-width: 100%;}
 .detail-info-box .notice-text {font-size: 1.2rem; color: #666; margin-top: 0.8rem; text-align: center; word-break: keep-all;}
 
-.line-box .detail-info .gird-box {margin-bottom: 0.8rem;}
-.line-box .detail-info .gird-box:last-child {margin-bottom: 0;}
+.line-box .detail-info .grid-box {margin-bottom: 0.8rem;}
+.line-box .detail-info .grid-box:last-child {margin-bottom: 0;}
 .line-box .detail-info.phone-number-box .phone-item {margin-bottom: 0.8rem;}
 
 .line-box .detail-info:has(h4) {margin-bottom: 1.2rem;}
 .line-box .detail-info:has(h4):last-child {margin-bottom: 0;}
+
 .line-box .detail-info:has(h4) .gird-box {margin-bottom: 0.4rem;}
 .line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {color: #333;}
 .line-box .detail-info .gird-box h4, .line-box .detail-info .gird-box .txt-12 {color: #999;}
@@ -15,6 +16,7 @@
 .line-box .detail-info .gird-box .info-link {font-size: 1.4rem; font-weight: 700; display: flex; align-items: center;}
 .line-box .detail-info .gird-box .info-link::after {content: ''; display: block; width: 2rem; height: 2rem; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 2rem; margin-left: 0.2rem;}
 .line-box .detail-info .gird-box .info-link.disabled-link::after {content: ''; display: block; width: 2rem; height: 2rem; background: url(../../public/images/right-arrow-dis.svg) center no-repeat; background-size: 2rem; margin-left: 0.2rem;}
+
 
 .line-box .detail-info.line-through h3, .line-box .detail-info.line-through em {text-decoration: line-through;}
 .line-box .detail-info.txt-16 h3, .line-box .detail-info.txt-16 p {font-size: 1.6rem !important;}
@@ -37,7 +39,7 @@
 	.detail-info-box .notice-text {padding: 0 3rem;}}
 
 @media (max-width: 280px) {
-	.line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {font-size: 1.3rem !important;}
+	.line-box .detail-info .grid-box h3, .line-box .detail-info .grid-box .txt-14 {font-size: 1.3rem !important;}
 	.detail-info-box .btn-box {flex-wrap: wrap;}
 	.detail-info-box .btn-box button {margin-top: 0.8rem;}
 	.detail-info-box .btn-box button:first-child {margin-top: 0;}

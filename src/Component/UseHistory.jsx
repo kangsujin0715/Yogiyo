@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 function UseHistory({ num, date }) {
   return (
-	<Box className='gird-box'>
+	<Box className='grid-box'>
 	  <Typography variant='h4'>{num}</Typography>
 	  <p className='txt-12'>{date}</p>
 	</Box>

@@ -3,7 +3,7 @@ import { Box, Typography, Link } from '@mui/material';
 
 function DetailInfoLink({ title, infoLink }) {
   return (
-	<Box className='gird-box'>
+	<Box className='grid-box'>
 	  <Typography variant='h3'>{title}</Typography>
 	  <Link href='#' className='info-link disabled-link'>{infoLink}</Link>
 	</Box>
