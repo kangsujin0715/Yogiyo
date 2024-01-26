@@ -9,13 +9,13 @@
 .line-box .detail-info:has(h4) {margin-bottom: 12px;}
 .line-box .detail-info:has(h4):last-child {margin-bottom: 0;}
 
-.line-box .detail-info:has(h4) .gird-box {margin-bottom: 4px;}
-.line-box .detail-info .gird-box h3, .line-box .detail-info .gird-box .txt-14 {color: #333;}
-.line-box .detail-info .gird-box h4, .line-box .detail-info .gird-box .txt-12 {color: #999;}
-.line-box .detail-info .gird-box .txt-14, .line-box .detail-info .gird-box .txt-12 {text-align: right;}
-.line-box .detail-info .gird-box .info-link {font-size: 14px; font-weight: 700; display: flex; align-items: center;}
-.line-box .detail-info .gird-box .info-link::after {content: ''; display: block; width: 20px; height: 20px; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 20px; margin-left: 2px;}
-.line-box .detail-info .gird-box .info-link.disabled-link::after {content: ''; display: block; width: 20px; height: 20px; background: url(../../public/images/right-arrow-dis.svg) center no-repeat; background-size: 20px; margin-left: 2px;}
+.line-box .detail-info:has(h4) .grid-box {margin-bottom: 4px;}
+.line-box .detail-info .grid-box h3, .line-box .detail-info .grid-box .txt-14 {color: #333;}
+.line-box .detail-info .grid-box h4, .line-box .detail-info .grid-box .txt-12 {color: #999;}
+.line-box .detail-info .grid-box .txt-14, .line-box .detail-info .grid-box .txt-12 {text-align: right;}
+.line-box .detail-info .grid-box .info-link {font-size: 14px; font-weight: 700; display: flex; align-items: center;}
+.line-box .detail-info .grid-box .info-link::after {content: ''; display: block; width: 20px; height: 20px; background: url(../../public/images/right-arrow.svg) center no-repeat; background-size: 20px; margin-left: 2px;}
+.line-box .detail-info .grid-box .info-link.disabled-link::after {content: ''; display: block; width: 20px; height: 20px; background: url(../../public/images/right-arrow-dis.svg) center no-repeat; background-size: 20px; margin-left: 2px;}
 
 .line-box .detail-info.line-through h3, .line-box .detail-info.line-through em {text-decoration: line-through;}
 .line-box .detail-info.txt-16 h3, .line-box .detail-info.txt-16 p {font-size: 16px !important;}

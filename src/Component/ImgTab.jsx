@@ -23,18 +23,20 @@ function ImgTab() {
   ];
 
   return (
-    <Box className='horizontal-scroll'>
-      <ul className='img-select'>
-        {imgTabList.map((list, i) => {
-          return (
-            <li key={i} onClick={() => imgClick(i)} className={imgTab === i ? 'selected ' : ''}>
-              {list.img}
-            </li>
-          );
-        })}
-      </ul>
-	  <GiftCardViewBtn/>
-    </Box>
+	<Box>
+		<Box className='horizontal-scroll'>
+			<ul className='img-select'>
+			{imgTabList.map((list, i) => {
+				return (
+				<li key={i} onClick={() => imgClick(i)} className={imgTab === i ? 'selected ' : ''}>
+					{list.img}
+				</li>
+				);
+			})}
+			</ul>
+			<GiftCardViewBtn/>
+		</Box>
+	</Box>
   );
 }
 
