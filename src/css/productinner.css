@@ -1,4 +1,4 @@
-.product-inner{
+.product-inner {
     width: 100%;
     position: relative;
     font-size: 0;
@@ -6,70 +6,71 @@
     display: block;
 }
 
-.thumbnail-img{
-    width: 6.4rem;
-    height: 6.4rem;
-    border-radius: 1.2rem;
+.thumbnail-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
-    border: 0.1rem solid #f6f6f6;
+    border: 1px solid #f6f6f6;
 }
 
-.product-inner > i{
+.product-inner > i {
     display: none;
-    height: 1.8rem;
-    padding: 0 0.4rem;
-    border-radius: 0.4rem;
+    height: 18px;
+    padding: 0 4px;
+    border-radius: 4px;
     background: #FFE6EE;
     vertical-align: middle;
-    font-size: 1rem;
+    font-size: 10px;
     font-weight: 700;
-    line-height: 1.8rem;
+    line-height: 18px;
     color: #FA0050;
     text-align: center;
     position: absolute;
     left: 0;
     top: 0;
 }
-.product-inner > i.active{display: inline-block;}
-.product-explan{
-    width: calc(100% - 6.4rem);
+.product-inner > i.active {display: inline-block;}
+.product-explan {
+    width: calc(100% - 64px);
     display: inline-block;
     vertical-align: middle;
-    padding-left: 1.2rem;
+    padding-left: 12px;
     vertical-align: middle;
-    
 }
-.product-explan .product-name{
+
+.product-explan .product-name {
     width: 100%;
     display: block;
-    margin-top: 0.2rem;
+    margin-top: 2px;
     line-height: 1;
-
 }
-.product-explan .product-name > span{
+
+.product-explan .product-name > span {
     display: inline-block;
     vertical-align: middle;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
 }
 
-.product-explan .product-price{
+.product-explan .product-price {
     width: 100%;
     display: block;
-    margin-top: 0.2rem;
-    font-size: 1.4rem;
+    margin-top: 2px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
 }
-.product-explan .product-price > span{font-weight: 700; line-height: 1.9rem;}
-.product-explan .product-price .discount-rate{color: #FA0050; line-height: 1.9rem;}
-.product-explan .brand-name{
+
+.product-explan .product-price > span {font-weight: 700; line-height: 19px;}
+.product-explan .product-price .discount-rate {color: #FA0050; line-height: 19px;}
+.product-explan .brand-name {
     width: 100%;
     display: block;
     margin-top: 0;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 12px;
+    line-height: 16px;
 }

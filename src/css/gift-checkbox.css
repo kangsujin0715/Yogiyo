@@ -1,23 +1,23 @@
-#gift-checkbox{
+#gift-checkbox {
     width: 100%;
     position: relative;
 }
 
 #gift-checkbox > input[type=checkbox] {
     position: absolute; 
-    top: 0.3rem; 
-    left: 0.3rem; 
+    top: 3px; 
+    left: 3px; 
     z-index: -1; 
-    width: 0rem; 
-    height: 0rem; 
+    width: 0; 
+    height: 0; 
     opacity: 0;
 }
 
 #gift-checkbox > input[type=checkbox] + label {
-    border: 0.1rem solid #e5e5e5;
-    border-radius: 0.8rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
     background: #fff !important;
-    padding: 0.4rem 1.6rem 0.4rem 0.4rem !important;
+    padding: 4px 16px 4px 4px !important;
     font-size: 0;
     position: relative; 
     display: flex; 
@@ -25,126 +25,111 @@
     
 }
 
-#gift-checkbox > input[type=checkbox] + label::before{display: none;}
+#gift-checkbox > input[type=checkbox] + label::before {display: none;}
 #gift-checkbox > input[type=checkbox]:checked + label {
     background: #fff;
     background-size: auto;
-    border: 0.2rem solid #333;
-    padding: 0.3rem 1.5rem 0.3rem 0.3rem !important;
+    border: 2px solid #333;
+    padding: 3px 15px 3px 3px !important;
 }
-#gift-checkbox > input[type=checkbox]:checked + label::before{display: none;}
 
-#gift-checkbox .gift-img{
+#gift-checkbox > input[type=checkbox]:checked + label::before {display: none;}
+#gift-checkbox .gift-img {
     position: relative;
     display: inline-block;
-    width: 11.2rem;
-    height: 11.2rem;
+    width: 112px;
+    height: 112px;
     vertical-align: middle;
-    border-radius: 0.8rem;
+    border-radius: 8px;
     overflow: hidden;
 }
 
-#gift-checkbox .gift-img > img{width: 100%;}
-
-#gift-checkbox .gift-img .brand-logo{
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 0.1rem solid #f6f6f6;
-    border-radius: 2.2rem;
+#gift-checkbox .gift-img > img {width: 100%;}
+#gift-checkbox .gift-img .brand-logo {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #f6f6f6;
+    border-radius: 22px;
     position: absolute;
-    left: 0.6rem;
-    top: 0.6rem;
+    left: 6px;
+    top: 6px;
     overflow: hidden;
 }
 
-#gift-checkbox .gift-img .brand-logo > img{width: 100%;}
-#gift-checkbox .gift-img .dim{
-    display: none;
-}
-#gift-checkbox .gift-img .dim > i{
+#gift-checkbox .gift-img .brand-logo > img {width: 100%;}
+#gift-checkbox .gift-img .dim {display: none;}
+#gift-checkbox .gift-img .dim > i {
     display: table-cell;
     vertical-align: middle;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 700;
     color: #fff;
     text-align: center;
 }
 
-
-#gift-checkbox .gift-info{
+#gift-checkbox .gift-info {
     display: inline-block;
     vertical-align: middle;
-    width: calc(100% - 13.6rem);
-    padding: 0 1.6rem;
+    width: calc(100% - 136px);
+    padding: 0 16px;
 }
-#gift-checkbox .gift-info #bage{
+#gift-checkbox .gift-info #bage {
     width: auto;
     display: inline-block;
     background: #e8f5fa;
-    border-radius: 0.4rem;
-    padding: 0 0.4rem;
-    line-height: 1.8rem;
-    margin-bottom: 0.4rem;
+    border-radius: 4px;
+    padding: 0 4px;
+    line-height: 18px;
+    margin-bottom: 4px;
 }
 
-#gift-checkbox .gift-info #bage > strong{
-    font-size: 1rem;
+#gift-checkbox .gift-info #bage > strong {
+    font-size: 10px;
     font-weight: 700;
     color: #003f55;
 }
-#gift-checkbox .gift-info #bage > i{
-    font-size: 1rem;
+#gift-checkbox .gift-info #bage > i {
+    font-size: 10px;
     font-weight: 400;
     color: #003f55;
 }
 
-#gift-checkbox .gift-info #bage.single > i{
-    display: none;
-}
-
-#gift-checkbox .gift-info #bage.none{
-    display: none;
-}
-
-#gift-checkbox .gift-info .balance{
-    width: 100%;
-    
-}
-#gift-checkbox .gift-info .balance > span{
-    font-size: 1.4rem;
-    line-height: 1.9rem;
+#gift-checkbox .gift-info #bage.single > i, #gift-checkbox .gift-info #bage.none {display: none;}
+#gift-checkbox .gift-info .balance {width: 100%;}
+#gift-checkbox .gift-info .balance > span {
+    font-size: 14px;
+    line-height: 19px;
     color: #333;
     vertical-align: bottom;
     display: inline-block;
 }
 
-#gift-checkbox .gift-info .balance > strong{
-    font-size: 1.8rem;
-    line-height: 2.4rem;
+#gift-checkbox .gift-info .balance > strong {
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 700;
     color: #333;
     vertical-align: bottom;
     display: inline-block;
-    margin-left: 0.4rem;
+    margin-left: 4px;
 }
 
-#gift-checkbox .gift-info .gift-name{
-    margin-top: 0.4rem;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
+#gift-checkbox .gift-info .gift-name {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 19px;
 }
 
-#gift-checkbox .gift-info .from-text{
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+#gift-checkbox .gift-info .from-text {
+    font-size: 12px;
+    line-height: 16px;
     color: #999;
 }
 
-#gift-checkbox.not .gift-img .dim
-{
+#gift-checkbox.not .gift-img .dim {
     display: table;
-    width: 11.2rem;
-    height: 11.2rem;
+    width: 112px;
+    height: 112px;
     background: rgba(0, 0, 0, 0.60);
     position: absolute;
     z-index: 10;
@@ -152,50 +137,43 @@
     top: 0;
 }
 
-#gift-checkbox.not .gift-info{
-    opacity: 0.3;
-}
-
-
-
-#gift-checkbox .check-circel{
+#gift-checkbox.not .gift-info {opacity: 0.3;}
+#gift-checkbox .check-circel {
     display: inline-block;
-    width: 2.4rem;
+    width: 24px;
     vertical-align: middle;
 }
-#gift-checkbox .check-circel .circel{
+
+#gift-checkbox .check-circel .circel {
     display: inline-block;
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 1.2rem;
-    border: 0.1rem solid #bfbfbf;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid #bfbfbf;
 }
-#gift-checkbox .check-circel .circel > i{
+#gift-checkbox .check-circel .circel > i {
     display: none;
-    font-size: 1.2rem;
+    font-size: 12px;
     text-align: center;
-    line-height: 2.2rem;
+    line-height: 22px;
     color: #fff;
     font-weight: 700;
 }
 
-#gift-checkbox > input[type=checkbox]:checked + label .check-circel .circel{
-    border: 0.1rem solid #333;
+#gift-checkbox > input[type=checkbox]:checked + label .check-circel .circel {
+    border: 1px solid #333;
     background: #333;
-    
 }
 
-#gift-checkbox > input[type=checkbox]:checked + label .check-circel .circel > i{
-    display: block;
-}
+#gift-checkbox > input[type=checkbox]:checked + label .check-circel .circel > i {display: block;}
 
-#gift-checkbox > input[type=checkbox]:disabled + label{ opacity: 0.3;}
-#gift-checkbox.not > input[type=checkbox]:disabled + label{ opacity: 1;}
-#gift-checkbox > p{display: none;}
-#gift-checkbox.not > p{
+#gift-checkbox > input[type=checkbox]:disabled + label {opacity: 0.3;}
+#gift-checkbox.not > input[type=checkbox]:disabled + label {opacity: 1;}
+#gift-checkbox > p {display: none;}
+#gift-checkbox.not > p {
     display: block;
-    font-size: 1.2rem;
-    list-style: 1.6rem;
+    font-size: 12px;
+    list-style: 16px;
     color: #c00000;
-    margin-top: 0.4rem;
+    margin-top: 04px;
 }

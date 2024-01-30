@@ -1,6 +1,6 @@
-.gift-center-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 5.6rem);}
-.gift-center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 0 1.6rem;}
+.gift-center-box {display: flex; justify-content: space-between; flex-direction: column; height: calc(100vh - 56px);}
+.gift-center {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 0 16px;}
 .gift-center img {width: auto; height: auto;}
-.gift-center .text-box {margin-bottom: 4rem; text-align: center;}
-.gift-center .text-box h2 {margin: 3.8rem 0 0.8rem; font-size: 2.4rem !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
-.gift-center .text-box p {font-size: 1.4rem !important; line-height: 1.9rem; color: rgba(0, 0, 0, 0.6); word-break: keep-all;}
+.gift-center .text-box {margin-bottom: 40px; text-align: center;}
+.gift-center .text-box h2 {margin: 38px 0 16px; font-size: 18px !important; font-weight: 700; color: rgba(0, 0, 0, 0.8); word-break: keep-all;}
+.gift-center .text-box p {font-size: 14px !important; line-height: 19px; color: rgba(0, 0, 0, 0.6); word-break: keep-all;}

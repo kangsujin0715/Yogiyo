@@ -1,4 +1,4 @@
-.brand-box{display: inline-block; width: 80px;}
-.brand-box .logo-img{width: 80px; height: 80px; border-radius: 40px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.12);}
-.brand-box .logo-img > img{width: 100%;}
-.brand-box > p{font-size: 1.4rem; text-align: center; line-height: 1.9rem; padding-top: 0.8rem; color: #333;}
+.brand-box {display: inline-block; width: 80px;}
+.brand-box .logo-img {width: 80px; height: 80px; border-radius: 40px; overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.12);}
+.brand-box .logo-img > img {width: 100%;}
+.brand-box > p {font-size: 14px; text-align: center; line-height: 19px; padding-top: 8px; color: #333;}

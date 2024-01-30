@@ -1,10 +1,10 @@
 .front, .back {
-	width: 24rem;
-	height: 33.6rem;
+	width: 240px;
+	height: 336px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 1.8rem;
+	border-radius: 18px;
 	
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;

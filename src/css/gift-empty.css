@@ -1,12 +1,3 @@
-.gift-empty{
-    width: 100%; 
-    text-align: center;
-    padding: 8.25rem 0 3.2rem;
-}
-.gift-empty > img{width: 12rem;}
-.gift-empty > p{
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    color: #999;
-    padding-top: 1.6rem;
-}
+.gift-empty {width: 100%;  text-align: center; padding: 825px 0 32px;}
+.gift-empty > img {width: 120px;}
+.gift-empty > p {font-size: 14px; line-height: 19px; color: #999; padding-top: 16px;}

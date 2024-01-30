@@ -25,16 +25,16 @@ function ImgTab() {
   return (
 	<Box>
 		<Box className='horizontal-scroll'>
-		<ul className='img-select'>
+			<ul className='img-select'>
 			{imgTabList.map((list, i) => {
-			return (
+				return (
 				<li key={i} onClick={() => imgClick(i)} className={imgTab === i ? 'selected ' : ''}>
-				{list.img}
+					{list.img}
 				</li>
-			);
+				);
 			})}
-		</ul>
-		<GiftCardViewBtn/>
+			</ul>
+			<GiftCardViewBtn/>
 		</Box>
 	</Box>
   );

@@ -1,18 +1,4 @@
-.p-card-slide{
-    padding: 1.6rem;
-}
-.p-card-slide > ul{
-    width: auto;
-    display: flex; 
-    
-    
-}
-
-
-.p-card-slide > ul > li{
-    display: flex;
-    margin-left: 0.8rem;
-}
-.p-card-slide > ul > li:first-child{
-    margin-left: 0;
-}
+.p-card-slide {padding: 16px;}
+.p-card-slide > ul {width: auto; display: flex;}
+.p-card-slide > ul > li {display: flex; margin-left: 8px;}
+.p-card-slide > ul > li:first-child {margin-left: 0;}
