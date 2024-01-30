@@ -36,13 +36,18 @@ export default function GiftDetail() {
             <em>30,000</em>원
           </span>
         </Box>
-
+        <Box className="underline grid-box mt-12">
+          <Typography variant="h3" className='green'>할인</Typography>
+          <span className="price green">
+            -<em className='green'>6,000</em>원
+          </span>
+        </Box>
         <Box className="grid-box">
           <Typography variant="h2" className="title mb0">
             총 결제금액
           </Typography>
           <strong className="price">
-            <em>30,000</em>원
+            <em>24,000</em>원
           </strong>
         </Box>
       </Box>

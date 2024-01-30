@@ -43,7 +43,7 @@ export default function Refund() {
             처리되며, 수수료는 현재 보여지는 입금액 기준으로 처리됩니다~~~~~
         </Box>
       </Box>
-      <Box className='btn-box'>
+      <Box className='footer-box btn-box'>
         <button className='full-btn pink'>
           다음
         </button>

@@ -63,7 +63,7 @@ strong.price em {font-size: 20px;}
 .full-btn.pink {color: #fff; background-color: #fa0050; border: none;}
 .full-btn.line {color: #333; border: 1px solid #bfbfbf;}
 .full-btn.whit {color: #333; background-color: #fff; border: none;}
-.full-btn:disabled {color: #bfbfbf; background-color: #ebebeb; border: none;}
+.full-btn:disabled {color: rgba(0, 0, 0, 0.4); background-color: rgba(0, 0, 0, 0.08); border: none;}
 
 /* ---header 임시-------------------------------------------------------------------------------------------------------------------------------------------------- */
 

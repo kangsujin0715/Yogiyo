@@ -36,7 +36,7 @@ export default function RefundAskInfo() {
 			</label>
 		</Box>
       </Box>
-		<Box className='btn-box'>
+		<Box className='footer-box btn-box'>
 			<button className='full-btn pink' disabled>
 			환불신청
 			</button>
