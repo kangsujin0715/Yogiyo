@@ -1,8 +1,13 @@
-#giftTopInfo {width: 100%; padding-top: 20px; text-align: center;}
+#giftTopInfo {width: 100%; padding-top: 12px; text-align: center;}
 #giftTopInfo.none {display: none;}
 #giftTopInfo.single, #giftTopInfo.double {display: block;}
-#giftTopInfo > p {text-align: center; padding: 7px 0 6px;}
+#giftTopInfo > p {text-align: center; padding: 4px 0;}
 #giftTopInfo > p > span {display: inline-block; font-size: 14px; line-height: 19px;}
 #giftTopInfo > p > strong {display: inline-block; font-size: 14px; line-height: 19px; font-weight: 700; margin-left: 8px;}
-#giftTopInfo > i {display: block; text-align: center; font-size: 12px; line-height: 16px; color: #666;}
-#giftTopInfo.single > i {display: none;}
+#giftTopInfo > span {display: block; text-align: center; font-size: 12px; line-height: 16px; color: #666; position: relative; padding-bottom: 4px;}
+#giftTopInfo.single > span {display: none;}
+#giftTopInfo > span > i{display: inline-block; vertical-align: middle;}
+#giftTopInfo > span .info {display: inline-block; width: 20px; height: 20px; background: url(../../public/images/info.svg) center no-repeat; background-size: 20px; margin-left: 2px; vertical-align: middle;}
+#giftTopInfo > span .info-box {display: none; vertical-align: baseline; width: 234px; z-index: 3; line-height: 16px; font-size: 12px; position: absolute; top: 24px; left: auto; right: 16px; border: 1px solid #bfbfbf; background-color: #fff; padding: 10px; border-radius: 4px; text-align: left;}
+#giftTopInfo > span .info-box b {font-weight: 700;}
+#giftTopInfo > span .info:focus ~ .info-box {display: block;}
