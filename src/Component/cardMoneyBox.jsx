@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import MoneyTab2 from './MoneyTab2';
+import MoneyTab3 from './MoneyTab3';
 import CardDesign from './CardDesign';
 
 function CardMoneyBox() {
@@ -13,7 +13,7 @@ function CardMoneyBox() {
   return (
     <>
 	  <CardDesign money={money}/>
-	  <MoneyTab2 onChange={handleMoneyChange}/>
+	  <MoneyTab3 onChange={handleMoneyChange}/>
 	</>
   );
 }
