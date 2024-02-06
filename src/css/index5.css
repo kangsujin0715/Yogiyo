@@ -1,0 +1,56 @@
+*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+		html,
+		body {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.viewer {
+			position: fixed;
+			perspective: 300px;
+			perspective-origin: 50% 50%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%) scale(2);
+		}
+
+		.card {
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			perspective: 600px;
+		}
+
+		.card .txt {font-size: 30px; color: #24292B; text-align: center;}
+
+		.card-front,
+		.card-back {
+			width: 280px;
+			height: 360px;
+			will-change: transform, filter, box-shadow, z-index;
+			padding: 4px;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			position: relative;
+			border-radius: 16px;
+			overflow: hidden;
+			transform: scale(0.5);
+		}
+
+		.card-front {
+			background-color: bisque !important;
+		}
+
+		.card-back {
+			background-color: aquamarine !important;
+			transform: rotateY(180deg) scale(0.5);
+			position: absolute;
+			left: 0;
+			top: 0;
+			will-change: transform;
+		}
