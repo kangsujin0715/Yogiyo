@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, useCallback } from 'react';
+import CountUp from 'react-countup';
 import { Box, Typography } from '@mui/material';
 
 import '../css/cardReflect.css';
@@ -16,7 +16,7 @@ import '../css/cardintraction.css';
 // 버튼 클릭시 한 방향으로 도는 인터렉션
 
 
-function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {  
+function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {
   const [textCount, setTextCount] = useState(0);
   const onTextHandler = (e) => {
     setTextCount(e.target.value.length);
@@ -33,13 +33,12 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {
     // 컴포넌트가 마운트된 후 실행될 코드
     // 여기서는 3초 후에 클래스를 숨기는 코드를 작성합니다.
     const timeoutId = setTimeout(() => {
-		setShowHide(false);
+      setShowHide(false);
     }, 2500);
 
     // 컴포넌트가 언마운트되면 타임아웃을 정리합니다.
     return () => clearTimeout(timeoutId);
   }, []); // 빈 배열은 컴포넌트가 마운트될 때만 실행하도록 합니다.
-
 
   // 클릭 횟수 상태 변수와 업데이트 함수 정의
   const [clickCount, setClickCount] = useState(0);
@@ -47,50 +46,69 @@ function CardDesign({ imgViewUrl, imglogoUrl, brand, money }) {
   const [isSparkles, setIsSparkles] = useState(true);
 
   // 클릭 이벤트 핸들러
-   const flipCard = () => {
-	 setIsOpen((prevState) => !prevState);
-	 // sparkles 클릭
-	 setIsSparkles((prevState) => !prevState);
-	 // 클릭 횟수 업데이트
-	 setClickCount((prevCount) => prevCount + 1);
-   };
+  const flipCard = () => {
+    setIsOpen((prevState) => !prevState);
+    // sparkles 클릭
+    setIsSparkles((prevState) => !prevState);
+    // 클릭 횟수 업데이트
+    setClickCount((prevCount) => prevCount + 1);
+  };
 
   // 클릭 횟수가 1 이상이면 true, 아니면 false
   const plusFlip = clickCount >= 1;
 
+  const [startVal, setStartVal] = useState(10000);
+  const divisionUnit = 5000;
+
   return (
     <Box className={`gift-card ${showHide ? 'rotate' : 'intraction'}`}>
       <Box className={`card-box ${isOpen ? 'open' : ''} ${plusFlip ? 'flip' : ''} manual-flip`}>
-        <Box className='card-view'>
-          <Box className={`front ${showHide ? 'sparkles' : ''}  ${isSparkles ? '' : 'sparkles'}`} onClick={flipCard}>
-            <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
-            <button className='message-btn'>메세지 쓰기</button>
-            <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
-              <img className='logo' src={imglogoUrl} alt='로고 이미지' />
-              <Box className='title-box'>
-                <Typography className='brand' variant='h3' component='h3'>
+        <Box className="card-view">
+          <Box
+            className={`front ${showHide ? 'sparkles' : ''}  ${isSparkles ? '' : 'sparkles'}`}
+            onClick={flipCard}
+          >
+            <img className="img-view" src={imgViewUrl} alt="카드 디자인 이미지" />
+            <button className="message-btn">메세지 쓰기</button>
+            <Box className="card-info" sx={{ backgroundColor: '#2C4299' }}>
+              <img className="logo" src={imglogoUrl} alt="로고 이미지" />
+              <Box className="title-box">
+                <Typography className="brand" variant="h3" component="h3">
                   {brand}
                 </Typography>
-				<Typography className='price'><span className='num'>{money.toLocaleString()}</span>원</Typography>
-                {/* <Typography className='price'><span className='num'>{moneySelected !== null ? moneyTabList[moneySelected].price : ''}</span>원</Typography> */}
+
+                <Typography className="price">
+                  <CountUp
+                    start={startVal}
+                    end={money}
+                    duration={1}
+                    onEnd={() => setStartVal(money)}
+                    className="num"
+                    useGrouping
+                    formattingFn={useCallback((target) =>
+                      (Number((target / divisionUnit).toFixed(0)) * divisionUnit).toLocaleString()
+                    )}
+                  />
+                  원
+                </Typography>
+                
               </Box>
             </Box>
           </Box>
           {/* 카드 앞 */}
-		  <Box className='back' sx={{ backgroundColor: '#2C4299' }}>
-            <Box className='text-box' >
-              <label htmlFor='text' className='label-box'>
+          <Box className="back" sx={{ backgroundColor: '#2C4299' }}>
+            <Box className="text-box">
+              <label htmlFor="text" className="label-box">
                 {labelText}
               </label>
-              <textarea id='text' onChange={onTextHandler} onClick={clearLabel} maxLength='150'/>
-              <button className='click' onClick={flipCard}>
+              <textarea id="text" onChange={onTextHandler} onClick={clearLabel} maxLength="150" />
+              <button className="click" onClick={flipCard}>
                 카드 뒤집기
               </button>
-              <p className='byte'>{textCount}/150</p>
+              <p className="byte">{textCount}/150</p>
             </Box>
           </Box>
-            {/* 카드 뒤 */}
-          
+          {/* 카드 뒤 */}
         </Box>
       </Box>
     </Box>
@@ -103,15 +121,14 @@ CardDesign.defaultProps = {
   brand: '요기요 상품권',
   name: (
     <>
-      To.<span className='name'>김민지</span>
+      To.<span className="name">김민지</span>
     </>
   ),
   content: (
-      <p className='content'>
-        최소글자는 1글자, 최대 글자는 150자로 맞춰 놓으면 어떨까요? 충분해 보이는 영역입니다.
-      </p>
+    <p className="content">
+      최소글자는 1글자, 최대 글자는 150자로 맞춰 놓으면 어떨까요? 충분해 보이는 영역입니다.
+    </p>
   ),
 };
 
 export default CardDesign;
-
