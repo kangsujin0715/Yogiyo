@@ -24,6 +24,7 @@ import HomeIndex from './page/HomeIndex';
 import MainHeader from './Component/MainHeader';
 import CardAllView from './page/CardAllView';
 import GiftBox from './page/GiftBox';
+import GiftBoxDisabled from './page/GiftBoxDisabled';
 import GiftBoxSent from './page/GiftBoxSent';
 import GiftBoxEmpty from './page/GiftBoxEmpty';
 import UseGiftBox from './page/UseGiftBox';
@@ -43,6 +44,7 @@ export const pageList = [
   { title: '알림톡 이동화면 (카톡 브라우저)', path: '/test/kakaoComplete', element: <KakaoComplete /> },
   { title: '받은선물함', path: '/giftbox', element: <GiftBox /> },
   { title: '보낸선물함', path: '/giftboxsent', element: <GiftBoxSent /> },
+  { title: '선물함 상품권등록 비활성화', path: '/GiftBoxDisabled', element: <GiftBoxDisabled /> },
   { title: '선물함(리스트없음)', path: '/giftboxempty', element: <GiftBoxEmpty /> },
   { title: '보낸 선물 상세', path: '/test/sendGiftDetail', element: <SendGiftDetail /> },
   { title: '받은 사람 (총 100명)', path: '/test/getInfo', element: <GetInfo /> },
