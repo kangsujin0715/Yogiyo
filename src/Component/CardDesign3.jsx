@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import '../css/cardReflect.css';
+//import '../css/cardReflect.css';
 // 로딩시간이 걸려 틀어지는 오류가 생김 - 미러효과 css를 따로 만들어서 처음에 올려둠
 
-import '../css/cardSparkles.css';
+//import '../css/cardSparkles.css';
 // 빛반사
 
-import '../css/cardDesign.css';
+//import '../css/cardDesign.css';
 // 카드 디자인
 
 

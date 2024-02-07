@@ -1,0 +1,63 @@
+.rotate {
+	--duration: 2500ms;
+	--duration-translate: 5000ms;
+	--transition-in: ease-in;
+	--transition-out: ease-out;
+}
+
+.rotate .front {
+	z-index: 5;
+	transform: scale(1) rotate3d(0, 1, 0, 0deg);
+	animation: rotateOut var(--duration);
+}
+
+.rotate .back {
+	transform: scale(1) rotate3d(0, 1, 0, 90deg);
+	animation: rotateIn var(--duration);
+}
+
+@keyframes rotateIn {
+	0% {
+		transform: scale(1) rotate3d(0, 1, 0, -180deg);
+	}
+
+	10% {
+		transform: scale(0.95) rotate3d(0, 1, 0, -180deg);
+	}
+
+	50% {
+		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
+	}
+
+	90% {
+		transform: scale(0.95) rotate3d(0, 1, 0, 180deg);
+	}
+
+	100% {
+		transform: scale(1) rotate3d(0, 1, 0, 180deg);
+	}
+}
+
+@keyframes rotateOut {
+	0% {
+		transform: scale(1) rotate3d(0, 1, 0, 0deg);
+	}
+
+	10% {
+		transform: scale(0.95) rotate3d(0, 1, 0, 0deg);
+	}
+
+	50% {
+		transform: scale(0.95) rotate3d(0, 1, 0, 180deg);
+	}
+
+	90% {
+		transform: scale(0.95) rotate3d(0, 1, 0, 360deg);
+	}
+
+	100% {
+		transform: scale(1) rotate3d(0, 1, 0, 360deg);
+	}
+}
+
+/* 360도 회전 css */
