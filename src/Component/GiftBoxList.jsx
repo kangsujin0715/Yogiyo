@@ -10,7 +10,7 @@ function GiftBoxList() {
             cashStatus='double' 
             normalText='사용 가능 금액' 
             strText='2,000,000원' 
-            WaitingCash='대기중인 금액 0000원'
+            WaitingCash='대기중인 금액 100,000원'
         >
         </TopInfo>
         <ul>
