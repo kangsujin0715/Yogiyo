@@ -19,15 +19,13 @@ const sensitivity = 1.5;
 function CardDesign5({ imgViewUrl, imglogoUrl, brand, price }) {
     const [rotationAngle, setRotationAngle] = useState(0);
     const [touchStartX, setTouchStartX] = useState(0);
-    const [touchStartY, setTouchStartY] = useState(0);
 
     const handleTouchStart = (event) => {
         setTouchStartX(event.touches[0].clientX);
-        setTouchStartY(event.touches[0].clientY);
     };
 
     const handleTouchMove = (event) => {
-        if (touchStartX === 0 && touchStartY === 0) return;
+        if (touchStartX === 0) return;
 
         const touchEndX = event.touches[0].clientX;
         const deltaX = touchEndX - touchStartX;
@@ -43,7 +41,6 @@ function CardDesign5({ imgViewUrl, imglogoUrl, brand, price }) {
         if (finalRotation % 180 !== 0) setRotationAngle((prevRotation) => prevRotation + 90);
 
         setTouchStartX(0);
-        setTouchStartY(0);
     };
 	// handleTouch 인터렉션
 
