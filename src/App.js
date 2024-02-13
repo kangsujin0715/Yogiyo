@@ -32,7 +32,7 @@ import UseGiftBox from './page/UseGiftBox';
 import Container from '@mui/material/Container';
 import TestPage from './page/TestPage';
 import ToastPop from './page/ToastPop';
-import TestPage from './page/TestPage';
+import GiftBoxInfo from './page/GiftBoxInfo';
 
 export const pageList = [
   { title: '-------------------', path: '/', element: <Index /> },
@@ -59,6 +59,8 @@ export const pageList = [
   { title: '환불 신청 정보', path: '/test/refundAskInfo', element: <RefundAskInfo /> },
   { title: '환불 신청 완료', path: '/test/refundComplete', element: <RefundComplete /> },
   { title: '사용하기', path: '/usegift', element: <UseGiftBox /> },
+
+  { title: '받은선물, 보낸선물, 환불 상태정보', path: '/giftBoxInfo', element: <GiftBoxInfo /> },
   
   { title: '(Sample) 카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
   { title: '테스트', path: '/category/TestPage', element: <TestPage /> },

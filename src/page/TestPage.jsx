@@ -13,4 +13,4 @@ function TestPage() {
   );
 }
 
-export default CounterApp;
+export default TestPage;
