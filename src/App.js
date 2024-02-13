@@ -32,7 +32,6 @@ import UseGiftBox from './page/UseGiftBox';
 import Container from '@mui/material/Container';
 import TestPage from './page/TestPage';
 import ToastPop from './page/ToastPop';
-import TestPage from './page/TestPage';
 
 export const pageList = [
   { title: '-------------------', path: '/', element: <Index /> },
