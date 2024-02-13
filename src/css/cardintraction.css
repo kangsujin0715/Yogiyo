@@ -1,3 +1,37 @@
+.rotateImg360:has(.img360) .img360 {
+	animation: fadeInOut 1600ms ease-in-out;
+}
+
+.img360 {
+	opacity: 0;
+	width: 7.2rem;
+	height: 7.2rem;
+	z-index: 20;
+	background: url(../../public/images/360.svg) center no-repeat;
+	background-size: 7.2rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -3.6rem;
+	margin-left: -3.6rem;
+}
+
+@keyframes fadeInOut {
+	35% {
+		opacity: 0;
+	}
+
+	70%, 80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/* 360도 회전 이미지 반영 */
+
 .rotate {
 	--duration: 2500ms;
 	--duration-translate: 5000ms;
