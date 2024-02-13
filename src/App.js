@@ -32,7 +32,6 @@ import UseGiftBox from './page/UseGiftBox';
 import Container from '@mui/material/Container';
 import TestPage from './page/TestPage';
 import ToastPop from './page/ToastPop';
-import TestPage from './page/TestPage';
 
 export const pageList = [
   { title: '-------------------', path: '/', element: <Index /> },
@@ -61,7 +60,6 @@ export const pageList = [
   { title: '사용하기', path: '/usegift', element: <UseGiftBox /> },
   
   { title: '(Sample) 카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
-  { title: '테스트', path: '/category/TestPage', element: <TestPage /> },
   { title: '(Sample) 토스트 팝업', path: '/toastpop', element: <ToastPop /> },
   { title: '(Sample) 테스트', path: '/category/TestPage', element: <TestPage /> },
 ];
