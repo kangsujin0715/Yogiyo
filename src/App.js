@@ -41,7 +41,7 @@ export const pageList = [
   { title: '선물하기 상세2', path: '/test/giftdetail', element: <GiftDetail2 /> },
   { title: '선물하기 상세 (이용안내 등 tab)', path: '/test/privacy', element: <Privacy /> },
   { title: '선물하기 완료 (선물 완료)', path: '/test/complete', element: <GiftComplete /> },
-  { title: '선물하기 완료 (보내는중)', path: '/test/complete', element: <GiftSending /> },
+  { title: '선물하기 완료 (보내는중)', path: '/test/complete2', element: <GiftSending /> },
   { title: '선물하기 오류', path: '/test/error', element: <GiftError /> },
   { title: '알림톡 이동화면 (카톡 브라우저)', path: '/test/kakaoComplete', element: <KakaoComplete /> },
   { title: '받은선물함', path: '/giftbox', element: <GiftBox /> },

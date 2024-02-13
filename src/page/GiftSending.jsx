@@ -15,14 +15,13 @@ export default function GiftSending() {
           <Typography className="text mt-0" variant="h2" component="h2">
             선물 보내는 중!
           </Typography>
-          <p>받는 사람이 많아 시간이 오래 걸려요.<br/>
-		  	선물하기 실패 시 전체 결제가 취소됩니다.
+          <p>받는 사람이 많아 보내는데 시간이 조금 더 걸려요.<br/> 
+			선물 완료는 선물함에서 확인해주세요.
 		  </p>
         </Box>
       </Box>
-      <Box className="btn-box col">
+      <Box className='btn-box center'>
         <button className="full-btn pink">선물 확인하기</button>
-        <button className="full-btn whit mt-12">다른 선물하기</button>
       </Box>
     </Box>
   );
