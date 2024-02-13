@@ -25,5 +25,5 @@ export default function RefundComplete({imgRefundUrl}) {
 }
 
 RefundComplete.defaultProps = {
-	imgRefundUrl: '/images/refund.svg',
+	imgRefundUrl: '/images/Refund.svg',
 }
