@@ -42,7 +42,7 @@ export default function GiftDetail2() {
             -<em className='green'>6,000</em>원
           </span>
         </Box>
-        <Box className="grid-box">
+        <Box className="price-box">
           <Typography variant="h2" className="title mb0">
             총 결제금액
           </Typography>

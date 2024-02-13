@@ -63,7 +63,6 @@ export const pageList = [
   { title: '받은선물, 보낸선물, 환불 상태정보', path: '/giftBoxInfo', element: <GiftBoxInfo /> },
   
   { title: '(Sample) 카테고리필터 테스트', path: '/category/filter', element: <CategoryFilter /> },
-  { title: '테스트', path: '/category/TestPage', element: <TestPage /> },
   { title: '(Sample) 토스트 팝업', path: '/toastpop', element: <ToastPop /> },
   { title: '(Sample) 테스트', path: '/category/TestPage', element: <TestPage /> },
 ];
