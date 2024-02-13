@@ -50,7 +50,7 @@ function CustomPayment({ pTitle }) {
 				결제 수단
 			</Typography>
 			{/* <button className='pay-btn red'>결제수단을 선택해주세요</button> */}
-		 	<button className='pay-btn'>요기서 1초결제</button>
+		 	<button className='right-arrow-btn'>요기서 1초결제</button>
 		  </Box>
 		
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>

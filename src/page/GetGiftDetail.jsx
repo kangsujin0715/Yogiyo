@@ -37,17 +37,13 @@ export default function GetGiftDetail() {
           </Box>
         </Box>
 		<Box className='btn-box mt-8'>
+			<button className='right-arrow-btn gray'>환불하기</button>
+		</Box>
+		<Box className='btn-box mt-8'>
+			<button className='full-btn line'>유효기간 연장하기</button>
+		</Box>
+		<Box className='btn-box mt-8'>
 			<button className='full-btn line'>선물 등록하기</button>
-		</Box>
-		<Box className='btn-box mt-8'>
-			<button className='full-btn line'>환불하기</button>
-		</Box>
-		<Box className='btn-box mt-8'>
-			<button className='full-btn line'>유효기간 연장하기</button>
-		</Box>
-		<Box className='btn-box mt-8'>
-			<button className='full-btn line'>환불하기</button>
-			<button className='full-btn line'>유효기간 연장하기</button>
 		</Box>
 		<p className="notice-text">이 상품권은 기업전용 상품권으로 환불 및 연장이 불가합니다.</p>
 		<p className="notice-text">이 상품권의 환불은<br/>발행사의 고객센터(1661-8191)로 문의해주세요</p>
