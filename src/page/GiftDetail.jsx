@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 import { Box, Typography, Link } from '@mui/material';
 import List from '@mui/material/List';
@@ -11,6 +12,7 @@ import Payment from '../Component/Payment';
 import '../css/payment.css';
 
 export default function GiftDetail() {
+	const [money, setMoney] = useState(10000);
   return (
     <>
       <CardBox/>

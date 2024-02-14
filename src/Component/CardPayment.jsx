@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 // import required modules
-import CardSwiper from './CardSwiper';
+// import CardSwiper from './CardSwiper';
 import AppPay from './AppPay';
 
 import '../css/apppay.css';
@@ -10,7 +10,7 @@ import '../css/apppay.css';
 export default function CardPayment() {
   return (
     <Box className="payment-box">
-      <Box className="payment-list">
+      {/* <Box className="payment-list">
         <input type="radio" id="card" name="pay" defaultChecked={true}/>
         <label htmlFor="card" className="pay flex">
           <Typography variant="h2" className="title">
@@ -26,14 +26,14 @@ export default function CardPayment() {
           <button className="card-btn">카드 관리</button>
         </label>
       </Box>
-      <CardSwiper />
+      <CardSwiper /> */}
       <Box className="payment-list">
-        <input type="radio" id="app" name="pay" />
+        {/* <input type="radio" id="app" name="pay" />
         <label htmlFor="app" className='pay'>
-          <Typography variant="h2" className="title app">
+        </label> */}
+		<Typography variant="h2" className="title app">
             요기서 결제
           </Typography>
-        </label>
       </Box>
       <AppPay />
     </Box>
