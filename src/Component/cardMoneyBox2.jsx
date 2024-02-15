@@ -1,21 +1,28 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import MoneyTab3 from './MoneyTab3';
 import CardDesign5 from './CardDesign5';
+import ImgTab from './ImgTab';
 
-function CardMoneyBox() {
-	const [money, setMoney] = useState(10000);
-	const handleMoneyChange = (money) => {
-		console.log("TEST",money)
-		setMoney(money);
-	};
-	
+function CardMoneyBox2() {
+  const [money, setMoney] = useState(10000);
+  const [image, setImage] = useState('');
+
+  const handleMoneyChange = (money) => {
+    setMoney(money);
+  };
+
+  const handleImgChange = (image) => {
+    setImage(image);
+  };
+  
   return (
     <>
-	  <CardDesign5 money={money}/>
-	  <MoneyTab3 onChange={handleMoneyChange}/>
-	</>
+      <ImgTab onChange={handleImgChange} />
+      <CardDesign5 money={money} images={image} />
+      <MoneyTab3 onChange={handleMoneyChange} />
+    </>
   );
 }
 
-export default CardMoneyBox;
+export default CardMoneyBox2;
