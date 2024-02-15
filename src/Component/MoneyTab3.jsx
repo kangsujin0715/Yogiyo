@@ -11,17 +11,14 @@ const MoneyTab3 = ({ onChange }) => {
   }, [moneyState]);
 
   const moneyList = [10000, 15000, 20000, 30000, 50000, 100000];
+  
   return (
     <Box>
       <Box className="horizontal-scroll">
         <ul className="money-voucher">
           <li className="disable">10,000원</li>
           {moneyList.map((money) => (
-            <li
-              key={money}
-              onClick={() => setMoneyState(money)}
-              className={moneyState === money ? 'selected' : ''}
-            >
+            <li key={money} onClick={() => setMoneyState(money)} className={moneyState === money ? 'selected' : ''}>
               {money.toLocaleString()}원
             </li>
           ))}

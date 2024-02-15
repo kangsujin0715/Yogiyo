@@ -8,7 +8,7 @@ import '../css/cardSparkles.css'; // 빛 반사
 import '../css/cardDesign.css'; // 카드 디자인
 import '../css/cardintraction2.css';// 로딩시 한 바퀴 도는 인터렉션
 
-function CardDesign5({ imgViewUrl, imglogoUrl, brand, money }) {
+function CardDesign5({ imgViewUrl, imglogoUrl, brand, money, images }) {
     const [rotationAngle, setRotationAngle] = useState(0);// 카드 회전 각도 상태와 터치 시작점 좌표 상태를 정의
     const [touchStartX, setTouchStartX] = useState(0); // 카드 회전 중 여부를 추적하는 상태를 정의
 	const [isRotating, setIsRotating] = useState(false);
@@ -105,7 +105,7 @@ function CardDesign5({ imgViewUrl, imglogoUrl, brand, money }) {
       <Box className={`card-box manual-flip`} style={{ touchAction: 'none' }} onTransitionEnd={handleTransitionEnd} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <Box className='card-view' style={{ transform: `rotateY(${rotationAngle}deg)` }}>
           <Box className={`front ${showHide ? 'sparkles' : ''} ${isSparkles ? '' : 'sparkles'}`} onClick={() => flipCard('back')}>
-            <img className='img-view' src={imgViewUrl} alt='카드 디자인 이미지' />
+            <img className='img-view' src={images} />
 			<button className={`message-btn flip-button ${showButtons ? '' : 'hide'}`}>메세지 쓰기</button>
             <Box className='card-info' sx={{ backgroundColor: '#2C4299' }}>
               <img className='logo' src={imglogoUrl} alt='로고 이미지' />
