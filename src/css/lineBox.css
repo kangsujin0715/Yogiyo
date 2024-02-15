@@ -2,6 +2,12 @@
 .detail-info-box .btn-box button {margin: 0 4px; max-width: 100%;}
 .detail-info-box .notice-text {font-size: 12px; color: #666; margin-top: 8px; text-align: center; word-break: keep-all;}
 
+.detail-info-box .accordion {display: flex;}
+.detail-info-box .accordion::after {content: ''; margin-left: auto; display: block; width: 20px; height: 20px; background: url(../../public/images/down-arrow.svg) center no-repeat; background-size: 20px;}
+.detail-info-box .accordion ~ .accordion-box {display: none}
+.detail-info-box .accordion.on::after {background: url(../../public/images/up-arrow.svg) center no-repeat;}
+.detail-info-box .accordion.on ~ .accordion-box {display: block}
+
 .line-box .detail-info .grid-box {margin-bottom: 8px;}
 .line-box .detail-info .grid-box:last-child {margin-bottom: 0;}
 .line-box .detail-info.phone-number-box .phone-item {margin-bottom: 8px;}

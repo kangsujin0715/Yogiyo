@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 import { Box, Typography, Link } from '@mui/material';
 import List from '@mui/material/List';
@@ -12,6 +13,10 @@ import UseHistory from '../Component/UseHistory';
 import '../css/lineBox.css';
 
 export default function Refunding() {
+	const [isAccordion, setIsAccordion] = useState(true);
+	const Accordion = () => {
+		setIsAccordion((prevState) => !prevState);
+	}
   return (
     <>
       <CardDesign3 txt='환불 접수'/>
@@ -53,10 +58,10 @@ export default function Refunding() {
 	  </Box>
 
 	  <Box className='padding-box detail-info-box'>
-        <Typography variant='h2' className='title'>
+		<Typography variant='h2' className={`title accordion ${isAccordion ? '' : 'on'}`} onClick={Accordion}>
           환불 신청 정보
         </Typography>
-        <Box className='line-box'>
+        <Box className='line-box accordion-box'>
           <Box className='detail-info underline'>
             <DetailInfo title='신청자' info='김요기'/>
             <DetailInfo title='연락처' info='010-1234-1234'/>
