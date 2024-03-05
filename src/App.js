@@ -9,6 +9,7 @@ import Privacy from './page/Privacy';
 import GiftComplete from './page/GiftComplete';
 import GiftSending from './page/GiftSending';
 import GiftError from './page/GiftError';
+import ServiceError from './page/ServiceError';
 import KakaoComplete from './page/KakaoComplete';
 import SendGiftDetail from './page/SendGiftDetail';
 import SendGiftDetailCancel from './page/SendGiftDetailCancel';
@@ -44,6 +45,7 @@ export const pageList = [
   { title: '선물하기 완료 (선물 완료)', path: '/test/complete', element: <GiftComplete /> },
   { title: '선물하기 완료 (보내는중)', path: '/test/complete2', element: <GiftSending /> },
   { title: '선물하기 오류', path: '/test/error', element: <GiftError /> },
+  { title: '서비스 장애', path: '/test/serviceError', element: <ServiceError /> },
   { title: '알림톡 이동화면 (카톡 브라우저)', path: '/test/kakaoComplete', element: <KakaoComplete /> },
   { title: '받은선물함', path: '/giftbox', element: <GiftBox /> },
   { title: '보낸선물함', path: '/giftboxsent', element: <GiftBoxSent /> },
